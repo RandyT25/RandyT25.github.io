@@ -112,7 +112,7 @@
     cursor: pointer; border-radius: 6px;
   }
   .mnav-btn.act { color: var(--accent); }
-  .mnav-ico { font-size: 17px; line-height: 1.2; }
+  .mnav-ico { width: 20px; height: 20px; }
 
   /* ---------- KPI strip ---------- */
   .kpis {
@@ -500,10 +500,22 @@
 
 <nav class="mob-nav">
   <div class="mob-nav-inner">
-    <button class="mnav-btn act" id="mn-overview" onclick="mobNav('overview', this)"><span class="mnav-ico">📊</span>Overview</button>
-    <button class="mnav-btn" id="mn-accounts" onclick="mobNav('accounts', this)"><span class="mnav-ico">🏨</span>Accounts</button>
-    <button class="mnav-btn" id="mn-actions" onclick="mobNav('actions', this)"><span class="mnav-ico">⚡</span>Actions</button>
-    <button class="mnav-btn" id="mn-products" onclick="mobNav('products', this)"><span class="mnav-ico">📦</span>Products</button>
+    <button class="mnav-btn act" id="mn-overview" onclick="mobNav('overview', this)">
+      <svg class="mnav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      Overview
+    </button>
+    <button class="mnav-btn" id="mn-accounts" onclick="mobNav('accounts', this)">
+      <svg class="mnav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      Accounts
+    </button>
+    <button class="mnav-btn" id="mn-actions" onclick="mobNav('actions', this)">
+      <svg class="mnav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      Actions
+    </button>
+    <button class="mnav-btn" id="mn-products" onclick="mobNav('products', this)">
+      <svg class="mnav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      Products
+    </button>
   </div>
 </nav>
 
