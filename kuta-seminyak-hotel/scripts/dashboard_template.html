@@ -254,7 +254,7 @@
   .modal-backdrop.show { opacity: 1; pointer-events: auto; }
   .modal {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-    box-shadow: 0 24px 60px -12px rgba(0,0,0,0.5); width: 100%; max-width: 640px;
+    box-shadow: 0 24px 60px -12px rgba(0,0,0,0.5); width: 100%; max-width: min(1040px, 94vw);
     max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;
     transform: translateY(-8px); transition: transform 0.12s ease;
   }
@@ -283,6 +283,10 @@
   .modal-product-table td.pname { font-weight: 600; }
   .modal-product-table td.pcat { color: var(--ink-2); white-space: nowrap; }
   .modal-product-table tfoot td { border-top: 2px solid var(--ink); border-bottom: none; font-weight: 700; }
+  .modal-product-table th:first-child, .modal-product-table td:first-child {
+    position: sticky; left: 0; background: var(--surface); min-width: 130px;
+  }
+  .modal-product-table tfoot td:first-child { background: var(--surface); }
 
   /* ---------- Footer ---------- */
   .foot {
@@ -296,6 +300,10 @@
     .action-grid { grid-template-columns: 1fr; }
     .masthead { flex-direction: column; align-items: flex-start; }
     .masthead .period { text-align: left; }
+  }
+  @media (max-width: 700px) {
+    .modal-backdrop { padding: 0; align-items: stretch; }
+    .modal { max-width: 100%; width: 100%; height: 100%; max-height: 100%; border-radius: 0; }
   }
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
@@ -474,13 +482,33 @@
     const bodyEl = document.getElementById('modalBody');
     const closeBtn = document.getElementById('modalClose');
 
-    function openModalFor(name) {
+    function monthContextStats(c, monthKey) {
+      if (!monthKey || monthKey === 'total') {
+        return {
+          value: c.total, pct: c.pct_of_total, rank: c.rank, rankOf: DATA.customer_count,
+          valueLabel: 'total', pctLabel: 'of revenue', monthSuffix: '',
+        };
+      }
+      const i = +monthKey;
+      const value = c.monthly[i];
+      const denom = DATA.monthly_totals[i] || 1;
+      const ranked = DATA.customers.filter(x => x.monthly[i] > 0).sort((a, b) => b.monthly[i] - a.monthly[i]);
+      const rank = ranked.findIndex(x => x.name === c.name) + 1;
+      const mLabel = monthShort(DATA.months[i]);
+      return {
+        value, pct: value / denom * 100, rank: rank || null, rankOf: ranked.length,
+        valueLabel: `in ${mLabel}`, pctLabel: `of ${mLabel} revenue`, monthSuffix: ` · ${mLabel}`,
+      };
+    }
+
+    function openModalFor(name, monthKey) {
       const c = CUSTOMER_BY_NAME[name];
       if (!c) return;
+      const stats = monthContextStats(c, monthKey);
 
       nameEl.textContent = c.name;
-      subEl.innerHTML = `${chip(c.status)}<span>Rank #${c.rank} of ${DATA.customer_count}</span>` +
-        `<span>${fmtIDR(c.total, { short: true })} total · ${c.pct_of_total.toFixed(1)}% of revenue</span>` +
+      subEl.innerHTML = `${chip(c.status)}<span>Rank #${stats.rank || '—'} of ${stats.rankOf}${stats.monthSuffix}</span>` +
+        `<span>${fmtIDR(stats.value, { short: true })} ${stats.valueLabel} · ${stats.pct.toFixed(1)}% ${stats.pctLabel}</span>` +
         `<span>${c.product_count} product${c.product_count === 1 ? '' : 's'}</span>`;
 
       const maxMonthly = Math.max(...c.monthly, 1);
@@ -524,7 +552,7 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
     document.addEventListener('click', e => {
       const el = e.target.closest('.clickable-name');
-      if (el && el.dataset.name) openModalFor(el.dataset.name);
+      if (el && el.dataset.name) openModalFor(el.dataset.name, el.dataset.monthContext);
     });
   })();
 
@@ -693,7 +721,7 @@
           <div class="rank-num">${key === 'total' ? c.rank : idx + 1}</div>
           <div class="rank-main">
             <div class="rank-name-line">
-              <span class="rank-name clickable-name" data-name="${esc(c.name)}" title="${esc(c.name)}">${esc(c.name)}</span>
+              <span class="rank-name clickable-name" data-name="${esc(c.name)}" data-month-context="${key}" title="${esc(c.name)}">${esc(c.name)}</span>
               <span class="rank-pct">${(getValue(c) / (denom || 1) * 100).toFixed(1)}%</span>
             </div>
             <div class="rank-track"><div class="rank-fill" style="width:${(getValue(c) / maxVal * 100).toFixed(1)}%"></div></div>
