@@ -1,97 +1,48 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d1117">
 <title>Kuta–Seminyak Accounts — Sales Territory Briefing</title>
+<script>
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+</script>
 <style>
-  @font-face {
-    font-family: 'Fraunces';
-    font-weight: 400 700;
-    font-style: normal;
-    font-display: swap;
-    src: url(data:font/woff2;base64,__FRAUNCES_B64__) format('woff2');
-  }
-  @font-face {
-    font-family: 'Source Sans 3';
-    font-weight: 400 700;
-    font-style: normal;
-    font-display: swap;
-    src: url(data:font/woff2;base64,__SOURCESANS_B64__) format('woff2');
-  }
-
   :root {
-    --bg: #f4f2ec;
-    --surface: #fdfcf9;
-    --surface-2: #ece9e0;
-    --ink: #23221d;
-    --ink-2: #5c584c;
-    --ink-3: #8a8574;
-    --border: #e1ddd0;
-    --border-2: #cfc9b8;
-    --accent: #0b6e76;
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface-2: #21262d;
+    --ink: #e6edf3;
+    --ink-2: #8b949e;
+    --ink-3: #6e7681;
+    --border: #30363d;
+    --border-2: #3d444d;
+    --accent: #58a6ff;
     --accent-ink: #ffffff;
-    --accent-soft: #e3eeee;
-    --secondary: #b5760a;
-    --secondary-soft: #f5e9d3;
-    --good: #2f7d3f;
-    --good-soft: #e5f0e3;
-    --info: #0a6e9e;
-    --info-soft: #dfedf4;
-    --warning: #9c7a00;
-    --warning-soft: #f3ecd6;
-    --critical: #c23050;
-    --critical-soft: #f8e2e7;
-    --shadow: 0 1px 2px rgba(35,34,29,0.06), 0 8px 24px -12px rgba(35,34,29,0.18);
-    --radius: 10px;
-    color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #17181a;
-      --surface: #202224;
-      --surface-2: #2a2c2d;
-      --ink: #edebe4;
-      --ink-2: #a6a296;
-      --ink-3: #79766a;
-      --border: #34362f;
-      --border-2: #454738;
-      --accent: #3fb7b0;
-      --accent-ink: #0d2523;
-      --accent-soft: #1e3634;
-      --secondary: #d9974a;
-      --secondary-soft: #3a2f1c;
-      --good: #4c9e4c;
-      --good-soft: #223523;
-      --info: #3f97c2;
-      --info-soft: #1c313b;
-      --warning: #b87f1e;
-      --warning-soft: #38300f;
-      --critical: #d65c8a;
-      --critical-soft: #3a2530;
-      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #17181a; --surface: #202224; --surface-2: #2a2c2d;
-    --ink: #edebe4; --ink-2: #a6a296; --ink-3: #79766a;
-    --border: #34362f; --border-2: #454738;
-    --accent: #3fb7b0; --accent-ink: #0d2523; --accent-soft: #1e3634;
-    --secondary: #d9974a; --secondary-soft: #3a2f1c;
-    --good: #4c9e4c; --good-soft: #223523;
-    --info: #3f97c2; --info-soft: #1c313b;
-    --warning: #b87f1e; --warning-soft: #38300f;
-    --critical: #d65c8a; --critical-soft: #3a2530;
+    --accent-soft: rgba(88,166,255,0.15);
+    --secondary: #f0883e;
+    --secondary-soft: rgba(240,136,62,0.15);
+    --good: #3fb950;
+    --good-soft: rgba(63,185,80,0.15);
+    --info: #39c5cf;
+    --info-soft: rgba(57,197,207,0.15);
+    --warning: #e3b341;
+    --warning-soft: rgba(227,179,65,0.15);
+    --critical: #f85149;
+    --critical-soft: rgba(248,81,73,0.15);
+    --shadow: 0 1px 3px rgba(0,0,0,.5);
+    --radius: 8px;
     color-scheme: dark;
   }
   :root[data-theme="light"] {
-    --bg: #f4f2ec; --surface: #fdfcf9; --surface-2: #ece9e0;
-    --ink: #23221d; --ink-2: #5c584c; --ink-3: #8a8574;
-    --border: #e1ddd0; --border-2: #cfc9b8;
-    --accent: #0b6e76; --accent-ink: #ffffff; --accent-soft: #e3eeee;
-    --secondary: #b5760a; --secondary-soft: #f5e9d3;
-    --good: #2f7d3f; --good-soft: #e5f0e3;
-    --info: #0a6e9e; --info-soft: #dfedf4;
-    --warning: #9c7a00; --warning-soft: #f3ecd6;
-    --critical: #c23050; --critical-soft: #f8e2e7;
+    --bg: #f6f8fa; --surface: #ffffff; --surface-2: #eaeef2;
+    --ink: #1f2328; --ink-2: #57606a; --ink-3: #6e7781;
+    --border: #d0d7de; --border-2: #c4cbd2;
+    --accent: #0969da; --accent-ink: #ffffff; --accent-soft: #dbeafe;
+    --secondary: #bc4c00; --secondary-soft: #ffe8d6;
+    --good: #1a7f37; --good-soft: #d4edda;
+    --info: #0a7fc4; --info-soft: #d6f0f5;
+    --warning: #7d4e00; --warning-soft: #fdf0d0;
+    --critical: #cf222e; --critical-soft: #ffe0e2;
+    --shadow: 0 1px 3px rgba(0,0,0,.15);
     color-scheme: light;
   }
 
@@ -100,71 +51,100 @@
   body {
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Source Sans 3', system-ui, sans-serif;
-    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    transition: background .2s, color .2s;
   }
   ::selection { background: var(--accent); color: var(--accent-ink); }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--surface); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; margin: 0; text-wrap: balance; }
+  h1, h2, h3 { font-weight: 700; margin: 0; text-wrap: balance; }
 
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px 80px; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px 60px; }
 
   /* ---------- Header ---------- */
   .masthead {
-    display: flex; justify-content: space-between; align-items: flex-end;
-    gap: 24px; flex-wrap: wrap;
-    padding-bottom: 20px; margin-bottom: 24px;
-    border-bottom: 2px solid var(--ink);
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px; flex-wrap: wrap;
+    padding: 14px 0; margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 50;
+    background: var(--surface);
+    margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px;
   }
   .eyebrow {
-    font-size: 11.5px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
-    color: var(--accent); margin: 0 0 6px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-2); margin: 0 0 2px;
   }
-  .masthead h1 { font-size: 34px; letter-spacing: -0.01em; }
-  .masthead .meta { color: var(--ink-2); font-size: 13.5px; margin-top: 6px; }
-  .masthead .period {
-    text-align: right; font-size: 13px; color: var(--ink-2);
+  .masthead h1 { font-size: 17px; letter-spacing: -0.01em; }
+  .masthead .meta { color: var(--ink-2); font-size: 12px; margin-top: 2px; }
+  .masthead .period { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .live-badge {
+    display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
+    background: var(--good-soft); color: var(--good); border-radius: 20px;
+    font-size: 12px; font-weight: 600; white-space: nowrap;
   }
-  .masthead .period strong { color: var(--ink); font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; }
+  .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--good); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+
+  .theme-toggle { display: flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 3px; gap: 2px; }
+  .theme-toggle button {
+    font: inherit; border: none; background: none; color: var(--ink-3); cursor: pointer;
+    padding: 5px 7px; border-radius: 6px; display: flex; align-items: center;
+  }
+  .theme-toggle button.act { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+  .theme-toggle button:hover { color: var(--ink); }
 
   /* ---------- KPI strip ---------- */
   .kpis {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
-    margin-bottom: 36px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+    margin-bottom: 28px;
   }
   .kpi {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 16px 18px; box-shadow: var(--shadow);
+    padding: 14px; box-shadow: var(--shadow); position: relative; overflow: hidden;
     display: flex; flex-direction: column; gap: 6px; min-width: 0;
   }
-  .kpi-label { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+  .kpi::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--accent); }
+  .kpi.kpi--secondary::before { background: var(--secondary); }
+  .kpi.kpi--good::before { background: var(--good); }
+  .kpi.kpi--warning::before { background: var(--warning); }
+  .kpi.kpi--info::before { background: var(--info); }
+  .kpi.kpi--critical::before { background: var(--critical); }
+  .kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); }
   .kpi-value {
-    font-family: 'Fraunces', serif; font-size: 26px; font-weight: 600; letter-spacing: -0.01em;
-    font-variant-numeric: tabular-nums; white-space: nowrap;
+    font-size: 22px; font-weight: 800; letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums; white-space: nowrap; line-height: 1.15;
   }
-  .kpi-sub { font-size: 12.5px; color: var(--ink-2); }
+  .kpi-sub { font-size: 11px; color: var(--ink-2); }
   .kpi-sub b { color: var(--ink); }
   .progress-track {
-    height: 8px; border-radius: 5px; background: var(--surface-2); overflow: hidden; margin-top: 2px;
+    height: 6px; border-radius: 4px; background: var(--surface-2); overflow: hidden; margin-top: 2px;
   }
-  .progress-fill { height: 100%; border-radius: 5px; background: var(--accent); }
+  .progress-fill { height: 100%; border-radius: 4px; background: var(--accent); }
 
   /* ---------- Section shell ---------- */
-  section.block { margin-bottom: 40px; }
-  .block-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
-  .block-head h2 { font-size: 20px; }
-  .block-head .hint { font-size: 13px; color: var(--ink-2); }
+  section.block { margin-bottom: 28px; }
+  .block-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+  .block-head h2 {
+    font-size: 12px; font-weight: 600; color: var(--ink-2); text-transform: uppercase;
+    letter-spacing: 0.06em; display: flex; align-items: center; gap: 10px; flex: 1; min-width: 160px;
+  }
+  .block-head h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .block-head .hint { font-size: 12px; color: var(--ink-2); white-space: nowrap; }
   .card {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-    box-shadow: var(--shadow); padding: 22px;
+    box-shadow: var(--shadow); padding: 16px;
   }
 
   /* ---------- Trend chart ---------- */
   .chart-wrap { position: relative; }
   #trendSvg { width: 100%; height: auto; display: block; overflow: visible; }
-  .axis-label { font-size: 11px; fill: var(--ink-3); font-family: 'Source Sans 3', sans-serif; }
+  .axis-label { font-size: 11px; fill: var(--ink-3); font-family: inherit; }
   .grid-line { stroke: var(--border); stroke-width: 1; }
   .trend-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
   .trend-area { fill: var(--accent); opacity: 0.10; }
@@ -181,7 +161,6 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.25); opacity: 0; transform: translate(-50%, -100%);
     transition: opacity 0.08s ease; white-space: nowrap;
   }
-  :root[data-theme="dark"] .tooltip, @media (prefers-color-scheme: dark) { }
   .tooltip.show { opacity: 1; }
   .tooltip b { font-variant-numeric: tabular-nums; }
 
@@ -189,7 +168,7 @@
   .rank-list { display: flex; flex-direction: column; gap: 10px; }
   .rank-row { display: grid; grid-template-columns: 28px minmax(0,1fr) 96px; gap: 12px; align-items: center; }
   .rank-row.products-row { grid-template-columns: 28px minmax(0,1fr) 130px; }
-  .rank-num { font-family: 'Fraunces', serif; font-size: 13px; color: var(--ink-3); text-align: right; font-variant-numeric: tabular-nums; }
+  .rank-num { font-weight: 700; font-size: 13px; color: var(--ink-3); text-align: right; font-variant-numeric: tabular-nums; }
   .rank-main { min-width: 0; }
   .rank-name-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13.5px; margin-bottom: 4px; }
   .rank-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -274,8 +253,8 @@
   }
   .modal-backdrop.show { opacity: 1; pointer-events: auto; }
   .modal {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
-    box-shadow: 0 24px 60px -12px rgba(0,0,0,0.35); width: 100%; max-width: 640px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: 0 24px 60px -12px rgba(0,0,0,0.5); width: 100%; max-width: 640px;
     max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;
     transform: translateY(-8px); transition: transform 0.12s ease;
   }
@@ -332,8 +311,16 @@
       <p class="meta" id="metaLine">76 accounts · 205 products</p>
     </div>
     <div class="period">
-      <div>Reporting period</div>
-      <strong id="periodLabel">Jan – Jul</strong>
+      <span class="live-badge"><span class="pulse"></span>Auto-updated</span>
+      <span id="periodLabel" style="font-size:12px;color:var(--ink-2)">Jan – Jul</span>
+      <div class="theme-toggle" id="themeToggle">
+        <button id="tt-light" onclick="setTheme('light')" title="Light mode">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button id="tt-dark" onclick="setTheme('dark')" title="Dark mode">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -465,7 +452,12 @@
     return `<span class="chip chip--${m.cls}"><span class="chip-icon">${m.icon}</span>${m.label}</span>`;
   }
 
-  function monthShort(m) { return (m || "").slice(0, 3); }
+  function monthShort(m) {
+    const s = m || "";
+    const partial = s.endsWith('*');
+    const base = partial ? s.slice(0, -1) : s;
+    return base.slice(0, 3) + (partial ? '*' : '');
+  }
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -542,35 +534,41 @@
   document.getElementById('periodLabel').textContent =
     `${monthShort(DATA.months[0])} – ${monthShort(DATA.months[DATA.months.length - 1])}`;
   document.getElementById('generatedLine').textContent =
-    `Generated ${new Date(DATA.generated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} from data Lani Customer.xlsx`;
+    `Generated ${new Date(DATA.generated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} from the daily company sales export`;
 
   // ---------------- KPI strip ----------------
   const progressPct = Math.min(100, DATA.target_progress_pct);
+  const completeMonths = DATA.partial_month ? DATA.months.length - 1 : DATA.months.length;
+  const runRateWindow = Math.min(3, completeMonths);
   const kpis = [
     {
       label: "Total revenue · period",
       value: fmtIDR(DATA.grand_total, { short: true }),
       sub: `Across ${DATA.months.length} months`,
+      cls: "",
     },
     {
       label: "Current run rate",
       value: fmtIDR(DATA.run_rate, { short: true }) + "/mo",
-      sub: `Avg of last ${Math.min(3, DATA.months.length)} months`,
+      sub: `Avg of last ${runRateWindow} complete months` + (DATA.partial_month ? ` · ${monthShort(DATA.partial_month)} still in progress` : ""),
+      cls: "kpi--info",
     },
     {
       label: "Progress to 1B/mo target",
       value: DATA.target_progress_pct.toFixed(0) + "%",
       sub: `<div class="progress-track"><div class="progress-fill" style="width:${progressPct}%"></div></div>`,
       isHtml: true,
+      cls: "kpi--good",
     },
     {
       label: "Top-5 concentration",
       value: DATA.top5_pct_of_total.toFixed(0) + "%",
       sub: `of revenue from 5 of ${DATA.customer_count} accounts`,
+      cls: "kpi--secondary",
     },
   ];
   document.getElementById('kpiStrip').innerHTML = kpis.map(k => `
-    <div class="kpi">
+    <div class="kpi ${k.cls}">
       <div class="kpi-label">${k.label}</div>
       <div class="kpi-value">${k.value}</div>
       <div class="kpi-sub">${k.isHtml ? k.sub : k.sub}</div>
@@ -851,4 +849,13 @@
     draw();
   })();
 })();
+
+function setTheme(choice) {
+  localStorage.setItem('theme', choice);
+  document.documentElement.setAttribute('data-theme', choice);
+  document.querySelectorAll('.theme-toggle button').forEach(b => b.classList.remove('act'));
+  const btn = document.getElementById('tt-' + choice);
+  if (btn) btn.classList.add('act');
+}
+setTheme(localStorage.getItem('theme') || 'dark');
 </script>
