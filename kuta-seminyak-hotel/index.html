@@ -227,6 +227,15 @@
   }
   .search-input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
   .dir-count { font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+  .dir-mobile-sort { display: none; gap: 6px; width: 100%; }
+  .dir-mobile-sort select {
+    flex: 1; font: inherit; font-size: 13.5px; padding: 9px 10px; border-radius: 8px;
+    border: 1px solid var(--border-2); background: var(--surface); color: var(--ink);
+  }
+  .dir-mobile-sort button {
+    font: inherit; font-size: 15px; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid var(--border-2); background: var(--surface); color: var(--ink); cursor: pointer;
+  }
   .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
   table.directory { border-collapse: collapse; width: 100%; font-size: 13px; min-width: 780px; }
   table.directory th {
@@ -304,6 +313,52 @@
   @media (max-width: 700px) {
     .modal-backdrop { padding: 0; align-items: stretch; }
     .modal { max-width: 100%; width: 100%; height: 100%; max-height: 100%; border-radius: 0; }
+  }
+  @media (max-width: 480px) {
+    .kpis { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    /* Bigger tap targets */
+    .month-tab { padding: 9px 15px; }
+    .theme-toggle button { padding: 8px 9px; }
+
+    /* Month tabs: horizontal scroll strip instead of wrapping */
+    .month-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; -webkit-overflow-scrolling: touch; }
+    .month-tab { flex-shrink: 0; }
+
+    /* Directory: hide desktop column-header sort, show mobile select */
+    .dir-mobile-sort { display: flex; }
+
+    /* Directory: table rows become stacked cards */
+    .table-scroll { overflow-x: visible; border: none; box-shadow: none; background: transparent; }
+    table.directory { min-width: 0; }
+    table.directory thead { display: none; }
+    table.directory tbody { display: block; }
+    table.directory tr {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 3px 10px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 12px 14px; margin-bottom: 10px;
+    }
+    table.directory td { border-bottom: none; padding: 2px 0; }
+    table.directory td.rank-cell { order: 1; flex: 0 0 auto; color: var(--ink-3); font-weight: 700; }
+    table.directory td.name-cell {
+      order: 2; flex: 1 1 auto; min-width: 0; max-width: none; white-space: normal;
+      font-size: 14.5px;
+    }
+    table.directory td[data-label="Status"] { order: 3; flex: 0 0 auto; }
+    table.directory td[data-label="Trend"] {
+      order: 4; flex: 1 1 100%; display: flex; justify-content: space-between; align-items: center;
+    }
+    table.directory td[data-label="Total"],
+    table.directory td[data-label="Products"],
+    table.directory td[data-label="Last active"] {
+      order: 5; flex: 1 1 45%; display: flex; justify-content: space-between; align-items: center;
+      font-size: 12.5px;
+    }
+    table.directory td[data-label]::before {
+      content: attr(data-label); font-size: 10.5px; font-weight: 600; color: var(--ink-3);
+      text-transform: uppercase; letter-spacing: 0.03em; margin-right: 8px;
+    }
   }
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
@@ -390,6 +445,17 @@
     <div class="dir-controls">
       <input type="text" class="search-input" id="searchInput" placeholder="Search accounts…" autocomplete="off">
       <span class="dir-count" id="dirCount"></span>
+      <div class="dir-mobile-sort">
+        <select id="dirSortSelect" aria-label="Sort accounts by">
+          <option value="rank">Sort: Rank</option>
+          <option value="name">Sort: Account</option>
+          <option value="total">Sort: Total</option>
+          <option value="product_count">Sort: Products</option>
+          <option value="status">Sort: Status</option>
+          <option value="last_active_month">Sort: Last active</option>
+        </select>
+        <button id="dirSortDir" title="Toggle sort direction" aria-label="Toggle sort direction">▾</button>
+      </div>
     </div>
     <div class="table-scroll">
       <table class="directory" id="dirTable">
@@ -843,13 +909,13 @@
 
       tbody.innerHTML = rows.map(c => `
         <tr>
-          <td class="num">${c.rank}</td>
+          <td class="num rank-cell" data-label="#">${c.rank}</td>
           <td class="name-cell clickable-name" data-name="${esc(c.name)}" title="${esc(c.name)}">${esc(c.name)}</td>
-          <td class="num">${fmtIDR(c.total, { short: true })}</td>
-          <td class="spark-cell">${sparkline(c)}</td>
-          <td class="num">${c.product_count}</td>
-          <td>${chip(c.status)}</td>
-          <td>${c.last_active_month || '—'}</td>
+          <td class="num" data-label="Total">${fmtIDR(c.total, { short: true })}</td>
+          <td class="spark-cell" data-label="Trend">${sparkline(c)}</td>
+          <td class="num" data-label="Products">${c.product_count}</td>
+          <td data-label="Status">${chip(c.status)}</td>
+          <td data-label="Last active">${c.last_active_month || '—'}</td>
         </tr>
       `).join('');
 
@@ -858,6 +924,7 @@
         const arrow = th.querySelector('.arrow');
         if (th.dataset.key === sortKey) arrow.textContent = sortDir === 1 ? '▾' : '▴';
       });
+      document.getElementById('dirSortDir').textContent = sortDir === 1 ? '▾' : '▴';
     }
 
     ths.forEach(th => {
@@ -865,8 +932,21 @@
         const key = th.dataset.key;
         if (sortKey === key) sortDir *= -1;
         else { sortKey = key; sortDir = 1; }
+        sortSelect.value = sortKey;
         draw();
       });
+    });
+
+    const sortSelect = document.getElementById('dirSortSelect');
+    const sortDirBtn = document.getElementById('dirSortDir');
+    sortSelect.addEventListener('change', () => {
+      sortKey = sortSelect.value;
+      sortDir = 1;
+      draw();
+    });
+    sortDirBtn.addEventListener('click', () => {
+      sortDir *= -1;
+      draw();
     });
 
     searchInput.addEventListener('input', () => {
