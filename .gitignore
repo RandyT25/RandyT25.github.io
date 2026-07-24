@@ -1,0 +1,3 @@
+# Raw sales export — its figures are already embedded in index.html/dashboard.html,
+# but there's no reason to publish the original file (and it's named after a departed employee).
+data Lani Customer.xlsx

@@ -1,0 +1,854 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Kuta–Seminyak Accounts — Sales Territory Briefing</title>
+<style>
+  @font-face {
+    font-family: 'Fraunces';
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(data:font/woff2;base64,__FRAUNCES_B64__) format('woff2');
+  }
+  @font-face {
+    font-family: 'Source Sans 3';
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(data:font/woff2;base64,__SOURCESANS_B64__) format('woff2');
+  }
+
+  :root {
+    --bg: #f4f2ec;
+    --surface: #fdfcf9;
+    --surface-2: #ece9e0;
+    --ink: #23221d;
+    --ink-2: #5c584c;
+    --ink-3: #8a8574;
+    --border: #e1ddd0;
+    --border-2: #cfc9b8;
+    --accent: #0b6e76;
+    --accent-ink: #ffffff;
+    --accent-soft: #e3eeee;
+    --secondary: #b5760a;
+    --secondary-soft: #f5e9d3;
+    --good: #2f7d3f;
+    --good-soft: #e5f0e3;
+    --info: #0a6e9e;
+    --info-soft: #dfedf4;
+    --warning: #9c7a00;
+    --warning-soft: #f3ecd6;
+    --critical: #c23050;
+    --critical-soft: #f8e2e7;
+    --shadow: 0 1px 2px rgba(35,34,29,0.06), 0 8px 24px -12px rgba(35,34,29,0.18);
+    --radius: 10px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181a;
+      --surface: #202224;
+      --surface-2: #2a2c2d;
+      --ink: #edebe4;
+      --ink-2: #a6a296;
+      --ink-3: #79766a;
+      --border: #34362f;
+      --border-2: #454738;
+      --accent: #3fb7b0;
+      --accent-ink: #0d2523;
+      --accent-soft: #1e3634;
+      --secondary: #d9974a;
+      --secondary-soft: #3a2f1c;
+      --good: #4c9e4c;
+      --good-soft: #223523;
+      --info: #3f97c2;
+      --info-soft: #1c313b;
+      --warning: #b87f1e;
+      --warning-soft: #38300f;
+      --critical: #d65c8a;
+      --critical-soft: #3a2530;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17181a; --surface: #202224; --surface-2: #2a2c2d;
+    --ink: #edebe4; --ink-2: #a6a296; --ink-3: #79766a;
+    --border: #34362f; --border-2: #454738;
+    --accent: #3fb7b0; --accent-ink: #0d2523; --accent-soft: #1e3634;
+    --secondary: #d9974a; --secondary-soft: #3a2f1c;
+    --good: #4c9e4c; --good-soft: #223523;
+    --info: #3f97c2; --info-soft: #1c313b;
+    --warning: #b87f1e; --warning-soft: #38300f;
+    --critical: #d65c8a; --critical-soft: #3a2530;
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f2ec; --surface: #fdfcf9; --surface-2: #ece9e0;
+    --ink: #23221d; --ink-2: #5c584c; --ink-3: #8a8574;
+    --border: #e1ddd0; --border-2: #cfc9b8;
+    --accent: #0b6e76; --accent-ink: #ffffff; --accent-soft: #e3eeee;
+    --secondary: #b5760a; --secondary-soft: #f5e9d3;
+    --good: #2f7d3f; --good-soft: #e5f0e3;
+    --info: #0a6e9e; --info-soft: #dfedf4;
+    --warning: #9c7a00; --warning-soft: #f3ecd6;
+    --critical: #c23050; --critical-soft: #f8e2e7;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; margin: 0; text-wrap: balance; }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px 80px; }
+
+  /* ---------- Header ---------- */
+  .masthead {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 24px; flex-wrap: wrap;
+    padding-bottom: 20px; margin-bottom: 24px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .eyebrow {
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 6px;
+  }
+  .masthead h1 { font-size: 34px; letter-spacing: -0.01em; }
+  .masthead .meta { color: var(--ink-2); font-size: 13.5px; margin-top: 6px; }
+  .masthead .period {
+    text-align: right; font-size: 13px; color: var(--ink-2);
+  }
+  .masthead .period strong { color: var(--ink); font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; }
+
+  /* ---------- KPI strip ---------- */
+  .kpis {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    margin-bottom: 36px;
+  }
+  .kpi {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px 18px; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 6px; min-width: 0;
+  }
+  .kpi-label { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+  .kpi-value {
+    font-family: 'Fraunces', serif; font-size: 26px; font-weight: 600; letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  .kpi-sub { font-size: 12.5px; color: var(--ink-2); }
+  .kpi-sub b { color: var(--ink); }
+  .progress-track {
+    height: 8px; border-radius: 5px; background: var(--surface-2); overflow: hidden; margin-top: 2px;
+  }
+  .progress-fill { height: 100%; border-radius: 5px; background: var(--accent); }
+
+  /* ---------- Section shell ---------- */
+  section.block { margin-bottom: 40px; }
+  .block-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .block-head h2 { font-size: 20px; }
+  .block-head .hint { font-size: 13px; color: var(--ink-2); }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 22px;
+  }
+
+  /* ---------- Trend chart ---------- */
+  .chart-wrap { position: relative; }
+  #trendSvg { width: 100%; height: auto; display: block; overflow: visible; }
+  .axis-label { font-size: 11px; fill: var(--ink-3); font-family: 'Source Sans 3', sans-serif; }
+  .grid-line { stroke: var(--border); stroke-width: 1; }
+  .trend-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  .trend-area { fill: var(--accent); opacity: 0.10; }
+  .target-line { stroke: var(--secondary); stroke-width: 1.6; stroke-dasharray: 5 4; fill: none; }
+  .target-label { font-size: 11.5px; fill: var(--secondary); font-weight: 600; }
+  .hover-dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+  .hover-guide { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; }
+  .hover-hit { fill: transparent; }
+
+  .tooltip {
+    position: fixed; pointer-events: none; z-index: 40;
+    background: var(--ink); color: var(--surface);
+    padding: 7px 10px; border-radius: 7px; font-size: 12.5px; line-height: 1.4;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25); opacity: 0; transform: translate(-50%, -100%);
+    transition: opacity 0.08s ease; white-space: nowrap;
+  }
+  :root[data-theme="dark"] .tooltip, @media (prefers-color-scheme: dark) { }
+  .tooltip.show { opacity: 1; }
+  .tooltip b { font-variant-numeric: tabular-nums; }
+
+  /* ---------- Ranked bar rows (top customers / categories / products) ---------- */
+  .rank-list { display: flex; flex-direction: column; gap: 10px; }
+  .rank-row { display: grid; grid-template-columns: 28px minmax(0,1fr) 96px; gap: 12px; align-items: center; }
+  .rank-row.products-row { grid-template-columns: 28px minmax(0,1fr) 130px; }
+  .rank-num { font-family: 'Fraunces', serif; font-size: 13px; color: var(--ink-3); text-align: right; font-variant-numeric: tabular-nums; }
+  .rank-main { min-width: 0; }
+  .rank-name-line { display: flex; justify-content: space-between; gap: 10px; font-size: 13.5px; margin-bottom: 4px; }
+  .rank-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rank-pct { color: var(--ink-2); font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .rank-track { height: 7px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+  .rank-fill { height: 100%; border-radius: 4px; background: var(--accent); }
+  .rank-fill.secondary { background: var(--secondary); }
+  .rank-value { text-align: right; font-variant-numeric: tabular-nums; font-size: 13.5px; font-weight: 600; white-space: nowrap; }
+  .rank-value .n { color: var(--ink-2); font-weight: 400; font-size: 12px; }
+
+  /* ---------- Month segmented control ---------- */
+  .month-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .month-tab {
+    font: inherit; font-size: 12.5px; font-weight: 600; padding: 6px 13px; border-radius: 100px;
+    border: 1px solid var(--border-2); background: var(--surface); color: var(--ink-2); cursor: pointer;
+  }
+  .month-tab:hover { color: var(--ink); border-color: var(--ink-3); }
+  .month-tab.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+  /* ---------- Clickable customer name (opens detail modal) ---------- */
+  .clickable-name { cursor: pointer; text-underline-offset: 2px; }
+  .clickable-name:hover { color: var(--accent); text-decoration: underline; }
+
+  /* ---------- Status chips ---------- */
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 700;
+    padding: 3px 8px 3px 7px; border-radius: 100px; white-space: nowrap; letter-spacing: 0.01em;
+  }
+  .chip-icon { font-size: 9px; line-height: 1; }
+  .chip--growing { background: var(--good-soft); color: var(--good); }
+  .chip--new { background: var(--info-soft); color: var(--info); }
+  .chip--flat { background: var(--surface-2); color: var(--ink-2); }
+  .chip--declining { background: var(--warning-soft); color: var(--warning); }
+  .chip--churned { background: var(--critical-soft); color: var(--critical); }
+
+  /* ---------- Two-column action list ---------- */
+  .action-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .action-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+  .action-card-head { padding: 14px 18px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  .action-card-head h3 { font-size: 15.5px; }
+  .action-card-head .count { font-size: 12px; font-weight: 700; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .action-card-body { max-height: 380px; overflow-y: auto; }
+  .action-item { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 18px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .action-item:last-child { border-bottom: none; }
+  .action-item .name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .action-item .detail { color: var(--ink-2); font-size: 12px; margin-top: 2px; }
+  .action-item .right { text-align: right; flex-shrink: 0; }
+  .action-item .value { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .action-empty { padding: 24px 18px; color: var(--ink-3); font-size: 13px; text-align: center; }
+
+  /* ---------- Directory table ---------- */
+  .dir-controls { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .search-input {
+    flex: 1; min-width: 220px; font: inherit; font-size: 13.5px; padding: 9px 12px;
+    border-radius: 8px; border: 1px solid var(--border-2); background: var(--surface); color: var(--ink);
+  }
+  .search-input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .dir-count { font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+  table.directory { border-collapse: collapse; width: 100%; font-size: 13px; min-width: 780px; }
+  table.directory th {
+    position: sticky; top: 0; background: var(--surface-2); text-align: left; font-size: 11px;
+    letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); padding: 10px 14px;
+    border-bottom: 1px solid var(--border-2); cursor: pointer; user-select: none; white-space: nowrap;
+  }
+  table.directory th.num, table.directory td.num { text-align: right; }
+  table.directory th:hover { color: var(--ink); }
+  table.directory th .arrow { opacity: 0.4; margin-left: 3px; }
+  table.directory th.active .arrow { opacity: 1; color: var(--accent); }
+  table.directory td { padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  table.directory tr:last-child td { border-bottom: none; }
+  table.directory tbody tr:hover { background: var(--surface-2); }
+  td.name-cell { font-weight: 600; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  td.num { font-variant-numeric: tabular-nums; }
+  td.spark-cell svg { display: block; }
+
+  /* ---------- Customer detail modal ---------- */
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(20, 19, 15, 0.5); backdrop-filter: blur(1px);
+    display: flex; align-items: flex-start; justify-content: center; padding: 5vh 20px;
+    z-index: 60; opacity: 0; pointer-events: none; transition: opacity 0.12s ease;
+  }
+  .modal-backdrop.show { opacity: 1; pointer-events: auto; }
+  .modal {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    box-shadow: 0 24px 60px -12px rgba(0,0,0,0.35); width: 100%; max-width: 640px;
+    max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;
+    transform: translateY(-8px); transition: transform 0.12s ease;
+  }
+  .modal-backdrop.show .modal { transform: translateY(0); }
+  .modal-head { padding: 18px 22px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
+  .modal-head h3 { font-size: 19px; margin-bottom: 6px; }
+  .modal-head .sub { font-size: 12.5px; color: var(--ink-2); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .modal-close {
+    font: inherit; font-size: 18px; line-height: 1; background: none; border: none; color: var(--ink-2);
+    cursor: pointer; padding: 4px 8px; border-radius: 6px; flex-shrink: 0;
+  }
+  .modal-close:hover { background: var(--surface-2); color: var(--ink); }
+  .modal-body { padding: 18px 22px 22px; overflow-y: auto; }
+  .modal-spark-row { display: flex; align-items: flex-end; gap: 4px; height: 56px; margin-bottom: 20px; }
+  .modal-spark-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end; }
+  .modal-spark-bar { width: 100%; border-radius: 3px 3px 0 0; background: var(--accent); min-height: 2px; }
+  .modal-spark-label { font-size: 10px; color: var(--ink-3); }
+  .modal-product-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .modal-product-table th {
+    text-align: left; font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--ink-3); padding: 6px 8px; border-bottom: 1px solid var(--border-2); white-space: nowrap;
+  }
+  .modal-product-table th.num, .modal-product-table td.num { text-align: right; }
+  .modal-product-table td { padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .modal-product-table tr:last-child td { border-bottom: none; }
+  .modal-product-table td.pname { font-weight: 600; }
+  .modal-product-table td.pcat { color: var(--ink-2); white-space: nowrap; }
+  .modal-product-table tfoot td { border-top: 2px solid var(--ink); border-bottom: none; font-weight: 700; }
+
+  /* ---------- Footer ---------- */
+  .foot {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border);
+    font-size: 12px; color: var(--ink-3); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .foot code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 11.5px; }
+
+  @media (max-width: 860px) {
+    .kpis { grid-template-columns: repeat(2, 1fr); }
+    .action-grid { grid-template-columns: 1fr; }
+    .masthead { flex-direction: column; align-items: flex-start; }
+    .masthead .period { text-align: left; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Territory Briefing · Handover Edition</p>
+      <h1>Kuta–Seminyak Accounts</h1>
+      <p class="meta" id="metaLine">76 accounts · 205 products</p>
+    </div>
+    <div class="period">
+      <div>Reporting period</div>
+      <strong id="periodLabel">Jan – Jul</strong>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpiStrip"></section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Monthly revenue vs. target</h2>
+      <div class="hint">Hover a point for the exact figure</div>
+    </div>
+    <div class="card chart-wrap">
+      <svg id="trendSvg" viewBox="0 0 1000 320" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Top accounts</h2>
+      <div class="hint" id="concentrationHint"></div>
+    </div>
+    <div class="card">
+      <div class="month-tabs" id="monthTabs"></div>
+      <div class="rank-list" id="topCustomers"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>This month's action list</h2>
+      <div class="hint">Where a new salesperson should spend the first calls</div>
+    </div>
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="action-card-head"><h3>Re-engage — went quiet</h3><span class="count" id="atRiskCount"></span></div>
+        <div class="action-card-body" id="atRiskList"></div>
+      </div>
+      <div class="action-card">
+        <div class="action-card-head"><h3 id="upsellHead">Grow — accounts on 1–2 products</h3><span class="count" id="upsellCount"></span></div>
+        <div class="action-card-body" id="upsellList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>What's selling</h2>
+      <div class="hint">By category, across all accounts</div>
+    </div>
+    <div class="card">
+      <div class="rank-list" id="categoryList"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Full account directory</h2>
+      <div class="hint">Search, or click a column to sort — this replaces the spreadsheet</div>
+    </div>
+    <div class="dir-controls">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search accounts…" autocomplete="off">
+      <span class="dir-count" id="dirCount"></span>
+    </div>
+    <div class="table-scroll">
+      <table class="directory" id="dirTable">
+        <thead>
+          <tr>
+            <th data-key="rank" class="num">#<span class="arrow">▾</span></th>
+            <th data-key="name">Account<span class="arrow">▾</span></th>
+            <th data-key="total" class="num">Total<span class="arrow">▾</span></th>
+            <th>Trend</th>
+            <th data-key="product_count" class="num">Products<span class="arrow">▾</span></th>
+            <th data-key="status">Status<span class="arrow">▾</span></th>
+            <th data-key="last_active_month">Last active<span class="arrow">▾</span></th>
+          </tr>
+        </thead>
+        <tbody id="dirBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div id="generatedLine"></div>
+    <div>Refresh next month: rerun <code>scripts/parse_sales.py</code> on the new export, then <code>scripts/build_dashboard.py</code>.</div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div>
+        <h3 id="modalName"></h3>
+        <div class="sub" id="modalSub"></div>
+      </div>
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script id="dashboard-data" type="application/json">__DATA_JSON__</script>
+<script>
+(function () {
+  "use strict";
+  const DATA = JSON.parse(document.getElementById('dashboard-data').textContent);
+
+  const STATUS_META = {
+    growing:   { label: "Growing",     cls: "growing",   icon: "▲", color: "var(--good)" },
+    new:       { label: "New",         cls: "new",       icon: "✦", color: "var(--info)" },
+    flat:      { label: "Steady",      cls: "flat",      icon: "–", color: "var(--ink-3)" },
+    declining: { label: "Declining",   cls: "declining", icon: "▼", color: "var(--warning)" },
+    churned:   { label: "Went quiet",  cls: "churned",   icon: "■", color: "var(--critical)" },
+  };
+
+  function fmtIDR(n, opts) {
+    opts = opts || {};
+    const abs = Math.abs(n);
+    let out;
+    if (abs >= 1e9) out = (n / 1e9).toFixed(opts.short ? 1 : 2) + "B";
+    else if (abs >= 1e6) out = (n / 1e6).toFixed(opts.decimals != null ? opts.decimals : 0) + "M";
+    else if (abs >= 1e3) out = (n / 1e3).toFixed(0) + "K";
+    else out = n.toFixed(0);
+    return (opts.noPrefix ? "" : "Rp ") + out;
+  }
+
+  function chip(status) {
+    const m = STATUS_META[status] || STATUS_META.flat;
+    return `<span class="chip chip--${m.cls}"><span class="chip-icon">${m.icon}</span>${m.label}</span>`;
+  }
+
+  function monthShort(m) { return (m || "").slice(0, 3); }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  // ---------------- Customer detail modal ----------------
+  const CUSTOMER_BY_NAME = {};
+  DATA.customers.forEach(c => { CUSTOMER_BY_NAME[c.name] = c; });
+
+  (function setupModal() {
+    const backdrop = document.getElementById('modalBackdrop');
+    const nameEl = document.getElementById('modalName');
+    const subEl = document.getElementById('modalSub');
+    const bodyEl = document.getElementById('modalBody');
+    const closeBtn = document.getElementById('modalClose');
+
+    function openModalFor(name) {
+      const c = CUSTOMER_BY_NAME[name];
+      if (!c) return;
+
+      nameEl.textContent = c.name;
+      subEl.innerHTML = `${chip(c.status)}<span>Rank #${c.rank} of ${DATA.customer_count}</span>` +
+        `<span>${fmtIDR(c.total, { short: true })} total · ${c.pct_of_total.toFixed(1)}% of revenue</span>` +
+        `<span>${c.product_count} product${c.product_count === 1 ? '' : 's'}</span>`;
+
+      const maxMonthly = Math.max(...c.monthly, 1);
+      const barsHtml = c.monthly.map((v, i) => `
+        <div class="modal-spark-bar-wrap">
+          <div class="modal-spark-bar" style="height:${Math.max(2, v / maxMonthly * 100)}%" title="${DATA.months[i]}: ${fmtIDR(v)}"></div>
+          <div class="modal-spark-label">${monthShort(DATA.months[i])}</div>
+        </div>
+      `).join('');
+
+      const products = c.products.slice().sort((a, b) => b.total - a.total);
+      const monthHeaders = DATA.months.map(m => `<th class="num">${monthShort(m)}</th>`).join('');
+      const productRows = products.map(p => `
+        <tr>
+          <td class="pname">${esc(p.name)}</td>
+          <td class="pcat">${esc(p.category)}</td>
+          ${p.monthly.map(v => `<td class="num">${v ? fmtIDR(v, { short: true }) : '—'}</td>`).join('')}
+          <td class="num">${fmtIDR(p.total, { short: true })}</td>
+        </tr>
+      `).join('');
+      const monthTotalCells = DATA.months.map((m, i) => `<td class="num">${fmtIDR(c.monthly[i], { short: true })}</td>`).join('');
+
+      bodyEl.innerHTML = `
+        <div class="modal-spark-row">${barsHtml}</div>
+        <div class="table-scroll">
+          <table class="modal-product-table">
+            <thead><tr><th>Product</th><th>Category</th>${monthHeaders}<th class="num">Total</th></tr></thead>
+            <tbody>${productRows}</tbody>
+            <tfoot><tr><td colspan="2">${products.length} product${products.length === 1 ? '' : 's'}</td>${monthTotalCells}<td class="num">${fmtIDR(c.total, { short: true })}</td></tr></tfoot>
+          </table>
+        </div>
+      `;
+
+      backdrop.classList.add('show');
+    }
+
+    function closeModal() { backdrop.classList.remove('show'); }
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', e => { if (e.target === backdrop) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    document.addEventListener('click', e => {
+      const el = e.target.closest('.clickable-name');
+      if (el && el.dataset.name) openModalFor(el.dataset.name);
+    });
+  })();
+
+  // ---------------- Header / meta ----------------
+  document.getElementById('metaLine').textContent =
+    `${DATA.customer_count} accounts · ${DATA.product_count} products tracked`;
+  document.getElementById('periodLabel').textContent =
+    `${monthShort(DATA.months[0])} – ${monthShort(DATA.months[DATA.months.length - 1])}`;
+  document.getElementById('generatedLine').textContent =
+    `Generated ${new Date(DATA.generated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} from data Lani Customer.xlsx`;
+
+  // ---------------- KPI strip ----------------
+  const progressPct = Math.min(100, DATA.target_progress_pct);
+  const kpis = [
+    {
+      label: "Total revenue · period",
+      value: fmtIDR(DATA.grand_total, { short: true }),
+      sub: `Across ${DATA.months.length} months`,
+    },
+    {
+      label: "Current run rate",
+      value: fmtIDR(DATA.run_rate, { short: true }) + "/mo",
+      sub: `Avg of last ${Math.min(3, DATA.months.length)} months`,
+    },
+    {
+      label: "Progress to 1B/mo target",
+      value: DATA.target_progress_pct.toFixed(0) + "%",
+      sub: `<div class="progress-track"><div class="progress-fill" style="width:${progressPct}%"></div></div>`,
+      isHtml: true,
+    },
+    {
+      label: "Top-5 concentration",
+      value: DATA.top5_pct_of_total.toFixed(0) + "%",
+      sub: `of revenue from 5 of ${DATA.customer_count} accounts`,
+    },
+  ];
+  document.getElementById('kpiStrip').innerHTML = kpis.map(k => `
+    <div class="kpi">
+      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-value">${k.value}</div>
+      <div class="kpi-sub">${k.isHtml ? k.sub : k.sub}</div>
+    </div>
+  `).join('');
+
+  // ---------------- Trend chart ----------------
+  (function renderTrend() {
+    const svg = document.getElementById('trendSvg');
+    const W = 1000, H = 320, padL = 56, padR = 24, padT = 20, padB = 34;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+    const months = DATA.months, values = DATA.monthly_totals;
+    const target = DATA.monthly_target;
+    const maxVal = Math.max(target, ...values) * 1.08;
+
+    const x = i => padL + (i / (months.length - 1)) * plotW;
+    const y = v => padT + plotH - (v / maxVal) * plotH;
+
+    let svgHtml = '';
+
+    // gridlines + y labels (4 bands)
+    const ticks = 4;
+    for (let t = 0; t <= ticks; t++) {
+      const v = (maxVal / ticks) * t;
+      const yy = y(v);
+      svgHtml += `<line class="grid-line" x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}"/>`;
+      svgHtml += `<text class="axis-label" x="${padL - 10}" y="${yy + 4}" text-anchor="end">${fmtIDR(v, { short: true })}</text>`;
+    }
+
+    // x labels
+    months.forEach((m, i) => {
+      svgHtml += `<text class="axis-label" x="${x(i)}" y="${H - 10}" text-anchor="middle">${monthShort(m)}</text>`;
+    });
+
+    // target dashed line
+    const ty = y(target);
+    svgHtml += `<line class="target-line" x1="${padL}" y1="${ty}" x2="${W - padR}" y2="${ty}"/>`;
+    svgHtml += `<text class="target-label" x="${W - padR}" y="${ty - 7}" text-anchor="end">Target · ${fmtIDR(target, { short: true })}/mo</text>`;
+
+    // area + line
+    const linePts = values.map((v, i) => `${x(i)},${y(v)}`).join(' L ');
+    const areaPts = `${padL},${padT + plotH} L ${linePts} L ${W - padR},${padT + plotH} Z`;
+    svgHtml += `<path class="trend-area" d="M ${areaPts}"/>`;
+    svgHtml += `<path class="trend-line" d="M ${linePts}"/>`;
+
+    // hover hit areas + guide + dot (created once, moved via JS)
+    values.forEach((v, i) => {
+      const bandW = plotW / months.length;
+      const bx = padL + i * bandW;
+      svgHtml += `<rect class="hover-hit" data-i="${i}" x="${bx}" y="${padT}" width="${bandW}" height="${plotH}"/>`;
+    });
+
+    svg.innerHTML = svgHtml;
+
+    const guide = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    guide.setAttribute('class', 'hover-guide');
+    guide.style.display = 'none';
+    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    dot.setAttribute('class', 'hover-dot');
+    dot.setAttribute('r', 4.5);
+    dot.style.display = 'none';
+    svg.appendChild(guide);
+    svg.appendChild(dot);
+
+    const tooltip = document.getElementById('tooltip');
+
+    svg.querySelectorAll('.hover-hit').forEach(hit => {
+      const i = +hit.dataset.i;
+      hit.addEventListener('mousemove', e => {
+        const cx = x(i), cy = y(values[i]);
+        guide.setAttribute('x1', cx); guide.setAttribute('x2', cx);
+        guide.setAttribute('y1', padT); guide.setAttribute('y2', padT + plotH);
+        guide.style.display = '';
+        dot.setAttribute('cx', cx); dot.setAttribute('cy', cy);
+        dot.style.display = '';
+        tooltip.innerHTML = `${months[i]} &nbsp;<b>${fmtIDR(values[i])}</b>`;
+        tooltip.style.left = e.clientX + 'px';
+        tooltip.style.top = (e.clientY - 12) + 'px';
+        tooltip.classList.add('show');
+      });
+      hit.addEventListener('mouseleave', () => {
+        guide.style.display = 'none'; dot.style.display = 'none';
+        tooltip.classList.remove('show');
+      });
+    });
+  })();
+
+  // ---------------- Top customers (Total + per-month) ----------------
+  (function renderTopCustomersSection() {
+    const listEl = document.getElementById('topCustomers');
+    const tabsEl = document.getElementById('monthTabs');
+    const hintEl = document.getElementById('concentrationHint');
+
+    const tabs = [{ key: 'total', label: 'Total' }].concat(
+      DATA.months.map((m, i) => ({ key: String(i), label: monthShort(m) }))
+    );
+    tabsEl.innerHTML = tabs.map(t =>
+      `<button class="month-tab${t.key === 'total' ? ' active' : ''}" data-key="${t.key}">${t.label}</button>`
+    ).join('');
+
+    function draw(key) {
+      let rows, denom, basisLabel;
+      const getValue = key === 'total' ? (c => c.total) : (c => c.monthly[+key]);
+
+      if (key === 'total') {
+        rows = DATA.customers.slice(0, 15);
+        denom = DATA.grand_total;
+        basisLabel = 'revenue';
+      } else {
+        const i = +key;
+        rows = DATA.customers.filter(c => c.monthly[i] > 0)
+          .slice().sort((a, b) => b.monthly[i] - a.monthly[i]).slice(0, 15);
+        denom = DATA.monthly_totals[i];
+        basisLabel = `${DATA.months[i]} revenue`;
+      }
+
+      const maxVal = rows.length ? getValue(rows[0]) : 1;
+      const top10Sum = rows.slice(0, 10).reduce((s, c) => s + getValue(c), 0);
+
+      listEl.innerHTML = rows.map((c, idx) => `
+        <div class="rank-row">
+          <div class="rank-num">${key === 'total' ? c.rank : idx + 1}</div>
+          <div class="rank-main">
+            <div class="rank-name-line">
+              <span class="rank-name clickable-name" data-name="${esc(c.name)}" title="${esc(c.name)}">${esc(c.name)}</span>
+              <span class="rank-pct">${(getValue(c) / (denom || 1) * 100).toFixed(1)}%</span>
+            </div>
+            <div class="rank-track"><div class="rank-fill" style="width:${(getValue(c) / maxVal * 100).toFixed(1)}%"></div></div>
+          </div>
+          <div class="rank-value">${fmtIDR(getValue(c), { short: true })}</div>
+        </div>
+      `).join('');
+
+      hintEl.textContent = rows.length
+        ? `Top ${Math.min(10, rows.length)} = ${(top10Sum / (denom || 1) * 100).toFixed(0)}% of ${basisLabel} — protect these relationships first`
+        : `No revenue recorded for this month`;
+
+      tabsEl.querySelectorAll('.month-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.key === key));
+    }
+
+    tabsEl.addEventListener('click', e => {
+      const btn = e.target.closest('.month-tab');
+      if (btn) draw(btn.dataset.key);
+    });
+
+    draw('total');
+  })();
+
+  // ---------------- Action lists ----------------
+  (function renderActionLists() {
+    const atRisk = DATA.at_risk;
+    const upsell = DATA.upsell_targets;
+    document.getElementById('atRiskCount').textContent = `${atRisk.length} accounts`;
+    document.getElementById('upsellCount').textContent = `${upsell.length} accounts`;
+
+    document.getElementById('atRiskList').innerHTML = atRisk.length ? atRisk.map(c => `
+      <div class="action-item">
+        <div style="min-width:0">
+          <div class="name clickable-name" data-name="${esc(c.name)}" title="${esc(c.name)}">${esc(c.name)}</div>
+          <div class="detail">Last active ${c.last_active_month || '—'} · was ${fmtIDR(c.total, { short: true })} total</div>
+        </div>
+        <div class="right">${chip('churned')}</div>
+      </div>
+    `).join('') : '<div class="action-empty">No churned accounts — nothing to re-engage.</div>';
+
+    document.getElementById('upsellList').innerHTML = upsell.length ? upsell.map(c => `
+      <div class="action-item">
+        <div style="min-width:0">
+          <div class="name clickable-name" data-name="${esc(c.name)}" title="${esc(c.name)}">${esc(c.name)}</div>
+          <div class="detail">${c.product_count} product${c.product_count === 1 ? '' : 's'} · ${c.products.map(p => esc(p.name)).join(', ')}</div>
+        </div>
+        <div class="right"><div class="value">${fmtIDR(c.total, { short: true })}</div></div>
+      </div>
+    `).join('') : '<div class="action-empty">No 1–2 product accounts remaining.</div>';
+  })();
+
+  // ---------------- Categories ----------------
+  (function renderCategories() {
+    const cats = DATA.categories;
+    const maxTotal = cats[0].total;
+    document.getElementById('categoryList').innerHTML = cats.map((c, i) => `
+      <div class="rank-row">
+        <div class="rank-num">${i + 1}</div>
+        <div class="rank-main">
+          <div class="rank-name-line">
+            <span class="rank-name">${c.category}</span>
+            <span class="rank-pct">${(c.total / DATA.grand_total * 100).toFixed(1)}%</span>
+          </div>
+          <div class="rank-track"><div class="rank-fill secondary" style="width:${(c.total / maxTotal * 100).toFixed(1)}%"></div></div>
+        </div>
+        <div class="rank-value">${fmtIDR(c.total, { short: true })}</div>
+      </div>
+    `).join('');
+  })();
+
+  // ---------------- Directory table ----------------
+  (function renderDirectory() {
+    const tbody = document.getElementById('dirBody');
+    const searchInput = document.getElementById('searchInput');
+    const dirCount = document.getElementById('dirCount');
+    const ths = document.querySelectorAll('#dirTable th[data-key]');
+
+    let sortKey = 'rank';
+    let sortDir = 1;
+    let query = '';
+
+    function sparkline(customer) {
+      const vals = customer.monthly;
+      const w = 72, h = 24, pad = 3;
+      const max = Math.max(...vals, 1);
+      const min = 0;
+      const stepX = (w - pad * 2) / (vals.length - 1);
+      const pts = vals.map((v, i) => {
+        const px = pad + i * stepX;
+        const py = pad + (1 - (v - min) / (max - min || 1)) * (h - pad * 2);
+        return [px, py];
+      });
+      const path = pts.map((p, i) => (i === 0 ? 'M' : 'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+      const meta = STATUS_META[customer.status] || STATUS_META.flat;
+      const last = pts[pts.length - 1];
+      return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+        <path d="${path}" fill="none" stroke="var(--ink-3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="2.6" fill="${meta.color}"/>
+      </svg>`;
+    }
+
+    function getSortValue(c, key) {
+      if (key === 'name') return c.name.toLowerCase();
+      if (key === 'status') return c.status;
+      if (key === 'last_active_month') return DATA.months.indexOf(c.last_active_month);
+      return c[key];
+    }
+
+    function draw() {
+      let rows = DATA.customers.filter(c => c.name.toLowerCase().includes(query));
+      rows = rows.slice().sort((a, b) => {
+        const av = getSortValue(a, sortKey), bv = getSortValue(b, sortKey);
+        if (av < bv) return -1 * sortDir;
+        if (av > bv) return 1 * sortDir;
+        return 0;
+      });
+
+      dirCount.textContent = `${rows.length} of ${DATA.customers.length} accounts`;
+
+      tbody.innerHTML = rows.map(c => `
+        <tr>
+          <td class="num">${c.rank}</td>
+          <td class="name-cell clickable-name" data-name="${esc(c.name)}" title="${esc(c.name)}">${esc(c.name)}</td>
+          <td class="num">${fmtIDR(c.total, { short: true })}</td>
+          <td class="spark-cell">${sparkline(c)}</td>
+          <td class="num">${c.product_count}</td>
+          <td>${chip(c.status)}</td>
+          <td>${c.last_active_month || '—'}</td>
+        </tr>
+      `).join('');
+
+      ths.forEach(th => {
+        th.classList.toggle('active', th.dataset.key === sortKey);
+        const arrow = th.querySelector('.arrow');
+        if (th.dataset.key === sortKey) arrow.textContent = sortDir === 1 ? '▾' : '▴';
+      });
+    }
+
+    ths.forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.key;
+        if (sortKey === key) sortDir *= -1;
+        else { sortKey = key; sortDir = 1; }
+        draw();
+      });
+    });
+
+    searchInput.addEventListener('input', () => {
+      query = searchInput.value.trim().toLowerCase();
+      draw();
+    });
+
+    draw();
+  })();
+})();
+</script>
