@@ -1,4 +1,4 @@
-# randyt25.github.io
+# kuta-seminyak-hotel
 
 Personal GitHub Pages site. Projects live in their own subfolder so the root stays free.
 
