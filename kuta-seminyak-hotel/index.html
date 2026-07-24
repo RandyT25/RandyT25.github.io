@@ -158,7 +158,7 @@
 
   /* ---------- Trend chart ---------- */
   .chart-wrap { position: relative; }
-  #trendSvg { width: 100%; height: auto; display: block; overflow: visible; }
+  #trendSvg { width: 100%; height: auto; aspect-ratio: 1000 / 320; display: block; overflow: visible; }
   .axis-label { font-size: 11px; fill: var(--ink-3); font-family: inherit; }
   .grid-line { stroke: var(--border); stroke-width: 1; }
   .trend-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
@@ -495,7 +495,6 @@
 
   <div class="foot">
     <div id="generatedLine"></div>
-    <div>Refresh next month: rerun <code>scripts/parse_sales.py</code> on the new export, then <code>scripts/build_dashboard.py</code>.</div>
   </div>
 </div>
 
@@ -655,7 +654,7 @@
   document.getElementById('periodLabel').textContent =
     `${monthShort(DATA.months[0])} – ${monthShort(DATA.months[DATA.months.length - 1])}`;
   document.getElementById('generatedLine').textContent =
-    `Generated ${new Date(DATA.generated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} from the daily company sales export`;
+    `Generated ${new Date(DATA.generated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`;
 
   // ---------------- KPI strip ----------------
   const progressPct = Math.min(100, DATA.target_progress_pct);
@@ -699,7 +698,9 @@
   // ---------------- Trend chart ----------------
   (function renderTrend() {
     const svg = document.getElementById('trendSvg');
-    const W = 1000, H = 320, padL = 56, padR = 24, padT = 20, padB = 34;
+    const W = 1000, H = window.innerWidth <= 768 ? 560 : 320, padL = 56, padR = 24, padT = 20, padB = 34;
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.style.aspectRatio = `${W} / ${H}`;
     const plotW = W - padL - padR, plotH = H - padT - padB;
     const months = DATA.months, values = DATA.monthly_totals;
     const target = DATA.monthly_target;
