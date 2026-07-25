@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T13:52:13",
+  "generated_at": "2026-07-25T08:03:29",
   "months": [
     "January",
     "February",
@@ -20,9 +20,9 @@
     521457513.8583959
   ],
   "grand_total": 3437247818.329165,
-  "run_rate": 555916775.6817329,
+  "run_rate": 555916775.681733,
   "monthly_target": 1000000000,
-  "target_progress_pct": 55.591677568173296,
+  "target_progress_pct": 55.5916775681733,
   "customer_count": 76,
   "product_count": 205,
   "top5_pct_of_total": 60.7008258129819,
@@ -750,7 +750,7 @@
             41249955.974721,
             45374951.572192
           ],
-          "total": 210374775.47107303
+          "total": 210374775.471073
         },
         {
           "name": "Pure Green Tea @50TB/Box",
@@ -924,7 +924,7 @@
             2799999.975,
             2799999.975
           ],
-          "total": 21417499.950000003
+          "total": 21417499.95
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -1045,9 +1045,9 @@
           "total": 39270000.357
         }
       ],
-      "total": 133661220.368394,
+      "total": 133661220.36839399,
       "rank": 5,
-      "pct_of_total": 3.888611686816527,
+      "pct_of_total": 3.888611686816526,
       "product_count": 5,
       "status": "flat",
       "last_active_month": "July"
@@ -1146,7 +1146,7 @@
             1108000.001996,
             554000.000998
           ],
-          "total": 6328000.065590999
+          "total": 6328000.065591
         },
         {
           "name": "EQUAL Classic 100 Pcs/Pack",
@@ -1272,7 +1272,7 @@
             0.0,
             124999.9971
           ],
-          "total": 999999.9768000001
+          "total": 999999.9768
         },
         {
           "name": "Bergold Mozzarella Block",
@@ -1485,9 +1485,9 @@
           "total": 363000.003297
         }
       ],
-      "total": 120202597.78487399,
+      "total": 120202597.784874,
       "rank": 6,
-      "pct_of_total": 3.4970593957145657,
+      "pct_of_total": 3.497059395714566,
       "product_count": 30,
       "status": "flat",
       "last_active_month": "July"
@@ -1788,7 +1788,7 @@
             5540000.009979,
             5540000.00998
           ],
-          "total": 29639000.053391002
+          "total": 29639000.053391
         },
         {
           "name": "Tepung Hime @25Kg/Sack",
@@ -2029,9 +2029,9 @@
           "total": 1078920.0
         }
       ],
-      "total": 93775269.61699101,
+      "total": 93775269.616991,
       "rank": 8,
-      "pct_of_total": 2.7282079900359024,
+      "pct_of_total": 2.7282079900359015,
       "product_count": 18,
       "status": "growing",
       "last_active_month": "July"
@@ -2074,7 +2074,7 @@
             11724999.929961,
             8039999.951973
           ],
-          "total": 54604999.673817
+          "total": 54604999.673816994
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -2102,7 +2102,7 @@
             708750.0294,
             405000.0168
           ],
-          "total": 2733750.1133999997
+          "total": 2733750.1134
         },
         {
           "name": "English Breakfast@50TB/Box",
@@ -2360,7 +2360,7 @@
             2879999.9616,
             4319999.9424
           ],
-          "total": 8999999.879999999
+          "total": 8999999.88
         },
         {
           "name": "Savis Organic Olong @250 GR",
@@ -2526,7 +2526,7 @@
             11039999.937877,
             7679999.956784
           ],
-          "total": 43199999.75691
+          "total": 43199999.756909996
         },
         {
           "name": "Crr Rock'n Hash Brown Triangular 2.5Kg",
@@ -3012,7 +3012,7 @@
             1679999.874,
             1439999.892
           ],
-          "total": 10919999.180999998
+          "total": 10919999.181
         },
         {
           "name": "Earl Grey @50TB/Box",
@@ -3498,7 +3498,7 @@
             2850000.146965,
             1710000.08818
           ],
-          "total": 13680000.705435002
+          "total": 13680000.705435
         },
         {
           "name": "Masterista Syrup Strawberry 850 Ml",
@@ -3624,7 +3624,7 @@
             319770.009897,
             0.0
           ],
-          "total": 746130.023093
+          "total": 746130.0230929999
         },
         {
           "name": "Javanese Jasmine Tea @50TB/Box",
@@ -3731,9 +3731,9 @@
           "total": 3779999.9163
         }
       ],
-      "total": 31779999.666300006,
+      "total": 31779999.6663,
       "rank": 21,
-      "pct_of_total": 0.9245769099578093,
+      "pct_of_total": 0.924576909957809,
       "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
@@ -3891,9 +3891,9 @@
           "total": 120000.0021
         }
       ],
-      "total": 28495084.905194998,
+      "total": 28495084.905195,
       "rank": 22,
-      "pct_of_total": 0.8290087422048715,
+      "pct_of_total": 0.8290087422048718,
       "product_count": 10,
       "status": "declining",
       "last_active_month": "July"
@@ -4155,7 +4155,7 @@
           "total": 95800.004099
         }
       ],
-      "total": 26564185.578774,
+      "total": 26564185.578773998,
       "rank": 24,
       "pct_of_total": 0.7728330042751111,
       "product_count": 14,
@@ -4304,7 +4304,7 @@
             799004.9952,
             258344.948448
           ],
-          "total": 2588776.1844479996
+          "total": 2588776.184448
         },
         {
           "name": "Masterista Syrup Tropical Lychee 850 Ml",
@@ -4346,7 +4346,7 @@
             1075785.004786,
             0.0
           ],
-          "total": 3048057.513561
+          "total": 3048057.5135609997
         },
         {
           "name": "Ice Shaken Orange Punch 1 Kg",
@@ -4503,9 +4503,9 @@
           "total": 199820.004753
         }
       ],
-      "total": 23544479.954481997,
+      "total": 23544479.954482,
       "rank": 26,
-      "pct_of_total": 0.6849805774530069,
+      "pct_of_total": 0.684980577453007,
       "product_count": 16,
       "status": "growing",
       "last_active_month": "July"
@@ -4576,7 +4576,7 @@
             154999.955989,
             650999.815154
           ],
-          "total": 1859999.4718679998
+          "total": 1859999.471868
         },
         {
           "name": "Tepung Hime @25Kg/Sack",
@@ -4862,10 +4862,10 @@
             1624999.984495,
             1949999.981394
           ],
-          "total": 8124999.922474999
+          "total": 8124999.922475
         }
       ],
-      "total": 14005113.922474999,
+      "total": 14005113.922475,
       "rank": 28,
       "pct_of_total": 0.4074513873510243,
       "product_count": 2,
@@ -4972,7 +4972,7 @@
             852720.026391,
             639540.019794
           ],
-          "total": 3837240.1187619995
+          "total": 3837240.118762
         },
         {
           "name": "Earl Grey @50TB/Box",
@@ -5000,7 +5000,7 @@
             106590.003299,
             213180.006598
           ],
-          "total": 1598850.0494849999
+          "total": 1598850.049485
         },
         {
           "name": "Java Ginger @50TB/Box",
@@ -5886,7 +5886,7 @@
             0.0,
             0.0
           ],
-          "total": 1011059.9946
+          "total": 1011059.9945999999
         },
         {
           "name": "Masterista Dark Chocolate 800Gr",
@@ -5973,9 +5973,9 @@
           "total": 156510.0
         }
       ],
-      "total": 6308144.996099999,
+      "total": 6308144.9961,
       "rank": 40,
-      "pct_of_total": 0.18352313622723798,
+      "pct_of_total": 0.183523136227238,
       "product_count": 15,
       "status": "churned",
       "last_active_month": "June"
@@ -6063,9 +6063,9 @@
           "total": 484000.004396
         }
       ],
-      "total": 6302700.013188001,
+      "total": 6302700.013188,
       "rank": 41,
-      "pct_of_total": 0.183364725102996,
+      "pct_of_total": 0.18336472510299598,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -6153,9 +6153,9 @@
           "total": 1767675.0
         }
       ],
-      "total": 5544083.966399999,
+      "total": 5544083.9664,
       "rank": 42,
-      "pct_of_total": 0.16129427551996994,
+      "pct_of_total": 0.16129427551996997,
       "product_count": 5,
       "status": "declining",
       "last_active_month": "July"
@@ -6201,9 +6201,9 @@
           "total": 4526802.0
         }
       ],
-      "total": 5505822.048839999,
+      "total": 5505822.04884,
       "rank": 43,
-      "pct_of_total": 0.16018111989133102,
+      "pct_of_total": 0.16018111989133105,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -6232,7 +6232,7 @@
             629999.9916,
             314999.9958
           ],
-          "total": 4724999.936999999
+          "total": 4724999.937
         },
         {
           "name": "Masterista Syrup Creme Brulee 850ml",
@@ -6466,7 +6466,7 @@
             337019.9982,
             168509.9991
           ],
-          "total": 2022119.9892
+          "total": 2022119.9891999997
         },
         {
           "name": "Flavour Artisan - Belgian Signature Dark Chocolate (80 Cocoa%)  500gr",
@@ -6483,7 +6483,7 @@
           "total": 1652000.0574
         }
       ],
-      "total": 3674120.0465999995,
+      "total": 3674120.0466,
       "rank": 48,
       "pct_of_total": 0.10689133402042503,
       "product_count": 2,
@@ -6725,9 +6725,9 @@
           "total": 2526804.0
         }
       ],
-      "total": 3216803.9993040003,
+      "total": 3216803.999304,
       "rank": 51,
-      "pct_of_total": 0.09358661840296631,
+      "pct_of_total": 0.0935866184029663,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -6832,7 +6832,7 @@
             104999.994899,
             104999.994899
           ],
-          "total": 734999.964293
+          "total": 734999.9642929999
         },
         {
           "name": "Peppermint Tea @50tb/Box",
@@ -6967,9 +6967,9 @@
           "total": 165000.0015
         }
       ],
-      "total": 2848969.978196,
+      "total": 2848969.9781959997,
       "rank": 54,
-      "pct_of_total": 0.08288520725808113,
+      "pct_of_total": 0.08288520725808111,
       "product_count": 7,
       "status": "declining",
       "last_active_month": "July"
@@ -7705,9 +7705,9 @@
           "total": 179330.001598
         }
       ],
-      "total": 955840.0031979999,
+      "total": 955840.003198,
       "rank": 65,
-      "pct_of_total": 0.027808294708952075,
+      "pct_of_total": 0.027808294708952082,
       "product_count": 7,
       "status": "declining",
       "last_active_month": "July"
@@ -8704,7 +8704,7 @@
             0.0,
             0.0
           ],
-          "total": 1011059.9946
+          "total": 1011059.9945999999
         },
         {
           "name": "Masterista Dark Chocolate 800Gr",
@@ -8791,9 +8791,9 @@
           "total": 156510.0
         }
       ],
-      "total": 6308144.996099999,
+      "total": 6308144.9961,
       "rank": 40,
-      "pct_of_total": 0.18352313622723798,
+      "pct_of_total": 0.183523136227238,
       "product_count": 15,
       "status": "churned",
       "last_active_month": "June"
@@ -9952,10 +9952,10 @@
             1624999.984495,
             1949999.981394
           ],
-          "total": 8124999.922474999
+          "total": 8124999.922475
         }
       ],
-      "total": 14005113.922474999,
+      "total": 14005113.922475,
       "rank": 28,
       "pct_of_total": 0.4074513873510243,
       "product_count": 2,
@@ -10181,9 +10181,9 @@
           "total": 4526802.0
         }
       ],
-      "total": 5505822.048839999,
+      "total": 5505822.04884,
       "rank": 43,
-      "pct_of_total": 0.16018111989133102,
+      "pct_of_total": 0.16018111989133105,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -10212,7 +10212,7 @@
             629999.9916,
             314999.9958
           ],
-          "total": 4724999.936999999
+          "total": 4724999.937
         },
         {
           "name": "Masterista Syrup Creme Brulee 850ml",
@@ -10308,7 +10308,7 @@
             337019.9982,
             168509.9991
           ],
-          "total": 2022119.9892
+          "total": 2022119.9891999997
         },
         {
           "name": "Flavour Artisan - Belgian Signature Dark Chocolate (80 Cocoa%)  500gr",
@@ -10325,7 +10325,7 @@
           "total": 1652000.0574
         }
       ],
-      "total": 3674120.0465999995,
+      "total": 3674120.0466,
       "rank": 48,
       "pct_of_total": 0.10689133402042503,
       "product_count": 2,
@@ -10421,9 +10421,9 @@
           "total": 2526804.0
         }
       ],
-      "total": 3216803.9993040003,
+      "total": 3216803.999304,
       "rank": 51,
-      "pct_of_total": 0.09358661840296631,
+      "pct_of_total": 0.0935866184029663,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10587,13 +10587,13 @@
     {
       "name": "Australian Butter Unsalted",
       "category": "Dairy",
-      "total": 210374775.47107303,
+      "total": 210374775.471073,
       "customer_count": 1
     },
     {
       "name": "Tepung Hime @25Kg/Sack",
       "category": "Flour Sriboga",
-      "total": 127358599.66961701,
+      "total": 127358599.669617,
       "customer_count": 5
     },
     {
@@ -10635,7 +10635,7 @@
     {
       "name": "Crr Rock'n Hash Brown Triangular 10Kg/Ctn",
       "category": "Frozen Fries",
-      "total": 59649999.845910005,
+      "total": 59649999.84591,
       "customer_count": 3
     },
     {
@@ -10821,7 +10821,7 @@
     {
       "name": "Savis English Breakfast Tea 50 Tb Cover Alila",
       "category": "Beverage",
-      "total": 8999999.879999999,
+      "total": 8999999.88,
       "customer_count": 1
     },
     {
@@ -11097,7 +11097,7 @@
     {
       "name": "ICE SHAKEN PEACH & MANGO 1000 GR",
       "category": "Beverage",
-      "total": 3227387.515159,
+      "total": 3227387.5151589997,
       "customer_count": 2
     },
     {
@@ -11133,7 +11133,7 @@
     {
       "name": "Masterista Ice Shaken Lemon Tea 1000Gr",
       "category": "Beverage",
-      "total": 2588776.1844479996,
+      "total": 2588776.184448,
       "customer_count": 1
     },
     {

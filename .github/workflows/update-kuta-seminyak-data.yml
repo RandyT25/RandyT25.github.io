@@ -4,10 +4,10 @@ on:
   push:
     branches: [main]
     paths:
-      - "kuta-seminyak-hotel/*.xlsx"
-      - "kuta-seminyak-hotel/scripts/parse_global_sales.py"
-      - "kuta-seminyak-hotel/scripts/build_dashboard.py"
-      - "kuta-seminyak-hotel/scripts/dashboard_template.html"
+      - "*.xlsx"
+      - "scripts/parse_global_sales.py"
+      - "scripts/build_dashboard.py"
+      - "scripts/dashboard_template.html"
   workflow_dispatch:
 
 jobs:
@@ -27,17 +27,15 @@ jobs:
         run: pip install openpyxl
 
       - name: Parse latest sales export
-        working-directory: kuta-seminyak-hotel
         run: python scripts/parse_global_sales.py
 
       - name: Rebuild dashboard
-        working-directory: kuta-seminyak-hotel
         run: python scripts/build_dashboard.py
 
       - name: Commit and push regenerated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add kuta-seminyak-hotel/data.json kuta-seminyak-hotel/index.html kuta-seminyak-hotel/dashboard.html
+          git add data.json index.html dashboard.html
           git diff --cached --quiet && echo "No changes to commit" || \
             git commit -m "auto: refresh Kuta-Seminyak dashboard data [skip ci]" && git push
