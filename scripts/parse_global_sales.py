@@ -46,6 +46,16 @@ def find_default_xlsx(project_root: Path) -> Path:
     return max(candidates, key=key)
 
 
+def load_monthly_targets(project_root: Path) -> tuple[int, dict]:
+    """Reads monthly_targets.json (default long-term target + a per-month ramp override map
+    keyed 'YYYY-MM'). Falls back to the flat MONTHLY_TARGET if the file is missing."""
+    path = project_root / "monthly_targets.json"
+    if not path.exists():
+        return MONTHLY_TARGET, {}
+    cfg = json.loads(path.read_text())
+    return int(cfg.get("default_target", MONTHLY_TARGET)), cfg.get("targets", {})
+
+
 def is_vacant_kuta_seminyak(sales_value) -> bool:
     s = str(sales_value or '').strip().lower()
     return 'vacant' in s and 'kuta' in s and 'seminyak' in s
@@ -105,6 +115,11 @@ def main():
     n_months = len(months)
     trend_len = n_months - 1 if partial_key is not None else n_months
 
+    default_target, target_overrides = load_monthly_targets(project_root)
+    monthly_targets = [
+        int(target_overrides.get(f"{y:04d}-{m:02d}", default_target)) for y, m in month_keys
+    ]
+
     vacant_rows = [r for r in rows if is_vacant_kuta_seminyak(r[col['Sales']])]
 
     customers = {}
@@ -135,7 +150,8 @@ def main():
             p["total"] = sum(p["monthly"])
         c["total"] = sum(c["monthly"])
 
-    data = build_data(months, list(customers.values()), trend_len, partial_key is not None)
+    data = build_data(months, list(customers.values()), trend_len, partial_key is not None,
+                       default_target, monthly_targets)
     out_path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
     print(f"Source: {xlsx_path.name}")
@@ -146,7 +162,9 @@ def main():
         print(f"Partial month detected: {data['partial_month']} (excluded from run-rate/trend)")
     print(f"Grand total: {data['grand_total']:,.0f}")
     print(f"Run rate (last {min(3, trend_len)} complete mo avg): {data['run_rate']:,.0f} "
-          f"({data['target_progress_pct']:.1f}% of {MONTHLY_TARGET:,.0f} target)")
+          f"({data['target_progress_pct']:.1f}% of {default_target:,.0f} long-term target)")
+    print(f"This month ({months[-1]}): {data['current_month_actual']:,.0f} of "
+          f"{data['current_month_target']:,.0f} target ({data['current_month_progress_pct']:.1f}%)")
     print(f"At-risk customers: {len(data['at_risk'])}, Upsell targets: {len(data['upsell_targets'])}")
     print(f"Wrote {out_path}")
 
@@ -173,7 +191,7 @@ def trend_status(monthly, window=3):
     return "flat"
 
 
-def build_data(months, customers, trend_len, has_partial):
+def build_data(months, customers, trend_len, has_partial, default_target, monthly_targets):
     grand_total = sum(c["total"] for c in customers)
 
     monthly_totals = [0.0] * len(months)
@@ -231,8 +249,14 @@ def build_data(months, customers, trend_len, has_partial):
         "monthly_totals": monthly_totals,
         "grand_total": grand_total,
         "run_rate": run_rate,
-        "monthly_target": MONTHLY_TARGET,
-        "target_progress_pct": (run_rate / MONTHLY_TARGET * 100) if MONTHLY_TARGET else 0,
+        "monthly_target": default_target,
+        "target_progress_pct": (run_rate / default_target * 100) if default_target else 0,
+        "monthly_targets": monthly_targets,
+        "current_month_target": monthly_targets[-1],
+        "current_month_actual": monthly_totals[-1],
+        "current_month_progress_pct": (
+            (monthly_totals[-1] / monthly_targets[-1] * 100) if monthly_targets[-1] else 0
+        ),
         "customer_count": len(ranked),
         "product_count": len(products),
         "top5_pct_of_total": (top5_total / grand_total * 100) if grand_total else 0,

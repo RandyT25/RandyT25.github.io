@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "*.xlsx"
+      - "monthly_targets.json"
       - "scripts/parse_global_sales.py"
       - "scripts/build_dashboard.py"
       - "scripts/dashboard_template.html"

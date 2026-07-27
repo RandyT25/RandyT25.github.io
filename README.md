@@ -23,6 +23,14 @@ accounts.
    `scripts/build_dashboard.py` (rebuilds `index.html`/`dashboard.html`), and pushes the result
    back — GitHub Pages redeploys on its own from there.
 
+### Monthly ramp target
+
+`monthly_targets.json` holds the long-term goal (`default_target`, currently Rp 1B/mo) plus a
+`targets` map of `"YYYY-MM": amount` overrides for the current ramp. Update it whenever the
+month's target changes (e.g. a new salesperson ramping toward the 1B/mo goal) — editing this
+file and pushing also triggers the same workflow above, so `data.json` and the dashboard rebuild
+automatically. Months without an override fall back to `default_target`.
+
 Note: the raw export is committed to this **public** repo — it contains company-wide sales data
 across all regions/reps, not just this territory. This was a deliberate, explicitly confirmed
 choice (matching the same pattern used by the separate `dashboard_kutaselatan` project), not an

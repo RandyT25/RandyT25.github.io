@@ -186,6 +186,12 @@ def build_data(months, customers):
         "run_rate": run_rate,
         "monthly_target": MONTHLY_TARGET,
         "target_progress_pct": (run_rate / MONTHLY_TARGET * 100) if MONTHLY_TARGET else 0,
+        "monthly_targets": [MONTHLY_TARGET] * len(months),
+        "current_month_target": MONTHLY_TARGET,
+        "current_month_actual": monthly_totals[-1] if monthly_totals else 0,
+        "current_month_progress_pct": (
+            (monthly_totals[-1] / MONTHLY_TARGET * 100) if monthly_totals and MONTHLY_TARGET else 0
+        ),
         "customer_count": len(ranked),
         "product_count": len(products),
         "top5_pct_of_total": (top5_total / grand_total * 100) if grand_total else 0,
