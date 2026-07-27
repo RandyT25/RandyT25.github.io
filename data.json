@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T00:58:09",
+  "generated_at": "2026-07-27T01:24:13",
   "months": [
     "January",
     "February",
@@ -13,25 +13,25 @@
   "monthly_totals": [
     480101004.89594096,
     394549286.42766607,
-    390614921.8634692,
+    390614921.8634691,
     504232278.0968899,
     500031821.0571481,
     646260992.1296549,
-    533496613.7501259
+    548151889.359051
   ],
-  "grand_total": 3449286918.220895,
-  "run_rate": 559929808.9789762,
+  "grand_total": 3463942193.8298197,
+  "run_rate": 564814900.8486179,
   "monthly_target": 1000000000,
-  "target_progress_pct": 55.992980897897624,
+  "target_progress_pct": 56.4814900848618,
   "customer_count": 76,
   "product_count": 205,
-  "top5_pct_of_total": 60.53926102675054,
-  "top10_pct_of_total": 74.13855062009596,
+  "top5_pct_of_total": 60.495819194658615,
+  "top10_pct_of_total": 74.2471418285777,
   "customers": [
     {
       "name": "PADMA BALI RESORT",
       "monthly": [
-        118873482.610467,
+        118873482.61046699,
         94768762.362478,
         88308400.486478,
         128464845.01246698,
@@ -97,18 +97,18 @@
           "total": 12210.0
         },
         {
-          "name": "Tepung Easymix Fish n Chips 1kg/pack",
-          "category": "Flour Mip",
+          "name": "Tepung Ninja @25Kg/Sack",
+          "category": "Flour Sriboga",
           "monthly": [
-            1049999.948967,
-            699999.965978,
-            699999.965978,
-            1049999.948967,
-            699999.965978,
-            1049999.948967,
-            1749999.914945
+            7425000.0675,
+            4675000.0425,
+            6325000.0575,
+            12375000.1125,
+            2750000.025,
+            8300000.136,
+            5600000.172
           ],
-          "total": 6999999.65978
+          "total": 47450000.613
         },
         {
           "name": "Allana Tenderloin Whole",
@@ -125,18 +125,18 @@
           "total": 309587852.5
         },
         {
-          "name": "Tepung Ninja @25Kg/Sack",
-          "category": "Flour Sriboga",
+          "name": "Tepung Easymix Fish n Chips 1kg/pack",
+          "category": "Flour Mip",
           "monthly": [
-            7425000.0675,
-            4675000.0425,
-            6325000.0575,
-            12375000.1125,
-            2750000.025,
-            8300000.136,
-            5600000.172
+            1049999.948967,
+            699999.965978,
+            699999.965978,
+            1049999.948967,
+            699999.965978,
+            1049999.948967,
+            1749999.914945
           ],
-          "total": 47450000.613
+          "total": 6999999.65978
         },
         {
           "name": "Double Happines Black Sesame Oil 320 Ml",
@@ -323,7 +323,7 @@
       ],
       "total": 811969573.6678799,
       "rank": 1,
-      "pct_of_total": 23.540215497256607,
+      "pct_of_total": 23.440621356621037,
       "product_count": 20,
       "status": "growing",
       "last_active_month": "July"
@@ -333,11 +333,11 @@
       "monthly": [
         84617729.432744,
         85022888.257262,
-        85395147.56763199,
+        85395147.56763197,
         148401930.30712798,
         116011117.19030501,
         77258098.669858,
-        65081641.933557
+        68324041.939557
       ],
       "products": [
         {
@@ -448,9 +448,9 @@
             27249600.0,
             27767952.0,
             21899976.0,
-            32332728.0
+            34915128.0
           ],
-          "total": 183278136.0
+          "total": 185860536.0
         },
         {
           "name": "EMBORG Perfect Pasta 1L",
@@ -560,9 +560,9 @@
             1650000.015,
             8855000.0805,
             14630000.133,
-            15235000.1385
+            15895000.1445
           ],
-          "total": 48180000.438
+          "total": 48840000.444000006
         },
         {
           "name": "O Sole Pomodori Secchi Oilio Di Gir 960 Gr",
@@ -663,9 +663,9 @@
           "total": 4440000.0
         }
       ],
-      "total": 661788553.358486,
+      "total": 665030953.3644859,
       "rank": 2,
-      "pct_of_total": 19.18624252052159,
+      "pct_of_total": 19.198673538752427,
       "product_count": 23,
       "status": "flat",
       "last_active_month": "July"
@@ -679,7 +679,7 @@
         32305901.870910004,
         62646333.04652,
         58902621.02820499,
-        69382660.598068
+        73507656.19554001
       ],
       "products": [
         {
@@ -725,20 +725,6 @@
           "total": 12237750.0
         },
         {
-          "name": "Australian Butter Unsalted",
-          "category": "Dairy",
-          "monthly": [
-            32999964.779776,
-            28874969.182304,
-            8249991.194944,
-            12374986.792416,
-            41249955.97472,
-            41249955.974721,
-            45374951.572192
-          ],
-          "total": 210374775.47107303
-        },
-        {
           "name": "Savis Green Tea 250Gr/Pack",
           "category": "Beverage",
           "monthly": [
@@ -751,6 +737,20 @@
             1324430.022
           ],
           "total": 9800782.162800001
+        },
+        {
+          "name": "Australian Butter Unsalted",
+          "category": "Dairy",
+          "monthly": [
+            32999964.779776,
+            28874969.182304,
+            8249991.194944,
+            12374986.792416,
+            41249955.97472,
+            41249955.974721,
+            49499947.169664
+          ],
+          "total": 214499771.068545
         },
         {
           "name": "Pure Green Tea @50TB/Box",
@@ -879,9 +879,9 @@
           "total": 220737.9966
         }
       ],
-      "total": 330716461.844705,
+      "total": 334841457.442177,
       "rank": 3,
-      "pct_of_total": 9.587966141572386,
+      "pct_of_total": 9.666485140503111,
       "product_count": 14,
       "status": "growing",
       "last_active_month": "July"
@@ -957,7 +957,7 @@
       ],
       "total": 148387001.728842,
       "rank": 4,
-      "pct_of_total": 4.301961687935732,
+      "pct_of_total": 4.283760912441258,
       "product_count": 4,
       "status": "flat",
       "last_active_month": "July"
@@ -1047,7 +1047,7 @@
       ],
       "total": 135311220.383394,
       "rank": 5,
-      "pct_of_total": 3.922875179464226,
+      "pct_of_total": 3.906278246340785,
       "product_count": 5,
       "status": "flat",
       "last_active_month": "July"
@@ -1061,7 +1061,7 @@
         13305299.523334,
         14231329.544599002,
         17417619.713766,
-        15516499.931268997
+        17075699.940735
       ],
       "products": [
         {
@@ -1144,9 +1144,9 @@
             590000.0094,
             831000.001497,
             1108000.001996,
-            554000.000998
+            831000.001497
           ],
-          "total": 6328000.065590999
+          "total": 6605000.066089999
         },
         {
           "name": "EQUAL Classic 100 Pcs/Pack",
@@ -1172,9 +1172,9 @@
             2536800.0,
             1689600.0,
             2275200.0,
-            1183200.0
+            1867200.0
           ],
-          "total": 9009600.0
+          "total": 9693600.0
         },
         {
           "name": "Allana Topside",
@@ -1228,9 +1228,9 @@
             0.0,
             0.0,
             1945800.12213,
-            3026800.18998
+            3243000.20355
           ],
-          "total": 4972600.312109999
+          "total": 5188800.325680001
         },
         {
           "name": "Black Gold Topside",
@@ -1256,9 +1256,9 @@
             479999.9862,
             319999.9908,
             588000.033593,
-            336000.019196
+            588000.033593
           ],
-          "total": 3803999.969989
+          "total": 4055999.984386
         },
         {
           "name": "O Sole Doppio Concentrato Paste Tomato 2.2 Kg",
@@ -1340,9 +1340,9 @@
             2469999.639,
             2144999.6865,
             2859999.582,
-            2144999.6865
+            2274999.6675
           ],
-          "total": 17094997.5015
+          "total": 17224997.482499998
         },
         {
           "name": "Crr Rock'n Super Crispy Jakets Spicy Wedges 2.5Kg",
@@ -1485,9 +1485,9 @@
           "total": 363000.003297
         }
       ],
-      "total": 120202597.78487399,
+      "total": 121761797.79434,
       "rank": 6,
-      "pct_of_total": 3.4848535548000514,
+      "pct_of_total": 3.515122105999037,
       "product_count": 30,
       "status": "flat",
       "last_active_month": "July"
@@ -1501,7 +1501,7 @@
         6896200.007984,
         5572360.006487,
         11147720.009979,
-        53026079.53047901
+        54237079.531976
       ],
       "products": [
         {
@@ -1514,9 +1514,9 @@
             4432000.007984,
             3601000.006487,
             5540000.009979,
-            5817000.010479
+            6648000.011976
           ],
-          "total": 29916000.05389
+          "total": 30747000.055387
         },
         {
           "name": "Tepung Hime @25Kg/Sack",
@@ -1542,9 +1542,9 @@
             0.0,
             0.0,
             0.0,
-            1230000.0
+            1470000.0
           ],
-          "total": 1230000.0
+          "total": 1470000.0
         },
         {
           "name": "BALIAN Glass Still (750 ml x 12)",
@@ -1640,9 +1640,9 @@
             0.0,
             0.0,
             0.0,
-            2310000.0
+            2450000.0
           ],
-          "total": 2310000.0
+          "total": 2450000.0
         },
         {
           "name": "BALIAN Crate Still 750 ml (Deposit)",
@@ -1757,9 +1757,9 @@
           "total": 1078920.0
         }
       ],
-      "total": 102152269.50949001,
+      "total": 103363269.51098701,
       "rank": 7,
-      "pct_of_total": 2.9615474714460417,
+      "pct_of_total": 2.983977899374413,
       "product_count": 18,
       "status": "growing",
       "last_active_month": "July"
@@ -1959,20 +1959,6 @@
           "total": 5999999.994
         },
         {
-          "name": "Crr Rock'n Hash Brown Triangular 2.5Kg",
-          "category": "Frozen Fries",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            249999.9942,
-            1124999.9739,
-            1999999.9536
-          ],
-          "total": 3374999.9217
-        },
-        {
           "name": "Wasabi Paste 43 Gr",
           "category": "Dry Goods",
           "monthly": [
@@ -1985,6 +1971,20 @@
             0.0
           ],
           "total": 20000.0022
+        },
+        {
+          "name": "Crr Rock'n Hash Brown Triangular 2.5Kg",
+          "category": "Frozen Fries",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            249999.9942,
+            1124999.9739,
+            1999999.9536
+          ],
+          "total": 3374999.9217
         },
         {
           "name": "Crr Rock'n Waffle Fries 2.5 Kg",
@@ -2031,7 +2031,7 @@
       ],
       "total": 94746049.927286,
       "rank": 8,
-      "pct_of_total": 2.7468300600564417,
+      "pct_of_total": 2.735208748461603,
       "product_count": 18,
       "status": "growing",
       "last_active_month": "July"
@@ -2045,7 +2045,7 @@
         9052499.993973,
         9241999.993182,
         15798200.008157,
-        10307000.038170999
+        14046900.038962
       ],
       "products": [
         {
@@ -2058,9 +2058,9 @@
             0.0,
             3274500.0,
             1309800.0,
-            0.0
+            654900.0
           ],
-          "total": 8513700.0
+          "total": 9168600.0
         },
         {
           "name": "Tepung Hime @25Kg/Sack",
@@ -2072,9 +2072,9 @@
             8039999.951973,
             5359999.967982,
             11724999.929961,
-            8039999.951973
+            10719999.935964
           ],
-          "total": 54604999.673817
+          "total": 57284999.657808006
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -2105,20 +2105,6 @@
           "total": 2733750.1133999997
         },
         {
-          "name": "English Breakfast@50TB/Box",
-          "category": "Beverage",
-          "monthly": [
-            1012500.042,
-            1012500.042,
-            1012500.042,
-            1012500.042,
-            405000.0168,
-            911250.0378,
-            1417500.0588
-          ],
-          "total": 6783750.2814
-        },
-        {
           "name": "Earl Grey @50TB/Box",
           "category": "Beverage",
           "monthly": [
@@ -2131,6 +2117,20 @@
             0.0
           ],
           "total": 852800.035191
+        },
+        {
+          "name": "English Breakfast@50TB/Box",
+          "category": "Beverage",
+          "monthly": [
+            1012500.042,
+            1012500.042,
+            1012500.042,
+            1012500.042,
+            405000.0168,
+            911250.0378,
+            1822500.0756
+          ],
+          "total": 7188750.2982
         },
         {
           "name": "Peppermint Tea @50tb/Box",
@@ -2203,11 +2203,11 @@
           "total": 405000.0168
         }
       ],
-      "total": 78536100.1294,
+      "total": 82276000.130191,
       "rank": 9,
-      "pct_of_total": 2.276879308431323,
+      "pct_of_total": 2.3752128507440426,
       "product_count": 11,
-      "status": "flat",
+      "status": "growing",
       "last_active_month": "July"
     },
     {
@@ -2219,7 +2219,7 @@
         6275050.0019890005,
         5901200.004,
         15868649.8878,
-        16666499.8614
+        17415749.861399997
       ],
       "products": [
         {
@@ -2232,9 +2232,9 @@
             1437450.0,
             2258850.0,
             2874900.0,
-            2464200.0
+            2874900.0
           ],
-          "total": 15811950.0
+          "total": 16222650.0
         },
         {
           "name": "Earl Grey @250gr",
@@ -2288,9 +2288,9 @@
             677100.0,
             338550.0,
             1015650.0,
-            677100.0
+            1015650.0
           ],
-          "total": 4739700.0
+          "total": 5078250.0
         },
         {
           "name": "Savis Earl Grey Tea 50 Tb Cover Alila",
@@ -2419,9 +2419,9 @@
           "total": 532950.016494
         }
       ],
-      "total": 73441499.563189,
+      "total": 74190749.563189,
       "rank": 10,
-      "pct_of_total": 2.1291791986115594,
+      "pct_of_total": 2.1418010293399807,
       "product_count": 14,
       "status": "growing",
       "last_active_month": "July"
@@ -2455,7 +2455,7 @@
       ],
       "total": 67843200.0,
       "rank": 11,
-      "pct_of_total": 1.9668760995676402,
+      "pct_of_total": 1.9585546237130154,
       "product_count": 1,
       "status": "flat",
       "last_active_month": "July"
@@ -2469,7 +2469,7 @@
         12096000.102884,
         14519999.965473998,
         13079999.973577,
-        10560000.007183999
+        11040000.004483
       ],
       "products": [
         {
@@ -2524,9 +2524,9 @@
             7679999.956784,
             12479999.929774,
             11039999.937877,
-            7679999.956784
+            8159999.954083
           ],
-          "total": 43199999.75691
+          "total": 43679999.754209004
         },
         {
           "name": "Crr Rock'n Hash Brown Triangular 2.5Kg",
@@ -2543,9 +2543,9 @@
           "total": 10080000.1764
         }
       ],
-      "total": 66482000.029089995,
+      "total": 66962000.026388995,
       "rank": 12,
-      "pct_of_total": 1.927412871277774,
+      "pct_of_total": 1.9331154008766573,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -2559,7 +2559,7 @@
         7652079.949145999,
         4770000.025146,
         12067420.011549,
-        25187180.007351004
+        21487180.011092003
       ],
       "products": [
         {
@@ -2572,9 +2572,9 @@
             2399999.997573,
             0.0,
             0.0,
-            7199999.99272
+            3599999.99636
           ],
-          "total": 10799999.98908
+          "total": 7199999.99272
         },
         {
           "name": "Masterista Syrup Passion Fruit 850 Ml",
@@ -2586,9 +2586,9 @@
             2399999.997573,
             0.0,
             0.0,
-            3599999.99636
+            1799999.99818
           ],
-          "total": 7199999.99272
+          "total": 5399999.99454
         },
         {
           "name": "Cocofreo Soft Ice Cream Vanilla 1000 Gr",
@@ -2614,9 +2614,9 @@
             0.0,
             3599999.99636,
             0.0,
-            7199999.99272
+            3599999.99636
           ],
-          "total": 16199999.983620001
+          "total": 12599999.98726
         },
         {
           "name": "Cocofreo Soft Ice Cream Belgian Chocolate 1000 Gr",
@@ -2698,9 +2698,9 @@
             0.0,
             599999.999393,
             3599999.99636,
-            3799999.996158
+            5499999.994439
           ],
-          "total": 7999999.991911001
+          "total": 9699999.990192
         },
         {
           "name": "Masterista Original Matcha 800Gr",
@@ -2729,12 +2729,26 @@
             939060.0
           ],
           "total": 1408590.0
+        },
+        {
+          "name": "Masterista Syrup Grenadine 850 Ml",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3599999.99636
+          ],
+          "total": 3599999.99636
         }
       ],
-      "total": 62726680.063273005,
+      "total": 59026680.06701401,
       "rank": 13,
-      "pct_of_total": 1.818540514328299,
-      "product_count": 12,
+      "pct_of_total": 1.70403190249987,
+      "product_count": 13,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -2837,9 +2851,57 @@
       ],
       "total": 55907498.10458,
       "rank": 14,
-      "pct_of_total": 1.6208422039131638,
+      "pct_of_total": 1.613984731158787,
       "product_count": 6,
       "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "THE MAGANI HOTEL & SPA",
+      "monthly": [
+        6876450.0,
+        6549000.0,
+        5566650.0,
+        7531350.0,
+        6876450.0,
+        5566650.0,
+        6876450.0
+      ],
+      "products": [
+        {
+          "name": "Tepung Double Zero @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            6876450.0,
+            6549000.0,
+            3929400.0,
+            7531350.0,
+            6876450.0,
+            5566650.0,
+            6876450.0
+          ],
+          "total": 44205750.0
+        },
+        {
+          "name": "Tepung 00 Fusion @25Kg",
+          "category": "Flour Sriboga",
+          "monthly": [
+            0.0,
+            0.0,
+            1637250.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 1637250.0
+        }
+      ],
+      "total": 45843000.0,
+      "rank": 15,
+      "pct_of_total": 1.3234343252511052,
+      "product_count": 2,
+      "status": "flat",
       "last_active_month": "July"
     },
     {
@@ -2851,7 +2913,7 @@
         6105590.03946,
         4608590.068705,
         8309999.954555001,
-        6979999.915288
+        7389999.901555999
       ],
       "products": [
         {
@@ -2920,9 +2982,9 @@
             459999.999536,
             0.0,
             1149999.99884,
-            3679999.996288
+            3909999.996056
           ],
-          "total": 5519999.994432
+          "total": 5749999.9942
         },
         {
           "name": "O Sole Pomodori Pelati Peeled Tomatoes 2.5Kg",
@@ -2962,9 +3024,9 @@
             0.0,
             0.0,
             1679999.874,
-            1799999.865
+            1979999.8515
           ],
-          "total": 11279999.154
+          "total": 11459999.1405
         },
         {
           "name": "Earl Grey @50TB/Box",
@@ -2995,20 +3057,6 @@
           "total": 1079999.919
         },
         {
-          "name": "Pure Green Tea @50TB/Box",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            106590.003299,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "total": 106590.003299
-        },
-        {
           "name": "IQF FF Shoestring 2.5 Kg/Pack",
           "category": "Frozen Fries",
           "monthly": [
@@ -3021,6 +3069,20 @@
             0.0
           ],
           "total": 150000.0054
+        },
+        {
+          "name": "Pure Green Tea @50TB/Box",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            106590.003299,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 106590.003299
         },
         {
           "name": "English Breakfast@50TB/Box",
@@ -3065,58 +3127,10 @@
           "total": 2850000.1026
         }
       ],
-      "total": 45174781.043778,
-      "rank": 15,
-      "pct_of_total": 1.3096846425022441,
-      "product_count": 15,
-      "status": "flat",
-      "last_active_month": "July"
-    },
-    {
-      "name": "THE MAGANI HOTEL & SPA",
-      "monthly": [
-        6876450.0,
-        6549000.0,
-        5566650.0,
-        7531350.0,
-        6876450.0,
-        5566650.0,
-        5894100.0
-      ],
-      "products": [
-        {
-          "name": "Tepung Double Zero @25Kg/Sack",
-          "category": "Flour Sriboga",
-          "monthly": [
-            6876450.0,
-            6549000.0,
-            3929400.0,
-            7531350.0,
-            6876450.0,
-            5566650.0,
-            5894100.0
-          ],
-          "total": 43223400.0
-        },
-        {
-          "name": "Tepung 00 Fusion @25Kg",
-          "category": "Flour Sriboga",
-          "monthly": [
-            0.0,
-            0.0,
-            1637250.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "total": 1637250.0
-        }
-      ],
-      "total": 44860650.0,
+      "total": 45584781.030046,
       "rank": 16,
-      "pct_of_total": 1.3005775125004284,
-      "product_count": 2,
+      "pct_of_total": 1.3159798425979605,
+      "product_count": 15,
       "status": "flat",
       "last_active_month": "July"
     },
@@ -3149,7 +3163,7 @@
       ],
       "total": 41530001.0052,
       "rank": 17,
-      "pct_of_total": 1.2040170037991715,
+      "pct_of_total": 1.1989230385881067,
       "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
@@ -3281,7 +3295,7 @@
       ],
       "total": 40264942.013823,
       "rank": 18,
-      "pct_of_total": 1.1673410466703429,
+      "pct_of_total": 1.1624022504054865,
       "product_count": 8,
       "status": "growing",
       "last_active_month": "July"
@@ -3357,7 +3371,7 @@
       ],
       "total": 39856249.664000005,
       "rank": 19,
-      "pct_of_total": 1.1554924426106434,
+      "pct_of_total": 1.1506037755189544,
       "product_count": 4,
       "status": "growing",
       "last_active_month": "July"
@@ -3371,7 +3385,7 @@
         4048920.126865,
         5742710.108072,
         8457070.230852,
-        5615620.136374
+        6407400.14157
       ],
       "products": [
         {
@@ -3552,9 +3566,9 @@
             242000.002198,
             242000.002198,
             242000.002198,
-            0.0
+            242000.002198
           ],
-          "total": 1089000.009891
+          "total": 1331000.012089
         },
         {
           "name": "Masterista Syrup Classic Caramel 850ml",
@@ -3580,23 +3594,9 @@
             213180.006598,
             426360.013196,
             639540.019794,
-            639540.019794
+            852720.026392
           ],
-          "total": 2558160.079176
-        },
-        {
-          "name": "Earl Grey @50TB/Box",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            0.0,
-            112199.9988,
-            224399.9976,
-            0.0,
-            336599.9964,
-            0.0
-          ],
-          "total": 673199.9928
+          "total": 2771340.085774
         },
         {
           "name": "O Sole Doppio Concentrato Paste Tomato 2.2 Kg",
@@ -3611,6 +3611,20 @@
             0.0
           ],
           "total": 289999.9986
+        },
+        {
+          "name": "Earl Grey @50TB/Box",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            0.0,
+            112199.9988,
+            224399.9976,
+            0.0,
+            336599.9964,
+            336599.9964
+          ],
+          "total": 1009799.9892
         },
         {
           "name": "Pure Green Tea @50TB/Box",
@@ -3669,9 +3683,9 @@
           "total": 1235000.063685
         }
       ],
-      "total": 38144771.001349,
+      "total": 38936551.006545,
       "rank": 20,
-      "pct_of_total": 1.1058741098007487,
+      "pct_of_total": 1.1240531402602822,
       "product_count": 21,
       "status": "growing",
       "last_active_month": "July"
@@ -3685,7 +3699,7 @@
         5459999.9457,
         5459999.9457,
         5879999.9253,
-        5459999.9346
+        5739999.9321
       ],
       "products": [
         {
@@ -3698,9 +3712,9 @@
             5039999.955,
             5039999.955,
             4199999.9625,
-            4199999.9625
+            4479999.96
           ],
-          "total": 27999999.75
+          "total": 28279999.747500002
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -3731,9 +3745,9 @@
           "total": 3779999.9163
         }
       ],
-      "total": 32059999.663800005,
+      "total": 32339999.661300004,
       "rank": 21,
-      "pct_of_total": 0.9294674645487656,
+      "pct_of_total": 0.9336183415215745,
       "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
@@ -3893,7 +3907,7 @@
       ],
       "total": 28495084.905194998,
       "rank": 22,
-      "pct_of_total": 0.8261152400709089,
+      "pct_of_total": 0.8226201048029076,
       "product_count": 10,
       "status": "declining",
       "last_active_month": "July"
@@ -3941,7 +3955,7 @@
       ],
       "total": 28107960.0,
       "rank": 23,
-      "pct_of_total": 0.8148919085715776,
+      "pct_of_total": 0.8114442570683649,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -3955,7 +3969,7 @@
         1216449.9975,
         6464681.877564,
         4041884.780335,
-        4236249.928478
+        4398649.932577
       ],
       "products": [
         {
@@ -3982,9 +3996,9 @@
             216450.0,
             399600.0,
             349650.0,
-            482850.0
+            549450.0
           ],
-          "total": 2414250.0
+          "total": 2480850.0
         },
         {
           "name": "Tiparos Fish Sauce 300 Ml",
@@ -4150,14 +4164,14 @@
             0.0,
             0.0,
             0.0,
-            95800.004099
+            191600.008198
           ],
-          "total": 95800.004099
+          "total": 191600.008198
         }
       ],
-      "total": 26564185.578774,
+      "total": 26726585.582873,
       "rank": 24,
-      "pct_of_total": 0.7701355731948076,
+      "pct_of_total": 0.7715655772339385,
       "product_count": 14,
       "status": "growing",
       "last_active_month": "July"
@@ -4261,7 +4275,7 @@
       ],
       "total": 25122999.533,
       "rank": 25,
-      "pct_of_total": 0.7283534286547022,
+      "pct_of_total": 0.7252719048762011,
       "product_count": 6,
       "status": "growing",
       "last_active_month": "July"
@@ -4505,7 +4519,7 @@
       ],
       "total": 23544479.954481997,
       "rank": 26,
-      "pct_of_total": 0.6825897790673205,
+      "pct_of_total": 0.6797018725202987,
       "product_count": 16,
       "status": "growing",
       "last_active_month": "July"
@@ -4519,7 +4533,7 @@
         1203819.9749999999,
         3418829.8478619996,
         3405699.868783,
-        4423749.68874
+        4863749.69274
       ],
       "products": [
         {
@@ -4756,9 +4770,9 @@
             0.0,
             330000.003,
             660000.006,
-            110000.001
+            550000.005
           ],
-          "total": 1100000.01
+          "total": 1540000.014
         },
         {
           "name": "Masterista Original Matcha 800Gr",
@@ -4817,9 +4831,9 @@
           "total": 426360.013196
         }
       ],
-      "total": 20069063.214124,
+      "total": 20509063.218124002,
       "rank": 27,
-      "pct_of_total": 0.5818322363416323,
+      "pct_of_total": 0.5920729062585389,
       "product_count": 21,
       "status": "growing",
       "last_active_month": "July"
@@ -4867,7 +4881,7 @@
       ],
       "total": 14005113.922474999,
       "rank": 28,
-      "pct_of_total": 0.4060292534231593,
+      "pct_of_total": 0.4043114214614131,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -4915,7 +4929,7 @@
       ],
       "total": 13404742.299534,
       "rank": 29,
-      "pct_of_total": 0.3886235798107518,
+      "pct_of_total": 0.3869793879185203,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -4928,7 +4942,7 @@
         1710940.0250869999,
         887150.017493,
         2390520.031482,
-        1555510.032886,
+        1555510.0328860001,
         1820720.035184
       ],
       "products": [
@@ -5019,7 +5033,7 @@
       ],
       "total": 12469490.2055,
       "rank": 30,
-      "pct_of_total": 0.3615092191846896,
+      "pct_of_total": 0.3599797429562017,
       "product_count": 6,
       "status": "flat",
       "last_active_month": "July"
@@ -5137,7 +5151,7 @@
       ],
       "total": 11239999.883599998,
       "rank": 31,
-      "pct_of_total": 0.32586445111958007,
+      "pct_of_total": 0.3244857810739843,
       "product_count": 7,
       "status": "growing",
       "last_active_month": "July"
@@ -5185,7 +5199,7 @@
       ],
       "total": 10488000.094999999,
       "rank": 32,
-      "pct_of_total": 0.3040628496167433,
+      "pct_of_total": 0.3027764179691523,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -5261,7 +5275,7 @@
       ],
       "total": 9828488.192966,
       "rank": 33,
-      "pct_of_total": 0.28494261063198034,
+      "pct_of_total": 0.28373707305142354,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -5309,7 +5323,7 @@
       ],
       "total": 8923139.9946,
       "rank": 34,
-      "pct_of_total": 0.2586952087825289,
+      "pct_of_total": 0.25760071892927167,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -5385,7 +5399,7 @@
       ],
       "total": 7982000.2208980005,
       "rank": 35,
-      "pct_of_total": 0.23141015549425592,
+      "pct_of_total": 0.23043110347268542,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "May"
@@ -5573,7 +5587,7 @@
       ],
       "total": 7391999.9684999995,
       "rank": 36,
-      "pct_of_total": 0.21430516346586542,
+      "pct_of_total": 0.21339847938764886,
       "product_count": 12,
       "status": "growing",
       "last_active_month": "July"
@@ -5607,7 +5621,7 @@
       ],
       "total": 6876450.0,
       "rank": 37,
-      "pct_of_total": 0.199358596806635,
+      "pct_of_total": 0.19851514878766577,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -5683,7 +5697,7 @@
       ],
       "total": 6844999.925956,
       "rank": 38,
-      "pct_of_total": 0.1984468120003939,
+      "pct_of_total": 0.1976072215682098,
       "product_count": 4,
       "status": "new",
       "last_active_month": "July"
@@ -5745,7 +5759,7 @@
       ],
       "total": 6713307.5972,
       "rank": 39,
-      "pct_of_total": 0.1946288539157726,
+      "pct_of_total": 0.19380541653258948,
       "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
@@ -5833,7 +5847,7 @@
           "total": 1776000.0
         },
         {
-          "name": "Masterista Syrup Pistachio 850 Ml",
+          "name": "Masterista Syrup Classic Caramel 850ml",
           "category": "Beverage",
           "monthly": [
             0.0,
@@ -5847,7 +5861,7 @@
           "total": 110000.001
         },
         {
-          "name": "Masterista Syrup Classic Caramel 850ml",
+          "name": "Masterista Syrup Pistachio 850 Ml",
           "category": "Beverage",
           "monthly": [
             0.0,
@@ -5975,7 +5989,7 @@
       ],
       "total": 6308144.996099999,
       "rank": 40,
-      "pct_of_total": 0.18288258256444706,
+      "pct_of_total": 0.18210884140435263,
       "product_count": 15,
       "status": "churned",
       "last_active_month": "June"
@@ -6065,7 +6079,7 @@
       ],
       "total": 6302700.013188001,
       "rank": 41,
-      "pct_of_total": 0.18272472434502102,
+      "pct_of_total": 0.1819516510528018,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -6155,7 +6169,7 @@
       ],
       "total": 5544083.966399999,
       "rank": 42,
-      "pct_of_total": 0.1607313075961677,
+      "pct_of_total": 0.1600512842355006,
       "product_count": 5,
       "status": "declining",
       "last_active_month": "July"
@@ -6203,7 +6217,7 @@
       ],
       "total": 5505822.048839999,
       "rank": 43,
-      "pct_of_total": 0.1596220372319692,
+      "pct_of_total": 0.1589467069816378,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -6251,7 +6265,7 @@
       ],
       "total": 5054999.9399999995,
       "rank": 44,
-      "pct_of_total": 0.14655202828436534,
+      "pct_of_total": 0.1459319947372178,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -6299,8 +6313,70 @@
       ],
       "total": 4639245.0,
       "rank": 45,
-      "pct_of_total": 0.13449866914500905,
+      "pct_of_total": 0.13392963105053252,
       "product_count": 2,
+      "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "HARRIS HOTEL KUTA TUBAN",
+      "monthly": [
+        0.0,
+        1367499.986676,
+        0.0,
+        318499.992292,
+        591499.985686,
+        1140500.013887,
+        1049500.01609
+      ],
+      "products": [
+        {
+          "name": "THE ALTERNATIVE Barista Almond Milk 1 Lt",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            955499.976876,
+            0.0,
+            318499.992292,
+            591499.985686,
+            500499.987887,
+            409499.99009
+          ],
+          "total": 2775499.932831
+        },
+        {
+          "name": "EQUAL Classic 100 Pcs/Pack",
+          "category": "Dry Goods",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            640000.026,
+            640000.026
+          ],
+          "total": 1280000.052
+        },
+        {
+          "name": "Artisan Pure Matcha (500Gr/Pack)",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            412000.0098,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 412000.0098
+        }
+      ],
+      "total": 4467499.994631,
+      "rank": 46,
+      "pct_of_total": 0.12897155162083182,
+      "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -6374,72 +6450,10 @@
         }
       ],
       "total": 4338750.096021,
-      "rank": 46,
-      "pct_of_total": 0.1257868712834965,
+      "rank": 47,
+      "pct_of_total": 0.12525469113628515,
       "product_count": 4,
       "status": "new",
-      "last_active_month": "July"
-    },
-    {
-      "name": "HARRIS HOTEL KUTA TUBAN",
-      "monthly": [
-        0.0,
-        1367499.986676,
-        0.0,
-        318499.992292,
-        591499.985686,
-        1140500.013887,
-        867500.0204939999
-      ],
-      "products": [
-        {
-          "name": "THE ALTERNATIVE Barista Almond Milk 1 Lt",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            955499.976876,
-            0.0,
-            318499.992292,
-            591499.985686,
-            500499.987887,
-            227499.994494
-          ],
-          "total": 2593499.937235
-        },
-        {
-          "name": "EQUAL Classic 100 Pcs/Pack",
-          "category": "Dry Goods",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            640000.026,
-            640000.026
-          ],
-          "total": 1280000.052
-        },
-        {
-          "name": "Artisan Pure Matcha (500Gr/Pack)",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            412000.0098,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "total": 412000.0098
-        }
-      ],
-      "total": 4285499.999035,
-      "rank": 47,
-      "pct_of_total": 0.12424307112281092,
-      "product_count": 3,
-      "status": "growing",
       "last_active_month": "July"
     },
     {
@@ -6485,7 +6499,7 @@
       ],
       "total": 3674120.0465999995,
       "rank": 48,
-      "pct_of_total": 0.10651824953127041,
+      "pct_of_total": 0.10606759123014702,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -6631,7 +6645,7 @@
       ],
       "total": 3461965.063055,
       "rank": 49,
-      "pct_of_total": 0.10036755842974768,
+      "pct_of_total": 0.09994292252398607,
       "product_count": 9,
       "status": "flat",
       "last_active_month": "July"
@@ -6679,7 +6693,7 @@
       ],
       "total": 3264000.51,
       "rank": 50,
-      "pct_of_total": 0.09462826918682474,
+      "pct_of_total": 0.09422791511400022,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -6727,7 +6741,7 @@
       ],
       "total": 3216803.9993040003,
       "rank": 51,
-      "pct_of_total": 0.09325997157010044,
+      "pct_of_total": 0.09286540650227834,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -6775,7 +6789,7 @@
       ],
       "total": 2956799.9958,
       "rank": 52,
-      "pct_of_total": 0.08572206562987476,
+      "pct_of_total": 0.08535939199755783,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -6851,7 +6865,7 @@
       ],
       "total": 2869999.871685,
       "rank": 53,
-      "pct_of_total": 0.08320559987411298,
+      "pct_of_total": 0.08285357292616531,
       "product_count": 4,
       "status": "growing",
       "last_active_month": "July"
@@ -6969,7 +6983,7 @@
       ],
       "total": 2848969.978196,
       "rank": 54,
-      "pct_of_total": 0.08259591172732793,
+      "pct_of_total": 0.08224646425309161,
       "product_count": 7,
       "status": "declining",
       "last_active_month": "July"
@@ -7059,7 +7073,7 @@
       ],
       "total": 2674540.039853,
       "rank": 55,
-      "pct_of_total": 0.07753892625529973,
+      "pct_of_total": 0.07721087391749927,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -7121,7 +7135,7 @@
       ],
       "total": 2464500.0663,
       "rank": 56,
-      "pct_of_total": 0.07144955246492404,
+      "pct_of_total": 0.07114726310069246,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "May"
@@ -7169,7 +7183,7 @@
       ],
       "total": 2464200.0,
       "rank": 57,
-      "pct_of_total": 0.07144085309293458,
+      "pct_of_total": 0.07113860053407878,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -7259,7 +7273,7 @@
       ],
       "total": 2069519.986186,
       "rank": 58,
-      "pct_of_total": 0.05999848766577633,
+      "pct_of_total": 0.05974464556228312,
       "product_count": 5,
       "status": "declining",
       "last_active_month": "July"
@@ -7321,7 +7335,7 @@
       ],
       "total": 1954999.920899,
       "rank": 59,
-      "pct_of_total": 0.056678379249104856,
+      "pct_of_total": 0.05643858388807303,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "June"
@@ -7355,7 +7369,7 @@
       ],
       "total": 1838160.0,
       "rank": 60,
-      "pct_of_total": 0.053291014739594446,
+      "pct_of_total": 0.05306555066866416,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -7403,7 +7417,7 @@
       ],
       "total": 1590000.0084,
       "rank": 61,
-      "pct_of_total": 0.046096484464681904,
+      "pct_of_total": 0.04590145907261971,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "February"
@@ -7507,7 +7521,7 @@
       ],
       "total": 1533020.0121,
       "rank": 62,
-      "pct_of_total": 0.04444454892986158,
+      "pct_of_total": 0.04425651256047825,
       "product_count": 6,
       "status": "flat",
       "last_active_month": "July"
@@ -7555,7 +7569,7 @@
       ],
       "total": 1324079.9945999999,
       "rank": 63,
-      "pct_of_total": 0.03838706451485764,
+      "pct_of_total": 0.038224656201207116,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -7589,7 +7603,7 @@
       ],
       "total": 1104000.0,
       "rank": 64,
-      "pct_of_total": 0.03200661545921588,
+      "pct_of_total": 0.0318712016028013,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -7707,7 +7721,7 @@
       ],
       "total": 955840.0031979999,
       "rank": 65,
-      "pct_of_total": 0.027711234984505492,
+      "pct_of_total": 0.027593994059733416,
       "product_count": 7,
       "status": "declining",
       "last_active_month": "July"
@@ -7797,7 +7811,7 @@
       ],
       "total": 863919.9971,
       "rank": 66,
-      "pct_of_total": 0.025046336172741487,
+      "pct_of_total": 0.024940369924153636,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -7887,7 +7901,7 @@
       ],
       "total": 770181.5092,
       "rank": 67,
-      "pct_of_total": 0.02232871684670556,
+      "pct_of_total": 0.02223424832469471,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "February"
@@ -7921,7 +7935,7 @@
       ],
       "total": 654900.0,
       "rank": 68,
-      "pct_of_total": 0.018986533029203334,
+      "pct_of_total": 0.01890620464644436,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -7969,7 +7983,7 @@
       ],
       "total": 627499.9497,
       "rank": 69,
-      "pct_of_total": 0.018192164484352544,
+      "pct_of_total": 0.018115196922677875,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -8045,7 +8059,7 @@
       ],
       "total": 470400.22889900004,
       "rank": 70,
-      "pct_of_total": 0.01363760800570419,
+      "pct_of_total": 0.013579909899677453,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -8135,7 +8149,7 @@
       ],
       "total": 454115.00819900003,
       "rank": 71,
-      "pct_of_total": 0.013165475037757302,
+      "pct_of_total": 0.013109774435840667,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -8183,7 +8197,7 @@
       ],
       "total": 404999.994594,
       "rank": 72,
-      "pct_of_total": 0.011741557144886476,
+      "pct_of_total": 0.01169188086670182,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "April"
@@ -8231,7 +8245,7 @@
       ],
       "total": 247249.9958,
       "rank": 73,
-      "pct_of_total": 0.0071681481321225924,
+      "pct_of_total": 0.007137821071044904,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -8265,7 +8279,7 @@
       ],
       "total": 214400.0,
       "rank": 74,
-      "pct_of_total": 0.006215777494978157,
+      "pct_of_total": 0.006189479731558514,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "February"
@@ -8313,7 +8327,7 @@
       ],
       "total": 93170.0034,
       "rank": 75,
-      "pct_of_total": 0.0027011381079326416,
+      "pct_of_total": 0.002689710110231053,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "January"
@@ -8361,7 +8375,7 @@
       ],
       "total": 67710.0,
       "rank": 76,
-      "pct_of_total": 0.001963014431832887,
+      "pct_of_total": 0.0019547092939544166,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -8411,7 +8425,7 @@
       ],
       "total": 28107960.0,
       "rank": 23,
-      "pct_of_total": 0.8148919085715776,
+      "pct_of_total": 0.8114442570683649,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -8487,7 +8501,7 @@
       ],
       "total": 9828488.192966,
       "rank": 33,
-      "pct_of_total": 0.28494261063198034,
+      "pct_of_total": 0.28373707305142354,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -8563,7 +8577,7 @@
       ],
       "total": 7982000.2208980005,
       "rank": 35,
-      "pct_of_total": 0.23141015549425592,
+      "pct_of_total": 0.23043110347268542,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "May"
@@ -8651,7 +8665,7 @@
           "total": 1776000.0
         },
         {
-          "name": "Masterista Syrup Pistachio 850 Ml",
+          "name": "Masterista Syrup Classic Caramel 850ml",
           "category": "Beverage",
           "monthly": [
             0.0,
@@ -8665,7 +8679,7 @@
           "total": 110000.001
         },
         {
-          "name": "Masterista Syrup Classic Caramel 850ml",
+          "name": "Masterista Syrup Pistachio 850 Ml",
           "category": "Beverage",
           "monthly": [
             0.0,
@@ -8793,7 +8807,7 @@
       ],
       "total": 6308144.996099999,
       "rank": 40,
-      "pct_of_total": 0.18288258256444706,
+      "pct_of_total": 0.18210884140435263,
       "product_count": 15,
       "status": "churned",
       "last_active_month": "June"
@@ -8855,7 +8869,7 @@
       ],
       "total": 2464500.0663,
       "rank": 56,
-      "pct_of_total": 0.07144955246492404,
+      "pct_of_total": 0.07114726310069246,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "May"
@@ -8917,7 +8931,7 @@
       ],
       "total": 1954999.920899,
       "rank": 59,
-      "pct_of_total": 0.056678379249104856,
+      "pct_of_total": 0.05643858388807303,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "June"
@@ -8965,7 +8979,7 @@
       ],
       "total": 1590000.0084,
       "rank": 61,
-      "pct_of_total": 0.046096484464681904,
+      "pct_of_total": 0.04590145907261971,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "February"
@@ -9013,7 +9027,7 @@
       ],
       "total": 1324079.9945999999,
       "rank": 63,
-      "pct_of_total": 0.03838706451485764,
+      "pct_of_total": 0.038224656201207116,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -9047,7 +9061,7 @@
       ],
       "total": 1104000.0,
       "rank": 64,
-      "pct_of_total": 0.03200661545921588,
+      "pct_of_total": 0.0318712016028013,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -9137,7 +9151,7 @@
       ],
       "total": 863919.9971,
       "rank": 66,
-      "pct_of_total": 0.025046336172741487,
+      "pct_of_total": 0.024940369924153636,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -9227,7 +9241,7 @@
       ],
       "total": 770181.5092,
       "rank": 67,
-      "pct_of_total": 0.02232871684670556,
+      "pct_of_total": 0.02223424832469471,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "February"
@@ -9261,7 +9275,7 @@
       ],
       "total": 654900.0,
       "rank": 68,
-      "pct_of_total": 0.018986533029203334,
+      "pct_of_total": 0.01890620464644436,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -9309,7 +9323,7 @@
       ],
       "total": 627499.9497,
       "rank": 69,
-      "pct_of_total": 0.018192164484352544,
+      "pct_of_total": 0.018115196922677875,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -9385,7 +9399,7 @@
       ],
       "total": 470400.22889900004,
       "rank": 70,
-      "pct_of_total": 0.01363760800570419,
+      "pct_of_total": 0.013579909899677453,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -9475,7 +9489,7 @@
       ],
       "total": 454115.00819900003,
       "rank": 71,
-      "pct_of_total": 0.013165475037757302,
+      "pct_of_total": 0.013109774435840667,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -9523,7 +9537,7 @@
       ],
       "total": 404999.994594,
       "rank": 72,
-      "pct_of_total": 0.011741557144886476,
+      "pct_of_total": 0.01169188086670182,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "April"
@@ -9571,7 +9585,7 @@
       ],
       "total": 247249.9958,
       "rank": 73,
-      "pct_of_total": 0.0071681481321225924,
+      "pct_of_total": 0.007137821071044904,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -9605,7 +9619,7 @@
       ],
       "total": 214400.0,
       "rank": 74,
-      "pct_of_total": 0.006215777494978157,
+      "pct_of_total": 0.006189479731558514,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "February"
@@ -9653,7 +9667,7 @@
       ],
       "total": 93170.0034,
       "rank": 75,
-      "pct_of_total": 0.0027011381079326416,
+      "pct_of_total": 0.002689710110231053,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "January"
@@ -9701,7 +9715,7 @@
       ],
       "total": 67710.0,
       "rank": 76,
-      "pct_of_total": 0.001963014431832887,
+      "pct_of_total": 0.0019547092939544166,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -9737,7 +9751,7 @@
       ],
       "total": 67843200.0,
       "rank": 11,
-      "pct_of_total": 1.9668760995676402,
+      "pct_of_total": 1.9585546237130154,
       "product_count": 1,
       "status": "flat",
       "last_active_month": "July"
@@ -9751,7 +9765,7 @@
         7531350.0,
         6876450.0,
         5566650.0,
-        5894100.0
+        6876450.0
       ],
       "products": [
         {
@@ -9764,9 +9778,9 @@
             7531350.0,
             6876450.0,
             5566650.0,
-            5894100.0
+            6876450.0
           ],
-          "total": 43223400.0
+          "total": 44205750.0
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -9783,9 +9797,9 @@
           "total": 1637250.0
         }
       ],
-      "total": 44860650.0,
-      "rank": 16,
-      "pct_of_total": 1.3005775125004284,
+      "total": 45843000.0,
+      "rank": 15,
+      "pct_of_total": 1.3234343252511052,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -9819,7 +9833,7 @@
       ],
       "total": 41530001.0052,
       "rank": 17,
-      "pct_of_total": 1.2040170037991715,
+      "pct_of_total": 1.1989230385881067,
       "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
@@ -9867,7 +9881,7 @@
       ],
       "total": 14005113.922474999,
       "rank": 28,
-      "pct_of_total": 0.4060292534231593,
+      "pct_of_total": 0.4043114214614131,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -9915,7 +9929,7 @@
       ],
       "total": 13404742.299534,
       "rank": 29,
-      "pct_of_total": 0.3886235798107518,
+      "pct_of_total": 0.3869793879185203,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -9963,7 +9977,7 @@
       ],
       "total": 10488000.094999999,
       "rank": 32,
-      "pct_of_total": 0.3040628496167433,
+      "pct_of_total": 0.3027764179691523,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -10011,7 +10025,7 @@
       ],
       "total": 8923139.9946,
       "rank": 34,
-      "pct_of_total": 0.2586952087825289,
+      "pct_of_total": 0.25760071892927167,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10045,7 +10059,7 @@
       ],
       "total": 6876450.0,
       "rank": 37,
-      "pct_of_total": 0.199358596806635,
+      "pct_of_total": 0.19851514878766577,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -10093,7 +10107,7 @@
       ],
       "total": 5505822.048839999,
       "rank": 43,
-      "pct_of_total": 0.1596220372319692,
+      "pct_of_total": 0.1589467069816378,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -10141,7 +10155,7 @@
       ],
       "total": 5054999.9399999995,
       "rank": 44,
-      "pct_of_total": 0.14655202828436534,
+      "pct_of_total": 0.1459319947372178,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10189,7 +10203,7 @@
       ],
       "total": 4639245.0,
       "rank": 45,
-      "pct_of_total": 0.13449866914500905,
+      "pct_of_total": 0.13392963105053252,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10237,7 +10251,7 @@
       ],
       "total": 3674120.0465999995,
       "rank": 48,
-      "pct_of_total": 0.10651824953127041,
+      "pct_of_total": 0.10606759123014702,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10285,7 +10299,7 @@
       ],
       "total": 3264000.51,
       "rank": 50,
-      "pct_of_total": 0.09462826918682474,
+      "pct_of_total": 0.09422791511400022,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -10333,7 +10347,7 @@
       ],
       "total": 3216803.9993040003,
       "rank": 51,
-      "pct_of_total": 0.09325997157010044,
+      "pct_of_total": 0.09286540650227834,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10381,7 +10395,7 @@
       ],
       "total": 2956799.9958,
       "rank": 52,
-      "pct_of_total": 0.08572206562987476,
+      "pct_of_total": 0.08535939199755783,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10429,7 +10443,7 @@
       ],
       "total": 2464200.0,
       "rank": 57,
-      "pct_of_total": 0.07144085309293458,
+      "pct_of_total": 0.07113860053407878,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10463,7 +10477,7 @@
       ],
       "total": 1838160.0,
       "rank": 60,
-      "pct_of_total": 0.053291014739594446,
+      "pct_of_total": 0.05306555066866416,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -10473,7 +10487,7 @@
     {
       "name": "Tepung Double Zero @25Kg/Sack",
       "category": "Flour Sriboga",
-      "total": 654847504.692046,
+      "total": 657872754.691542,
       "customer_count": 20
     },
     {
@@ -10485,7 +10499,7 @@
     {
       "name": "Halal Premium Oxtail Whole Cut 3Cm (2 Kg/Pack)",
       "category": "Frozen Meat",
-      "total": 302637240.0,
+      "total": 305903640.0,
       "customer_count": 6
     },
     {
@@ -10497,13 +10511,13 @@
     {
       "name": "Australian Butter Unsalted",
       "category": "Dairy",
-      "total": 210374775.47107303,
+      "total": 214499771.068545,
       "customer_count": 1
     },
     {
       "name": "Tepung Hime @25Kg/Sack",
       "category": "Flour Sriboga",
-      "total": 127358599.66961701,
+      "total": 130038599.65360801,
       "customer_count": 5
     },
     {
@@ -10521,7 +10535,7 @@
     {
       "name": "O Sole Pomodori Pelati Peeled Tomatoes 2.5Kg",
       "category": "Dry Goods",
-      "total": 76220645.723323,
+      "total": 76472645.73772,
       "customer_count": 7
     },
     {
@@ -10533,25 +10547,25 @@
     {
       "name": "Pristine Classic Cooking Cream 1 Lt",
       "category": "Dairy",
-      "total": 62043120.674021,
+      "total": 62703120.68002101,
       "customer_count": 7
     },
     {
       "name": "English Breakfast@50TB/Box",
       "category": "Beverage",
-      "total": 60426952.892056994,
+      "total": 61045132.91545499,
       "customer_count": 13
     },
     {
       "name": "Crr Rock'n Hash Brown Triangular 10Kg/Ctn",
       "category": "Frozen Fries",
-      "total": 59649999.845910005,
+      "total": 60129999.843209006,
       "customer_count": 3
     },
     {
       "name": "Premium Straight Cut 2Kg",
       "category": "Frozen Fries",
-      "total": 53279996.004,
+      "total": 53459995.9905,
       "customer_count": 2
     },
     {
@@ -10575,7 +10589,7 @@
     {
       "name": "Emborg Pizza Topping 2.3 Kg",
       "category": "Dairy",
-      "total": 34633303.578395,
+      "total": 35079503.591733,
       "customer_count": 6
     },
     {
@@ -10611,19 +10625,19 @@
     {
       "name": "THE ALTERNATIVE Barista Almond Milk 1 Lt",
       "category": "Beverage",
-      "total": 30612119.937235,
+      "total": 30794119.932831,
       "customer_count": 7
     },
     {
       "name": "English Breakfast @250gr/Pouch",
       "category": "Beverage",
-      "total": 26473646.142549,
+      "total": 26884346.142549,
       "customer_count": 2
     },
     {
       "name": "IQF FF Shoestring 2.5 Kg/Pack",
       "category": "Frozen Fries",
-      "total": 17244997.506899998,
+      "total": 17374997.487899996,
       "customer_count": 2
     },
     {
@@ -10639,18 +10653,6 @@
       "customer_count": 2
     },
     {
-      "name": "Masterista Syrup Blue Lagoon 850ml",
-      "category": "Beverage",
-      "total": 16419999.985620001,
-      "customer_count": 3
-    },
-    {
-      "name": "Masterista Syrup Tropical Lychee 850 Ml",
-      "category": "Beverage",
-      "total": 16410000.04008,
-      "customer_count": 3
-    },
-    {
       "name": "Peppermint Tea @50tb/Box",
       "category": "Beverage",
       "total": 15478270.091673998,
@@ -10663,10 +10665,28 @@
       "customer_count": 2
     },
     {
+      "name": "Masterista Syrup Blue Lagoon 850ml",
+      "category": "Beverage",
+      "total": 12819999.989260001,
+      "customer_count": 3
+    },
+    {
+      "name": "Masterista Syrup Tropical Lychee 850 Ml",
+      "category": "Beverage",
+      "total": 12810000.04372,
+      "customer_count": 3
+    },
+    {
       "name": "Savis Green Tea 250Gr/Pack",
       "category": "Beverage",
       "total": 12248332.162800001,
       "customer_count": 2
+    },
+    {
+      "name": "Masterista Syrup Strawberry 850 Ml",
+      "category": "Beverage",
+      "total": 11020000.002192002,
+      "customer_count": 6
     },
     {
       "name": "Inofa Heat Treated Wheat Flour SF 346 @25kg/sack",
@@ -10715,12 +10735,6 @@
       "category": "Beverage",
       "total": 9436559.9496,
       "customer_count": 10
-    },
-    {
-      "name": "Masterista Syrup Strawberry 850 Ml",
-      "category": "Beverage",
-      "total": 9320000.003911002,
-      "customer_count": 6
     },
     {
       "name": "Artisan Pure Matcha (500Gr/Pack)",
@@ -10789,12 +10803,6 @@
       "customer_count": 3
     },
     {
-      "name": "Masterista Syrup Passion Fruit 850 Ml",
-      "category": "Beverage",
-      "total": 7199999.99272,
-      "customer_count": 1
-    },
-    {
       "name": "Tepung Easymix Fish n Chips 1kg/pack",
       "category": "Flour Mip",
       "total": 6999999.65978,
@@ -10837,16 +10845,16 @@
       "customer_count": 3
     },
     {
-      "name": "Tepung Double Zero 1kg/pack",
-      "category": "Flour Sriboga",
-      "total": 5556299.471868,
-      "customer_count": 6
-    },
-    {
       "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
       "category": "Balian",
-      "total": 5433000.0,
+      "total": 5673000.0,
       "customer_count": 5
+    },
+    {
+      "name": "Tepung Double Zero 1kg/pack",
+      "category": "Flour Sriboga",
+      "total": 5622899.471868,
+      "customer_count": 6
     },
     {
       "name": "Maestro FF 10x10mm Straight Cut 10Kg/Ctn",
@@ -10855,10 +10863,22 @@
       "customer_count": 1
     },
     {
+      "name": "Masterista Syrup Passion Fruit 850 Ml",
+      "category": "Beverage",
+      "total": 5399999.99454,
+      "customer_count": 1
+    },
+    {
       "name": "BALIAN Crate Still 330 ml (Deposit)",
       "category": "Balian",
-      "total": 5110000.0,
+      "total": 5250000.0,
       "customer_count": 4
+    },
+    {
+      "name": "Peppermint @250gr",
+      "category": "Beverage",
+      "total": 5078250.0,
+      "customer_count": 1
     },
     {
       "name": "Earl Grey @250gr",
@@ -10897,12 +10917,6 @@
       "customer_count": 1
     },
     {
-      "name": "Peppermint @250gr",
-      "category": "Beverage",
-      "total": 4739700.0,
-      "customer_count": 1
-    },
-    {
       "name": "Flavorista Chocolate Malt (1000Gr/Pack)",
       "category": "Beverage",
       "total": 4697520.0,
@@ -10921,10 +10935,22 @@
       "customer_count": 1
     },
     {
+      "name": "Exotic Especia@50TB/Box",
+      "category": "Beverage",
+      "total": 4421000.018968,
+      "customer_count": 5
+    },
+    {
       "name": "Komi Teriyaki Sauce 1.9 L",
       "category": "Other",
       "total": 4420000.193159999,
       "customer_count": 1
+    },
+    {
+      "name": "Masterista Syrup Grenadine 850 Ml",
+      "category": "Beverage",
+      "total": 4356800.00324,
+      "customer_count": 4
     },
     {
       "name": "Arass Green Tea 100 Tb",
@@ -10939,16 +10965,16 @@
       "customer_count": 4
     },
     {
-      "name": "Exotic Especia@50TB/Box",
-      "category": "Beverage",
-      "total": 4179000.01677,
-      "customer_count": 5
-    },
-    {
       "name": "La Torrente Tomatoes  Peeled 2.5 Kg",
       "category": "Dry Goods",
       "total": 4124664.0959819998,
       "customer_count": 5
+    },
+    {
+      "name": "Earl Grey @50TB/Box",
+      "category": "Beverage",
+      "total": 4100990.0004510004,
+      "customer_count": 7
     },
     {
       "name": "Crr Rock'n Waffle Fries 10Kg/Ctn",
@@ -10963,16 +10989,16 @@
       "customer_count": 2
     },
     {
+      "name": "Masterista Syrup Vanilla Tradition 850ml",
+      "category": "Beverage",
+      "total": 3810400.03464,
+      "customer_count": 5
+    },
+    {
       "name": "Isabi Smoked Salmon Slice 1Kg/Pack",
       "category": "Frozen Sea Food",
       "total": 3779999.9163,
       "customer_count": 1
-    },
-    {
-      "name": "Earl Grey @50TB/Box",
-      "category": "Beverage",
-      "total": 3764390.004051,
-      "customer_count": 7
     },
     {
       "name": "Savis Cold Infusions Refreshing 50Pbx4g",
@@ -10985,12 +11011,6 @@
       "category": "Frozen Meat",
       "total": 3567000.0,
       "customer_count": 1
-    },
-    {
-      "name": "Masterista Syrup Vanilla Tradition 850ml",
-      "category": "Beverage",
-      "total": 3370400.0306400005,
-      "customer_count": 5
     },
     {
       "name": "Masterista Frappe Base 800 Gr",
@@ -11311,12 +11331,6 @@
       "customer_count": 2
     },
     {
-      "name": "Masterista Syrup Grenadine 850 Ml",
-      "category": "Beverage",
-      "total": 756800.00688,
-      "customer_count": 3
-    },
-    {
       "name": "Osterberg Vanilla 750 Ml",
       "category": "Beverage",
       "total": 674999.9909999999,
@@ -11395,6 +11409,12 @@
       "customer_count": 1
     },
     {
+      "name": "Flavorista Matcha (1000Gr/Pack)",
+      "category": "Beverage",
+      "total": 287400.012297,
+      "customer_count": 2
+    },
+    {
       "name": "Masterista Aren Sugar Liquid 1000Gr",
       "category": "Beverage",
       "total": 231999.99,
@@ -11435,12 +11455,6 @@
       "category": "Other",
       "total": 191999.985596,
       "customer_count": 1
-    },
-    {
-      "name": "Flavorista Matcha (1000Gr/Pack)",
-      "category": "Beverage",
-      "total": 191600.008198,
-      "customer_count": 2
     },
     {
       "name": "Masterista Cold Foam Sea Salt 500 Gr",
@@ -11704,31 +11718,31 @@
   "categories": [
     {
       "category": "Frozen Meat",
-      "total": 1105936035.2
+      "total": 1109202435.2
     },
     {
       "category": "Flour Sriboga",
-      "total": 871317464.0457311
+      "total": 877089314.029218
     },
     {
       "category": "Beverage",
-      "total": 521214374.04578704
+      "total": 520178204.075219
     },
     {
       "category": "Dairy",
-      "total": 462760053.798643
+      "total": 467991249.4154529
     },
     {
       "category": "Frozen Fries",
-      "total": 183757993.63097098
+      "total": 184547993.59576997
     },
     {
       "category": "Balian",
-      "total": 116214998.6967
+      "total": 116594998.6967
     },
     {
       "category": "Dry Goods",
-      "total": 91592310.404746
+      "total": 91844310.41914299
     },
     {
       "category": "Flour Mip",
