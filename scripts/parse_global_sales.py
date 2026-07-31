@@ -26,7 +26,7 @@ import openpyxl
 
 MONTHLY_TARGET = 1_000_000_000  # 1B IDR/month, the long-term growth target
 
-REQUIRED_COLUMNS = ['Nama Cust', 'Nama Brg', 'Kategori Barang', 'Grand Total', 'Sales', 'bulan', 'nama bulan', 'tahun']
+REQUIRED_COLUMNS = ['Nama Cust', 'Nama Brg', 'Kategori Barang', 'DPP', 'Sales', 'bulan', 'nama bulan', 'tahun']
 
 _MONTH_ABBR = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
                'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12}
@@ -141,7 +141,7 @@ def main():
         category = normalize_category(r[col['Kategori Barang']])
         if category in EXCLUDED_CATEGORIES:
             continue
-        amount = float(r[col['Grand Total']] or 0)
+        amount = float(r[col['DPP']] or 0)  # pre-VAT base amount, matching the company's achievement reports
 
         c = customers.setdefault(cname, {"name": cname, "monthly": [0.0] * n_months, "products": {}})
         c["monthly"][mi] += amount
