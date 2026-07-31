@@ -66,6 +66,9 @@ def normalize_category(raw) -> str:
     return s.upper().title() if s else 'Other'
 
 
+EXCLUDED_CATEGORIES = {'Balian'}  # bottled-water sub-brand + its bottle/crate deposits, not F&B revenue
+
+
 def load_rows(xlsx_path: Path):
     wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
     ws = wb[wb.sheetnames[0]]
@@ -135,8 +138,10 @@ def main():
         pname = str(r[col['Nama Brg']] or '').strip()
         if not cname or not pname:
             continue
-        amount = float(r[col['Grand Total']] or 0)
         category = normalize_category(r[col['Kategori Barang']])
+        if category in EXCLUDED_CATEGORIES:
+            continue
+        amount = float(r[col['Grand Total']] or 0)
 
         c = customers.setdefault(cname, {"name": cname, "monthly": [0.0] * n_months, "products": {}})
         c["monthly"][mi] += amount

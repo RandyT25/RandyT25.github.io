@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T01:06:55",
+  "generated_at": "2026-07-31T09:24:00",
   "months": [
     "January",
     "February",
@@ -14,15 +14,15 @@
     480101004.89594096,
     394549286.42766607,
     390614921.86346906,
-    504232278.0968899,
-    500031821.0571481,
-    646260992.1296549,
-    620902439.7931231
+    501432278.1208899,
+    484831821.21214813,
+    609323992.5313547,
+    555244440.5785232
   ],
-  "grand_total": 3536692744.2638903,
-  "run_rate": 589065084.326642,
+  "grand_total": 3416097745.629992,
+  "run_rate": 549800084.7740086,
   "monthly_target": 1000000000,
-  "target_progress_pct": 58.906508432664204,
+  "target_progress_pct": 54.980008477400865,
   "monthly_targets": [
     1000000000,
     1000000000,
@@ -33,12 +33,12 @@
     628100000
   ],
   "current_month_target": 628100000,
-  "current_month_actual": 620902439.7931231,
-  "current_month_progress_pct": 98.8540741590707,
-  "customer_count": 77,
-  "product_count": 206,
-  "top5_pct_of_total": 60.450799454052664,
-  "top10_pct_of_total": 74.18210216618077,
+  "current_month_actual": 555244440.5785232,
+  "current_month_progress_pct": 88.40064330178684,
+  "customer_count": 76,
+  "product_count": 192,
+  "top5_pct_of_total": 62.58483209023975,
+  "top10_pct_of_total": 75.79325734108195,
   "customers": [
     {
       "name": "PADMA BALI RESORT",
@@ -204,7 +204,7 @@
             2640000.024,
             4950000.045
           ],
-          "total": 22300000.343999997
+          "total": 22300000.344
         },
         {
           "name": "Double Happines White Sesame Oil 320 Ml",
@@ -333,9 +333,9 @@
           "total": 86025.0
         }
       ],
-      "total": 824944573.9018799,
+      "total": 824944573.90188,
       "rank": 1,
-      "pct_of_total": 23.325310779112645,
+      "pct_of_total": 24.148740326800716,
       "product_count": 20,
       "status": "growing",
       "last_active_month": "July"
@@ -560,7 +560,7 @@
             14630000.133,
             16555000.1505
           ],
-          "total": 49500000.45
+          "total": 49500000.449999996
         },
         {
           "name": "Bergold Mozzarella Block",
@@ -630,7 +630,7 @@
             425000.019,
             1530000.0684
           ],
-          "total": 4505000.196959999
+          "total": 4505000.19696
         },
         {
           "name": "Savis Pure Bunga Telang 200 Gr",
@@ -677,7 +677,7 @@
       ],
       "total": 669949868.539231,
       "rank": 2,
-      "pct_of_total": 18.942834930340293,
+      "pct_of_total": 19.611554423355056,
       "product_count": 23,
       "status": "flat",
       "last_active_month": "July"
@@ -762,7 +762,7 @@
             41249955.974721,
             53624942.767136
           ],
-          "total": 218624766.66601703
+          "total": 218624766.666017
         },
         {
           "name": "Pure Green Tea @50TB/Box",
@@ -893,7 +893,7 @@
       ],
       "total": 344028053.039649,
       "rank": 3,
-      "pct_of_total": 9.727394430789133,
+      "pct_of_total": 10.070790669843783,
       "product_count": 14,
       "status": "growing",
       "last_active_month": "July"
@@ -936,7 +936,7 @@
             2799999.975,
             2799999.975
           ],
-          "total": 21417499.950000003
+          "total": 21417499.95
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -964,12 +964,12 @@
             4800000.528,
             4800000.528
           ],
-          "total": 40554001.33695199
+          "total": 40554001.336952
         }
       ],
       "total": 153187002.256842,
       "rank": 4,
-      "pct_of_total": 4.33136303698685,
+      "pct_of_total": 4.484268708435081,
       "product_count": 4,
       "status": "flat",
       "last_active_month": "July"
@@ -1057,9 +1057,9 @@
           "total": 43120000.392
         }
       ],
-      "total": 145849540.403394,
+      "total": 145849540.40339398,
       "rank": 5,
-      "pct_of_total": 4.123896276823742,
+      "pct_of_total": 4.269477961805118,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -1284,7 +1284,7 @@
             0.0,
             124999.9971
           ],
-          "total": 999999.9768000001
+          "total": 999999.9768
         },
         {
           "name": "Bergold Mozzarella Block",
@@ -1499,281 +1499,9 @@
       ],
       "total": 125345617.680093,
       "rank": 6,
-      "pct_of_total": 3.5441477884497945,
+      "pct_of_total": 3.669263206547298,
       "product_count": 30,
       "status": "flat",
-      "last_active_month": "July"
-    },
-    {
-      "name": "PT BALI PERKASASUKSES",
-      "monthly": [
-        12714894.988481,
-        5815039.9835870005,
-        6979974.982493,
-        6896200.007984,
-        5572360.006487,
-        11147720.009979,
-        55377079.531976
-      ],
-      "products": [
-        {
-          "name": "Tepung Double Zero @25Kg/Sack",
-          "category": "Flour Sriboga",
-          "monthly": [
-            5263000.009481,
-            3324000.005987,
-            1939000.003493,
-            4432000.007984,
-            3601000.006487,
-            5540000.009979,
-            6648000.011976
-          ],
-          "total": 30747000.055387
-        },
-        {
-          "name": "Tepung Hime @25Kg/Sack",
-          "category": "Flour Sriboga",
-          "monthly": [
-            0.0,
-            355200.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "total": 355200.0
-        },
-        {
-          "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            2040000.0
-          ],
-          "total": 2040000.0
-        },
-        {
-          "name": "BALIAN Glass Still (750 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            16199999.784
-          ],
-          "total": 16199999.784
-        },
-        {
-          "name": "BALIAN Glass Sparkling (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            2699999.964
-          ],
-          "total": 2699999.964
-        },
-        {
-          "name": "BALIAN Return Bottle Glass 750 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            2070000.0
-          ],
-          "total": 2070000.0
-        },
-        {
-          "name": "BALIAN Crate Sparkling 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            770000.0
-          ],
-          "total": 770000.0
-        },
-        {
-          "name": "BALIAN Glass Still (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            12599999.832
-          ],
-          "total": 12599999.832
-        },
-        {
-          "name": "BALIAN Glass Sparkling (750 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            4499999.94
-          ],
-          "total": 4499999.94
-        },
-        {
-          "name": "BALIAN Crate Still 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            2450000.0
-          ],
-          "total": 2450000.0
-        },
-        {
-          "name": "BALIAN Crate Still 750 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            2730000.0
-          ],
-          "total": 2730000.0
-        },
-        {
-          "name": "BALIAN Crate Sparkling 750 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1750000.0
-          ],
-          "total": 1750000.0
-        },
-        {
-          "name": "Ice Shaken Lemonade (1000Gr/Pack)",
-          "category": "Beverage",
-          "monthly": [
-            3203460.0,
-            0.0,
-            1232100.0,
-            1232100.0,
-            985680.0,
-            985680.0,
-            0.0
-          ],
-          "total": 7639020.0
-        },
-        {
-          "name": "Ice Shaken Orange Punch 1 Kg",
-          "category": "Beverage",
-          "monthly": [
-            3203460.0,
-            0.0,
-            1232100.0,
-            1232100.0,
-            985680.0,
-            985680.0,
-            0.0
-          ],
-          "total": 7639020.0
-        },
-        {
-          "name": "ICE SHAKEN PEACH TEA 1000 GR",
-          "category": "Beverage",
-          "monthly": [
-            1044974.979,
-            1114639.9776,
-            1044974.979,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "total": 3204589.9356000004
-        },
-        {
-          "name": "Flavorista Chocolate Malt (1000Gr/Pack)",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            1021200.0,
-            1531800.0,
-            0.0,
-            0.0,
-            1225440.0,
-            919080.0
-          ],
-          "total": 4697520.0
-        },
-        {
-          "name": "Flavorista Vanilla Latte 1 Kg",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1332000.0,
-            0.0
-          ],
-          "total": 1332000.0
-        },
-        {
-          "name": "Flavorista Coffee Latte 1 Kg",
-          "category": "Beverage",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1078920.0,
-            0.0
-          ],
-          "total": 1078920.0
-        }
-      ],
-      "total": 104503269.51098701,
-      "rank": 7,
-      "pct_of_total": 2.9548303193846657,
-      "product_count": 18,
-      "status": "growing",
       "last_active_month": "July"
     },
     {
@@ -2055,9 +1783,9 @@
           "total": 2099999.9979
         }
       ],
-      "total": 97386049.77368599,
-      "rank": 8,
-      "pct_of_total": 2.753590905843743,
+      "total": 97386049.773686,
+      "rank": 7,
+      "pct_of_total": 2.8507981043067665,
       "product_count": 19,
       "status": "growing",
       "last_active_month": "July"
@@ -2100,7 +1828,7 @@
             11724999.929961,
             10719999.935964
           ],
-          "total": 57284999.657808006
+          "total": 57284999.657808
         },
         {
           "name": "Tepung 00 Fusion @25Kg",
@@ -2128,7 +1856,7 @@
             708750.0294,
             810000.0336
           ],
-          "total": 3138750.1301999995
+          "total": 3138750.1302
         },
         {
           "name": "Earl Grey @50TB/Box",
@@ -2230,8 +1958,8 @@
         }
       ],
       "total": 83592250.184791,
-      "rank": 9,
-      "pct_of_total": 2.3635711731070796,
+      "rank": 8,
+      "pct_of_total": 2.447009904553391,
       "product_count": 11,
       "status": "growing",
       "last_active_month": "July"
@@ -2386,7 +2114,7 @@
             2879999.9616,
             4319999.9424
           ],
-          "total": 8999999.879999999
+          "total": 8999999.88
         },
         {
           "name": "Savis Organic Olong @250 GR",
@@ -2446,8 +2174,8 @@
         }
       ],
       "total": 74806799.563189,
-      "rank": 10,
-      "pct_of_total": 2.1151625253428374,
+      "rank": 9,
+      "pct_of_total": 2.189831940812725,
       "product_count": 14,
       "status": "growing",
       "last_active_month": "July"
@@ -2536,8 +2264,8 @@
         }
       ],
       "total": 70082000.025484,
-      "rank": 11,
-      "pct_of_total": 1.981568801506689,
+      "rank": 10,
+      "pct_of_total": 2.0515220946220194,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -2570,8 +2298,8 @@
         }
       ],
       "total": 69619200.0,
-      "rank": 12,
-      "pct_of_total": 1.9684831291300144,
+      "rank": 11,
+      "pct_of_total": 2.0379744721608053,
       "product_count": 1,
       "status": "flat",
       "last_active_month": "July"
@@ -2772,10 +2500,142 @@
         }
       ],
       "total": 59406680.086610004,
-      "rank": 13,
-      "pct_of_total": 1.679724092033746,
+      "rank": 12,
+      "pct_of_total": 1.7390216706358999,
       "product_count": 13,
       "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "PT BALI PERKASASUKSES",
+      "monthly": [
+        12714894.988481,
+        5815039.9835870005,
+        6979974.982493,
+        6896200.007984,
+        5572360.006487,
+        11147720.009979,
+        7567080.011976
+      ],
+      "products": [
+        {
+          "name": "Tepung Double Zero @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            5263000.009481,
+            3324000.005987,
+            1939000.003493,
+            4432000.007984,
+            3601000.006487,
+            5540000.009979,
+            6648000.011976
+          ],
+          "total": 30747000.055387
+        },
+        {
+          "name": "Tepung Hime @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            0.0,
+            355200.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 355200.0
+        },
+        {
+          "name": "Ice Shaken Lemonade (1000Gr/Pack)",
+          "category": "Beverage",
+          "monthly": [
+            3203460.0,
+            0.0,
+            1232100.0,
+            1232100.0,
+            985680.0,
+            985680.0,
+            0.0
+          ],
+          "total": 7639020.0
+        },
+        {
+          "name": "Ice Shaken Orange Punch 1 Kg",
+          "category": "Beverage",
+          "monthly": [
+            3203460.0,
+            0.0,
+            1232100.0,
+            1232100.0,
+            985680.0,
+            985680.0,
+            0.0
+          ],
+          "total": 7639020.0
+        },
+        {
+          "name": "ICE SHAKEN PEACH TEA 1000 GR",
+          "category": "Beverage",
+          "monthly": [
+            1044974.979,
+            1114639.9776,
+            1044974.979,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 3204589.9356000004
+        },
+        {
+          "name": "Flavorista Chocolate Malt (1000Gr/Pack)",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            1021200.0,
+            1531800.0,
+            0.0,
+            0.0,
+            1225440.0,
+            919080.0
+          ],
+          "total": 4697520.0
+        },
+        {
+          "name": "Flavorista Vanilla Latte 1 Kg",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1332000.0,
+            0.0
+          ],
+          "total": 1332000.0
+        },
+        {
+          "name": "Flavorista Coffee Latte 1 Kg",
+          "category": "Beverage",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1078920.0,
+            0.0
+          ],
+          "total": 1078920.0
+        }
+      ],
+      "total": 56693269.990987,
+      "rank": 13,
+      "pct_of_total": 1.6595915636053238,
+      "product_count": 8,
+      "status": "flat",
       "last_active_month": "July"
     },
     {
@@ -2877,7 +2737,7 @@
       ],
       "total": 55907498.10458,
       "rank": 14,
-      "pct_of_total": 1.5807847089701403,
+      "pct_of_total": 1.6365895319037371,
       "product_count": 6,
       "status": "growing",
       "last_active_month": "July"
@@ -3121,7 +2981,7 @@
       ],
       "total": 46798570.999513,
       "rank": 15,
-      "pct_of_total": 1.323229762478375,
+      "pct_of_total": 1.3699423870227248,
       "product_count": 16,
       "status": "flat",
       "last_active_month": "July"
@@ -3169,7 +3029,7 @@
       ],
       "total": 45843000.0,
       "rank": 16,
-      "pct_of_total": 1.2962109890476656,
+      "pct_of_total": 1.3419697975166016,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -3301,7 +3161,7 @@
       ],
       "total": 42229642.013823,
       "rank": 17,
-      "pct_of_total": 1.1940432790582285,
+      "pct_of_total": 1.236195365540838,
       "product_count": 8,
       "status": "growing",
       "last_active_month": "July"
@@ -3335,84 +3195,8 @@
       ],
       "total": 41530001.0052,
       "rank": 18,
-      "pct_of_total": 1.1742609270357707,
+      "pct_of_total": 1.2157146574136184,
       "product_count": 1,
-      "status": "growing",
-      "last_active_month": "July"
-    },
-    {
-      "name": "DOUBLE SIX HOTEL",
-      "monthly": [
-        0.0,
-        0.0,
-        0.0,
-        1637250.0,
-        12937249.892,
-        18244499.844,
-        7037249.928
-      ],
-      "products": [
-        {
-          "name": "Tepung Double Zero @25Kg/Sack",
-          "category": "Flour Sriboga",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            1637250.0,
-            1637250.0,
-            3274500.0,
-            1637250.0
-          ],
-          "total": 8186250.0
-        },
-        {
-          "name": "BALIAN Glass Sparkling (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            8099999.892,
-            11699999.844,
-            5399999.928
-          ],
-          "total": 25199999.664
-        },
-        {
-          "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            960000.0,
-            1170000.0,
-            0.0
-          ],
-          "total": 2130000.0
-        },
-        {
-          "name": "BALIAN Crate Sparkling 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            2240000.0,
-            2100000.0,
-            0.0
-          ],
-          "total": 4340000.0
-        }
-      ],
-      "total": 39856249.664000005,
-      "rank": 19,
-      "pct_of_total": 1.126935601873877,
-      "product_count": 4,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -3424,8 +3208,8 @@
         5001260.144664,
         4048920.126865,
         5742710.108072001,
-        8457070.230852,
-        6407400.14157
+        6405070.173851999,
+        5279400.11517
       ],
       "products": [
         {
@@ -3485,48 +3269,6 @@
           "total": 66600.0
         },
         {
-          "name": "BALIAN Glass Sparkling (750 ml x 6)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1080000.03,
-            432000.012
-          ],
-          "total": 1512000.042
-        },
-        {
-          "name": "BALIAN Glass Still (750 ml x 6)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            972000.027,
-            432000.012
-          ],
-          "total": 1404000.0389999999
-        },
-        {
-          "name": "BALIAN Glass Still (330 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            264000.0024
-          ],
-          "total": 264000.0024
-        },
-        {
           "name": "Pristine Classic Cooking Cream 1 Lt",
           "category": "Dairy",
           "monthly": [
@@ -3552,7 +3294,7 @@
             2850000.146965,
             1710000.08818
           ],
-          "total": 13680000.705435002
+          "total": 13680000.705435
         },
         {
           "name": "Masterista Syrup Strawberry 850 Ml",
@@ -3678,7 +3420,7 @@
             319770.009897,
             0.0
           ],
-          "total": 746130.023093
+          "total": 746130.0230929999
         },
         {
           "name": "Javanese Jasmine Tea @50TB/Box",
@@ -3723,10 +3465,10 @@
           "total": 1235000.063685
         }
       ],
-      "total": 38936551.006545,
-      "rank": 20,
-      "pct_of_total": 1.1009311190432252,
-      "product_count": 21,
+      "total": 35756550.923145,
+      "rank": 19,
+      "pct_of_total": 1.0467074886509382,
+      "product_count": 18,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -3785,9 +3527,9 @@
           "total": 4199999.907000001
         }
       ],
-      "total": 33319999.647000007,
-      "rank": 21,
-      "pct_of_total": 0.9421231092534464,
+      "total": 33319999.647,
+      "rank": 20,
+      "pct_of_total": 0.9753819160948853,
       "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
@@ -3946,8 +3688,8 @@
         }
       ],
       "total": 29265084.901094,
-      "rank": 22,
-      "pct_of_total": 0.8274703803025754,
+      "rank": 21,
+      "pct_of_total": 0.8566817193252465,
       "product_count": 10,
       "status": "declining",
       "last_active_month": "July"
@@ -3994,8 +3736,8 @@
         }
       ],
       "total": 28107960.0,
-      "rank": 23,
-      "pct_of_total": 0.7947526695834092,
+      "rank": 22,
+      "pct_of_total": 0.8228090087866138,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -4192,7 +3934,7 @@
             1727999.870362,
             767999.942384
           ],
-          "total": 3455999.740725
+          "total": 3455999.7407250004
         },
         {
           "name": "Flavorista Matcha (1000Gr/Pack)",
@@ -4209,114 +3951,10 @@
           "total": 191600.008198
         }
       ],
-      "total": 27739667.575671002,
-      "rank": 24,
-      "pct_of_total": 0.7843391999675844,
+      "total": 27739667.575671,
+      "rank": 23,
+      "pct_of_total": 0.812027923122419,
       "product_count": 14,
-      "status": "growing",
-      "last_active_month": "July"
-    },
-    {
-      "name": "BALI DYNASTY RESORT",
-      "monthly": [
-        0.0,
-        559999.995,
-        559999.995,
-        1119999.99,
-        2699999.965,
-        13402999.759,
-        8379999.783
-      ],
-      "products": [
-        {
-          "name": "Inofa Heat Treated Wheat Flour SF 346 @25kg/sack",
-          "category": "Flour Mip",
-          "monthly": [
-            0.0,
-            559999.995,
-            559999.995,
-            1119999.99,
-            0.0,
-            1119999.99,
-            1119999.99
-          ],
-          "total": 4479999.96
-        },
-        {
-          "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            300000.0,
-            1113000.0,
-            60000.0
-          ],
-          "total": 1473000.0
-        },
-        {
-          "name": "BALIAN Glass Sparkling (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            899999.988,
-            1799999.976,
-            0.0
-          ],
-          "total": 2699999.964
-        },
-        {
-          "name": "BALIAN Crate Still 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            350000.0,
-            1540000.0,
-            0.0
-          ],
-          "total": 1890000.0
-        },
-        {
-          "name": "BALIAN Glass Still (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            799999.977,
-            7199999.793,
-            7199999.793
-          ],
-          "total": 15199999.563
-        },
-        {
-          "name": "BALIAN Crate Sparkling 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            350000.0,
-            630000.0,
-            0.0
-          ],
-          "total": 980000.0
-        }
-      ],
-      "total": 26722999.487,
-      "rank": 25,
-      "pct_of_total": 0.7555929061222986,
-      "product_count": 6,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -4358,7 +3996,7 @@
             799004.9952,
             258344.948448
           ],
-          "total": 2588776.1844479996
+          "total": 2588776.184448
         },
         {
           "name": "Masterista Syrup Tropical Lychee 850 Ml",
@@ -4400,7 +4038,7 @@
             1075785.004786,
             0.0
           ],
-          "total": 3048057.513561
+          "total": 3048057.5135609997
         },
         {
           "name": "Ice Shaken Orange Punch 1 Kg",
@@ -4557,9 +4195,9 @@
           "total": 511500.00465
         }
       ],
-      "total": 24696179.964951996,
-      "rank": 26,
-      "pct_of_total": 0.6982845768834842,
+      "total": 24696179.964952,
+      "rank": 24,
+      "pct_of_total": 0.7229354018497959,
       "product_count": 16,
       "status": "growing",
       "last_active_month": "July"
@@ -4630,7 +4268,7 @@
             154999.955989,
             650999.815154
           ],
-          "total": 1859999.4718679998
+          "total": 1859999.471868
         },
         {
           "name": "Tepung Hime @25Kg/Sack",
@@ -4871,9 +4509,9 @@
           "total": 426360.013196
         }
       ],
-      "total": 21115123.218124002,
-      "rank": 27,
-      "pct_of_total": 0.5970301845522292,
+      "total": 21115123.218124,
+      "rank": 25,
+      "pct_of_total": 0.6181065294497297,
       "product_count": 21,
       "status": "growing",
       "last_active_month": "July"
@@ -4916,12 +4554,12 @@
             1624999.984495,
             1949999.981394
           ],
-          "total": 8124999.922474999
+          "total": 8124999.922475
         }
       ],
-      "total": 14549568.922474999,
-      "rank": 28,
-      "pct_of_total": 0.4113891133481338,
+      "total": 14549568.922475,
+      "rank": 26,
+      "pct_of_total": 0.4259119617138411,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -4950,7 +4588,7 @@
             0.0,
             605000.005495
           ],
-          "total": 1936000.0175840002
+          "total": 1936000.017584
         },
         {
           "name": "Chamomile Dream @50Tb/Box",
@@ -4978,7 +4616,7 @@
             852720.026391,
             639540.019794
           ],
-          "total": 3837240.1187619995
+          "total": 3837240.118762
         },
         {
           "name": "Earl Grey @50TB/Box",
@@ -5006,7 +4644,7 @@
             106590.003299,
             426360.013196
           ],
-          "total": 1812030.0560829998
+          "total": 1812030.056083
         },
         {
           "name": "Java Ginger @50TB/Box",
@@ -5020,12 +4658,12 @@
             363000.003297,
             605000.005495
           ],
-          "total": 2783000.0252770004
+          "total": 2783000.025277
         }
       ],
       "total": 13754070.217391,
-      "rank": 29,
-      "pct_of_total": 0.3888963846152178,
+      "rank": 27,
+      "pct_of_total": 0.40262519522416335,
       "product_count": 6,
       "status": "growing",
       "last_active_month": "July"
@@ -5072,127 +4710,9 @@
         }
       ],
       "total": 13404742.299534,
-      "rank": 30,
-      "pct_of_total": 0.3790191364877527,
+      "rank": 28,
+      "pct_of_total": 0.39239926072612763,
       "product_count": 2,
-      "status": "growing",
-      "last_active_month": "July"
-    },
-    {
-      "name": "INSPIRA SEMINYAK",
-      "monthly": [
-        0.0,
-        0.0,
-        0.0,
-        2799999.976,
-        1199999.988,
-        4439999.955599999,
-        4059999.9472000003
-      ],
-      "products": [
-        {
-          "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            300000.0,
-            90000.0,
-            0.0,
-            30000.0
-          ],
-          "total": 420000.0
-        },
-        {
-          "name": "BALIAN Glass Sparkling (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            539999.9928,
-            0.0,
-            539999.9928,
-            1079999.9856
-          ],
-          "total": 2159999.9712
-        },
-        {
-          "name": "BALIAN Glass Still (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            1259999.9832,
-            899999.988,
-            3239999.9568,
-            2879999.9616
-          ],
-          "total": 8279999.889599999
-        },
-        {
-          "name": "BALIAN Crate Still 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            490000.0,
-            210000.0,
-            0.0,
-            0.0
-          ],
-          "total": 700000.0
-        },
-        {
-          "name": "BALIAN Crate Sparkling 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            210000.0,
-            0.0,
-            0.0,
-            70000.0
-          ],
-          "total": 280000.0
-        },
-        {
-          "name": "BALIAN Glass Still (330 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            528000.0048,
-            0.0
-          ],
-          "total": 528000.0048
-        },
-        {
-          "name": "BALIAN Glass Sparkling (330 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            132000.0012,
-            0.0
-          ],
-          "total": 132000.0012
-        }
-      ],
-      "total": 12499999.866799999,
-      "rank": 31,
-      "pct_of_total": 0.35343754096460783,
-      "product_count": 7,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -5238,8 +4758,8 @@
         }
       ],
       "total": 10488000.094999999,
-      "rank": 32,
-      "pct_of_total": 0.29654824021708787,
+      "rank": 29,
+      "pct_of_total": 0.3070169789028041,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -5314,8 +4834,8 @@
         }
       ],
       "total": 9828488.192966,
-      "rank": 33,
-      "pct_of_total": 0.2779005388270349,
+      "rank": 30,
+      "pct_of_total": 0.28771097681672,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -5362,9 +4882,43 @@
         }
       ],
       "total": 8923139.9946,
-      "rank": 34,
-      "pct_of_total": 0.25230181527847756,
+      "rank": 31,
+      "pct_of_total": 0.2612085677587779,
       "product_count": 2,
+      "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "DOUBLE SIX HOTEL",
+      "monthly": [
+        0.0,
+        0.0,
+        0.0,
+        1637250.0,
+        1637250.0,
+        3274500.0,
+        1637250.0
+      ],
+      "products": [
+        {
+          "name": "Tepung Double Zero @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            1637250.0,
+            1637250.0,
+            3274500.0,
+            1637250.0
+          ],
+          "total": 8186250.0
+        }
+      ],
+      "total": 8186250.0,
+      "rank": 32,
+      "pct_of_total": 0.2396374638422503,
+      "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -5438,199 +4992,11 @@
         }
       ],
       "total": 7982000.2208980005,
-      "rank": 35,
-      "pct_of_total": 0.22569108480921585,
+      "rank": 33,
+      "pct_of_total": 0.2336584259366961,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "May"
-    },
-    {
-      "name": "THE OBEROI",
-      "monthly": [
-        299999.9997,
-        0.0,
-        899999.9991,
-        299999.9997,
-        599999.9994,
-        4691999.9712,
-        599999.9994
-      ],
-      "products": [
-        {
-          "name": "Tepung Hime @25Kg/Sack",
-          "category": "Flour Sriboga",
-          "monthly": [
-            299999.9997,
-            0.0,
-            899999.9991,
-            299999.9997,
-            599999.9994,
-            1499999.9985,
-            599999.9994
-          ],
-          "total": 4199999.9958
-        },
-        {
-          "name": "Tepung Double Zero @25Kg/Sack",
-          "category": "Flour Sriboga",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "total": 0.0
-        },
-        {
-          "name": "BALIAN Crate Still 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            210000.0,
-            0.0
-          ],
-          "total": 210000.0
-        },
-        {
-          "name": "BALIAN Crate Still 750 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            210000.0,
-            0.0
-          ],
-          "total": 210000.0
-        },
-        {
-          "name": "BALIAN Crate Sparkling 750 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            210000.0,
-            0.0
-          ],
-          "total": 210000.0
-        },
-        {
-          "name": "BALIAN Glass Sparkling (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            539999.9928,
-            0.0
-          ],
-          "total": 539999.9928
-        },
-        {
-          "name": "BALIAN Return Bottle Glass 750 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            180000.0,
-            0.0
-          ],
-          "total": 180000.0
-        },
-        {
-          "name": "BALIAN Crate Sparkling 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            210000.0,
-            0.0
-          ],
-          "total": 210000.0
-        },
-        {
-          "name": "BALIAN Glass Still (750 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            467999.9982,
-            0.0
-          ],
-          "total": 467999.9982
-        },
-        {
-          "name": "BALIAN Glass Still (330 ml x 20)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            479999.9862,
-            0.0
-          ],
-          "total": 479999.9862
-        },
-        {
-          "name": "BALIAN Glass Sparkling (750 ml x 12)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            503999.9955,
-            0.0
-          ],
-          "total": 503999.9955
-        },
-        {
-          "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
-          "category": "Balian",
-          "monthly": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            180000.0,
-            0.0
-          ],
-          "total": 180000.0
-        }
-      ],
-      "total": 7391999.9684999995,
-      "rank": 36,
-      "pct_of_total": 0.2090088255613659,
-      "product_count": 12,
-      "status": "growing",
-      "last_active_month": "July"
     },
     {
       "name": "AKMANI HOTEL",
@@ -5656,7 +5022,7 @@
             1333327.9152,
             1666659.894
           ],
-          "total": 5999975.618400001
+          "total": 5999975.6184
         },
         {
           "name": "La Torrente Tomatoes  Peeled 2.5 Kg",
@@ -5688,8 +5054,8 @@
         }
       ],
       "total": 7046639.576,
-      "rank": 37,
-      "pct_of_total": 0.19924375922756765,
+      "rank": 34,
+      "pct_of_total": 0.20627745751755325,
       "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
@@ -5722,8 +5088,8 @@
         }
       ],
       "total": 6876450.0,
-      "rank": 38,
-      "pct_of_total": 0.19443164835714982,
+      "rank": 35,
+      "pct_of_total": 0.20129546962749026,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -5798,8 +5164,8 @@
         }
       ],
       "total": 6844999.925956,
-      "rank": 39,
-      "pct_of_total": 0.19354239740101267,
+      "rank": 36,
+      "pct_of_total": 0.20037482635596113,
       "product_count": 4,
       "status": "new",
       "last_active_month": "July"
@@ -5887,9 +5253,9 @@
           "total": 484000.004396
         }
       ],
-      "total": 6657900.013187999,
-      "rank": 40,
-      "pct_of_total": 0.18825214669796658,
+      "total": 6657900.013188,
+      "rank": 37,
+      "pct_of_total": 0.19489781935265318,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -6030,7 +5396,7 @@
             0.0,
             0.0
           ],
-          "total": 1011059.9946
+          "total": 1011059.9945999999
         },
         {
           "name": "Masterista Dark Chocolate 800Gr",
@@ -6117,9 +5483,9 @@
           "total": 156510.0
         }
       ],
-      "total": 6308144.996099999,
-      "rank": 41,
-      "pct_of_total": 0.1783628223382166,
+      "total": 6308144.9961,
+      "rank": 38,
+      "pct_of_total": 0.1846593823074773,
       "product_count": 15,
       "status": "churned",
       "last_active_month": "June"
@@ -6207,9 +5573,9 @@
           "total": 1767675.0
         }
       ],
-      "total": 5544083.966399999,
-      "rank": 42,
-      "pct_of_total": 0.15675899398928186,
+      "total": 5544083.9664,
+      "rank": 39,
+      "pct_of_total": 0.16229289614128323,
       "product_count": 5,
       "status": "declining",
       "last_active_month": "July"
@@ -6255,9 +5621,9 @@
           "total": 4526802.0
         }
       ],
-      "total": 5505822.048839999,
-      "rank": 43,
-      "pct_of_total": 0.15567713813335385,
+      "total": 5505822.04884,
+      "rank": 40,
+      "pct_of_total": 0.1611728486365259,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -6314,7 +5680,7 @@
             1690000.041569,
             2275000.055958
           ],
-          "total": 4940000.121509001
+          "total": 4940000.121509
         },
         {
           "name": "Pork B sliced  100gr - sample",
@@ -6346,8 +5712,8 @@
         }
       ],
       "total": 5157260.111109,
-      "rank": 44,
-      "pct_of_total": 0.14582154809669243,
+      "rank": 41,
+      "pct_of_total": 0.15096933680268287,
       "product_count": 5,
       "status": "new",
       "last_active_month": "July"
@@ -6376,7 +5742,7 @@
             629999.9916,
             314999.9958
           ],
-          "total": 4724999.936999999
+          "total": 4724999.937
         },
         {
           "name": "Masterista Syrup Creme Brulee 850ml",
@@ -6394,8 +5760,8 @@
         }
       ],
       "total": 5054999.9399999995,
-      "rank": 45,
-      "pct_of_total": 0.14293014139265078,
+      "rank": 42,
+      "pct_of_total": 0.14797585773025834,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -6442,9 +5808,43 @@
         }
       ],
       "total": 4794645.0,
-      "rank": 46,
-      "pct_of_total": 0.1355686045324792,
+      "rank": 43,
+      "pct_of_total": 0.14035444407682715,
       "product_count": 2,
+      "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "BALI DYNASTY RESORT",
+      "monthly": [
+        0.0,
+        559999.995,
+        559999.995,
+        1119999.99,
+        0.0,
+        1119999.99,
+        1119999.99
+      ],
+      "products": [
+        {
+          "name": "Inofa Heat Treated Wheat Flour SF 346 @25kg/sack",
+          "category": "Flour Mip",
+          "monthly": [
+            0.0,
+            559999.995,
+            559999.995,
+            1119999.99,
+            0.0,
+            1119999.99,
+            1119999.99
+          ],
+          "total": 4479999.96
+        }
+      ],
+      "total": 4479999.96,
+      "rank": 44,
+      "pct_of_total": 0.13114378725640954,
+      "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -6504,8 +5904,8 @@
         }
       ],
       "total": 4467499.994631,
-      "rank": 47,
-      "pct_of_total": 0.1263185783349931,
+      "rank": 45,
+      "pct_of_total": 0.1307778736819227,
       "product_count": 3,
       "status": "growing",
       "last_active_month": "July"
@@ -6552,10 +5952,58 @@
         }
       ],
       "total": 4464000.6975,
-      "rank": 48,
-      "pct_of_total": 0.126219635696092,
+      "rank": 46,
+      "pct_of_total": 0.1306754381724155,
       "product_count": 2,
       "status": "new",
+      "last_active_month": "July"
+    },
+    {
+      "name": "THE OBEROI",
+      "monthly": [
+        299999.9997,
+        0.0,
+        899999.9991,
+        299999.9997,
+        599999.9994,
+        1499999.9985,
+        599999.9994
+      ],
+      "products": [
+        {
+          "name": "Tepung Hime @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            299999.9997,
+            0.0,
+            899999.9991,
+            299999.9997,
+            599999.9994,
+            1499999.9985,
+            599999.9994
+          ],
+          "total": 4199999.9958
+        },
+        {
+          "name": "Tepung Double Zero @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 0.0
+        }
+      ],
+      "total": 4199999.9958,
+      "rank": 47,
+      "pct_of_total": 0.12294730152768041,
+      "product_count": 2,
+      "status": "growing",
       "last_active_month": "July"
     },
     {
@@ -6582,7 +6030,7 @@
             337019.9982,
             168509.9991
           ],
-          "total": 2022119.9892
+          "total": 2022119.9891999997
         },
         {
           "name": "Flavour Artisan - Belgian Signature Dark Chocolate (80 Cocoa%)  500gr",
@@ -6599,9 +6047,9 @@
           "total": 1652000.0574
         }
       ],
-      "total": 3674120.0465999995,
-      "rank": 49,
-      "pct_of_total": 0.10388575746533256,
+      "total": 3674120.0466,
+      "rank": 48,
+      "pct_of_total": 0.10755312992141634,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -6746,8 +6194,8 @@
         }
       ],
       "total": 3461965.063055,
-      "rank": 50,
-      "pct_of_total": 0.09788707454640808,
+      "rank": 49,
+      "pct_of_total": 0.10134268164556132,
       "product_count": 9,
       "status": "flat",
       "last_active_month": "July"
@@ -6793,9 +6241,9 @@
           "total": 2526804.0
         }
       ],
-      "total": 3216803.9993040003,
-      "rank": 51,
-      "pct_of_total": 0.09095514459154777,
+      "total": 3216803.999304,
+      "rank": 50,
+      "pct_of_total": 0.09416604086985109,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -6870,8 +6318,8 @@
         }
       ],
       "total": 3159999.8591839997,
-      "rank": 52,
-      "pct_of_total": 0.08934900732638301,
+      "rank": 51,
+      "pct_of_total": 0.09250320378643723,
       "product_count": 4,
       "status": "growing",
       "last_active_month": "July"
@@ -6918,8 +6366,8 @@
         }
       ],
       "total": 2956799.9958,
-      "rank": 53,
-      "pct_of_total": 0.0836035304620564,
+      "rank": 52,
+      "pct_of_total": 0.08655490023909462,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -7035,9 +6483,9 @@
           "total": 165000.0015
         }
       ],
-      "total": 2848969.978196,
-      "rank": 54,
-      "pct_of_total": 0.08055463632843714,
+      "total": 2848969.9781959997,
+      "rank": 53,
+      "pct_of_total": 0.08339837411972521,
       "product_count": 7,
       "status": "declining",
       "last_active_month": "July"
@@ -7126,8 +6574,8 @@
         }
       ],
       "total": 2674540.039853,
-      "rank": 55,
-      "pct_of_total": 0.07562262919759702,
+      "rank": 54,
+      "pct_of_total": 0.07829225739440208,
       "product_count": 5,
       "status": "growing",
       "last_active_month": "July"
@@ -7188,8 +6636,8 @@
         }
       ],
       "total": 2464500.0663,
-      "rank": 56,
-      "pct_of_total": 0.06968374819376481,
+      "rank": 55,
+      "pct_of_total": 0.07214372215937576,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "May"
@@ -7236,8 +6684,8 @@
         }
       ],
       "total": 2464200.0,
-      "rank": 57,
-      "pct_of_total": 0.06967526381805854,
+      "rank": 56,
+      "pct_of_total": 0.07213493826844687,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -7326,8 +6774,8 @@
         }
       ],
       "total": 2069519.986186,
-      "rank": 58,
-      "pct_of_total": 0.05851568501511826,
+      "rank": 57,
+      "pct_of_total": 0.0605814042889555,
       "product_count": 5,
       "status": "declining",
       "last_active_month": "July"
@@ -7388,8 +6836,8 @@
         }
       ],
       "total": 1954999.920899,
-      "rank": 59,
-      "pct_of_total": 0.05527762975932205,
+      "rank": 58,
+      "pct_of_total": 0.05722903928612445,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "June"
@@ -7422,8 +6870,8 @@
         }
       ],
       "total": 1838160.0,
-      "rank": 60,
-      "pct_of_total": 0.051973980577795016,
+      "rank": 59,
+      "pct_of_total": 0.05380876476240902,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -7470,8 +6918,8 @@
         }
       ],
       "total": 1590000.0084,
-      "rank": 61,
-      "pct_of_total": 0.04495725592727266,
+      "rank": 60,
+      "pct_of_total": 0.046544335870775104,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "February"
@@ -7574,8 +7022,8 @@
         }
       ],
       "total": 1533020.0121,
-      "rank": 62,
-      "pct_of_total": 0.043346146327989124,
+      "rank": 61,
+      "pct_of_total": 0.044876350920025634,
       "product_count": 6,
       "status": "flat",
       "last_active_month": "July"
@@ -7622,8 +7070,8 @@
         }
       ],
       "total": 1324079.9945999999,
-      "rank": 63,
-      "pct_of_total": 0.03743836658549165,
+      "rank": 62,
+      "pct_of_total": 0.03876001488229708,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -7656,8 +7104,8 @@
         }
       ],
       "total": 1104000.0,
-      "rank": 64,
-      "pct_of_total": 0.03121560395062764,
+      "rank": 63,
+      "pct_of_total": 0.032317576433879294,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -7773,9 +7221,9 @@
           "total": 179330.001598
         }
       ],
-      "total": 955840.0031979999,
-      "rank": 65,
-      "pct_of_total": 0.02702637951086542,
+      "total": 955840.003198,
+      "rank": 64,
+      "pct_of_total": 0.027980464095933685,
       "product_count": 7,
       "status": "declining",
       "last_active_month": "July"
@@ -7864,8 +7312,8 @@
         }
       ],
       "total": 863919.9971,
-      "rank": 66,
-      "pct_of_total": 0.024427341009511758,
+      "rank": 65,
+      "pct_of_total": 0.025289674401300748,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -7954,8 +7402,8 @@
         }
       ],
       "total": 770181.5092,
-      "rank": 67,
-      "pct_of_total": 0.021776884928699163,
+      "rank": 66,
+      "pct_of_total": 0.022545651985082887,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "February"
@@ -7988,8 +7436,8 @@
         }
       ],
       "total": 654900.0,
-      "rank": 68,
-      "pct_of_total": 0.01851729984353808,
+      "rank": 67,
+      "pct_of_total": 0.019170997107380027,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -8036,8 +7484,8 @@
         }
       ],
       "total": 627499.9497,
-      "rank": 69,
-      "pct_of_total": 0.017742563323255404,
+      "rank": 68,
+      "pct_of_total": 0.018368910857504674,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -8112,8 +7560,8 @@
         }
       ],
       "total": 470400.22889900004,
-      "rank": 70,
-      "pct_of_total": 0.013300568155430952,
+      "rank": 69,
+      "pct_of_total": 0.013770104485468974,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -8202,8 +7650,8 @@
         }
       ],
       "total": 454115.00819900003,
-      "rank": 71,
-      "pct_of_total": 0.012840103481862326,
+      "rank": 70,
+      "pct_of_total": 0.013293384499314225,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -8250,8 +7698,8 @@
         }
       ],
       "total": 404999.994594,
-      "rank": 72,
-      "pct_of_total": 0.011451376296424492,
+      "rank": 71,
+      "pct_of_total": 0.011855632500916933,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "April"
@@ -8298,8 +7746,8 @@
         }
       ],
       "total": 247249.9958,
-      "rank": 73,
-      "pct_of_total": 0.006990994516020967,
+      "rank": 72,
+      "pct_of_total": 0.007237790432556914,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -8346,8 +7794,8 @@
         }
       ],
       "total": 218790.002099,
-      "rank": 74,
-      "pct_of_total": 0.006186288092282042,
+      "rank": 73,
+      "pct_of_total": 0.0064046762824302925,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -8380,8 +7828,8 @@
         }
       ],
       "total": 214400.0,
-      "rank": 75,
-      "pct_of_total": 0.006062160767223339,
+      "rank": 74,
+      "pct_of_total": 0.006276167017593949,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "February"
@@ -8428,8 +7876,8 @@
         }
       ],
       "total": 93170.0034,
-      "rank": 76,
-      "pct_of_total": 0.0026343821795407887,
+      "rank": 75,
+      "pct_of_total": 0.0027273810744785267,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "January"
@@ -8476,8 +7924,8 @@
         }
       ],
       "total": 67710.0,
-      "rank": 77,
-      "pct_of_total": 0.001914500492298005,
+      "rank": 76,
+      "pct_of_total": 0.001982086141610477,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -8526,8 +7974,8 @@
         }
       ],
       "total": 28107960.0,
-      "rank": 23,
-      "pct_of_total": 0.7947526695834092,
+      "rank": 22,
+      "pct_of_total": 0.8228090087866138,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -8602,8 +8050,8 @@
         }
       ],
       "total": 9828488.192966,
-      "rank": 33,
-      "pct_of_total": 0.2779005388270349,
+      "rank": 30,
+      "pct_of_total": 0.28771097681672,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -8678,8 +8126,8 @@
         }
       ],
       "total": 7982000.2208980005,
-      "rank": 35,
-      "pct_of_total": 0.22569108480921585,
+      "rank": 33,
+      "pct_of_total": 0.2336584259366961,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "May"
@@ -8820,7 +8268,7 @@
             0.0,
             0.0
           ],
-          "total": 1011059.9946
+          "total": 1011059.9945999999
         },
         {
           "name": "Masterista Dark Chocolate 800Gr",
@@ -8907,9 +8355,9 @@
           "total": 156510.0
         }
       ],
-      "total": 6308144.996099999,
-      "rank": 41,
-      "pct_of_total": 0.1783628223382166,
+      "total": 6308144.9961,
+      "rank": 38,
+      "pct_of_total": 0.1846593823074773,
       "product_count": 15,
       "status": "churned",
       "last_active_month": "June"
@@ -8970,8 +8418,8 @@
         }
       ],
       "total": 2464500.0663,
-      "rank": 56,
-      "pct_of_total": 0.06968374819376481,
+      "rank": 55,
+      "pct_of_total": 0.07214372215937576,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "May"
@@ -9032,8 +8480,8 @@
         }
       ],
       "total": 1954999.920899,
-      "rank": 59,
-      "pct_of_total": 0.05527762975932205,
+      "rank": 58,
+      "pct_of_total": 0.05722903928612445,
       "product_count": 3,
       "status": "churned",
       "last_active_month": "June"
@@ -9080,8 +8528,8 @@
         }
       ],
       "total": 1590000.0084,
-      "rank": 61,
-      "pct_of_total": 0.04495725592727266,
+      "rank": 60,
+      "pct_of_total": 0.046544335870775104,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "February"
@@ -9128,8 +8576,8 @@
         }
       ],
       "total": 1324079.9945999999,
-      "rank": 63,
-      "pct_of_total": 0.03743836658549165,
+      "rank": 62,
+      "pct_of_total": 0.03876001488229708,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -9162,8 +8610,8 @@
         }
       ],
       "total": 1104000.0,
-      "rank": 64,
-      "pct_of_total": 0.03121560395062764,
+      "rank": 63,
+      "pct_of_total": 0.032317576433879294,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -9252,8 +8700,8 @@
         }
       ],
       "total": 863919.9971,
-      "rank": 66,
-      "pct_of_total": 0.024427341009511758,
+      "rank": 65,
+      "pct_of_total": 0.025289674401300748,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -9342,8 +8790,8 @@
         }
       ],
       "total": 770181.5092,
-      "rank": 67,
-      "pct_of_total": 0.021776884928699163,
+      "rank": 66,
+      "pct_of_total": 0.022545651985082887,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "February"
@@ -9376,8 +8824,8 @@
         }
       ],
       "total": 654900.0,
-      "rank": 68,
-      "pct_of_total": 0.01851729984353808,
+      "rank": 67,
+      "pct_of_total": 0.019170997107380027,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "January"
@@ -9424,8 +8872,8 @@
         }
       ],
       "total": 627499.9497,
-      "rank": 69,
-      "pct_of_total": 0.017742563323255404,
+      "rank": 68,
+      "pct_of_total": 0.018368910857504674,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "June"
@@ -9500,8 +8948,8 @@
         }
       ],
       "total": 470400.22889900004,
-      "rank": 70,
-      "pct_of_total": 0.013300568155430952,
+      "rank": 69,
+      "pct_of_total": 0.013770104485468974,
       "product_count": 4,
       "status": "churned",
       "last_active_month": "June"
@@ -9590,8 +9038,8 @@
         }
       ],
       "total": 454115.00819900003,
-      "rank": 71,
-      "pct_of_total": 0.012840103481862326,
+      "rank": 70,
+      "pct_of_total": 0.013293384499314225,
       "product_count": 5,
       "status": "churned",
       "last_active_month": "June"
@@ -9638,8 +9086,8 @@
         }
       ],
       "total": 404999.994594,
-      "rank": 72,
-      "pct_of_total": 0.011451376296424492,
+      "rank": 71,
+      "pct_of_total": 0.011855632500916933,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "April"
@@ -9686,8 +9134,8 @@
         }
       ],
       "total": 247249.9958,
-      "rank": 73,
-      "pct_of_total": 0.006990994516020967,
+      "rank": 72,
+      "pct_of_total": 0.007237790432556914,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -9720,8 +9168,8 @@
         }
       ],
       "total": 214400.0,
-      "rank": 75,
-      "pct_of_total": 0.006062160767223339,
+      "rank": 74,
+      "pct_of_total": 0.006276167017593949,
       "product_count": 1,
       "status": "churned",
       "last_active_month": "February"
@@ -9768,8 +9216,8 @@
         }
       ],
       "total": 93170.0034,
-      "rank": 76,
-      "pct_of_total": 0.0026343821795407887,
+      "rank": 75,
+      "pct_of_total": 0.0027273810744785267,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "January"
@@ -9816,8 +9264,8 @@
         }
       ],
       "total": 67710.0,
-      "rank": 77,
-      "pct_of_total": 0.001914500492298005,
+      "rank": 76,
+      "pct_of_total": 0.001982086141610477,
       "product_count": 2,
       "status": "churned",
       "last_active_month": "March"
@@ -9852,8 +9300,8 @@
         }
       ],
       "total": 69619200.0,
-      "rank": 12,
-      "pct_of_total": 1.9684831291300144,
+      "rank": 11,
+      "pct_of_total": 2.0379744721608053,
       "product_count": 1,
       "status": "flat",
       "last_active_month": "July"
@@ -9901,7 +9349,7 @@
       ],
       "total": 45843000.0,
       "rank": 16,
-      "pct_of_total": 1.2962109890476656,
+      "pct_of_total": 1.3419697975166016,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -9935,7 +9383,7 @@
       ],
       "total": 41530001.0052,
       "rank": 18,
-      "pct_of_total": 1.1742609270357707,
+      "pct_of_total": 1.2157146574136184,
       "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
@@ -9978,12 +9426,12 @@
             1624999.984495,
             1949999.981394
           ],
-          "total": 8124999.922474999
+          "total": 8124999.922475
         }
       ],
-      "total": 14549568.922474999,
-      "rank": 28,
-      "pct_of_total": 0.4113891133481338,
+      "total": 14549568.922475,
+      "rank": 26,
+      "pct_of_total": 0.4259119617138411,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10030,8 +9478,8 @@
         }
       ],
       "total": 13404742.299534,
-      "rank": 30,
-      "pct_of_total": 0.3790191364877527,
+      "rank": 28,
+      "pct_of_total": 0.39239926072612763,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10078,8 +9526,8 @@
         }
       ],
       "total": 10488000.094999999,
-      "rank": 32,
-      "pct_of_total": 0.29654824021708787,
+      "rank": 29,
+      "pct_of_total": 0.3070169789028041,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -10126,9 +9574,43 @@
         }
       ],
       "total": 8923139.9946,
-      "rank": 34,
-      "pct_of_total": 0.25230181527847756,
+      "rank": 31,
+      "pct_of_total": 0.2612085677587779,
       "product_count": 2,
+      "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "DOUBLE SIX HOTEL",
+      "monthly": [
+        0.0,
+        0.0,
+        0.0,
+        1637250.0,
+        1637250.0,
+        3274500.0,
+        1637250.0
+      ],
+      "products": [
+        {
+          "name": "Tepung Double Zero @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            1637250.0,
+            1637250.0,
+            3274500.0,
+            1637250.0
+          ],
+          "total": 8186250.0
+        }
+      ],
+      "total": 8186250.0,
+      "rank": 32,
+      "pct_of_total": 0.2396374638422503,
+      "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -10160,8 +9642,8 @@
         }
       ],
       "total": 6876450.0,
-      "rank": 38,
-      "pct_of_total": 0.19443164835714982,
+      "rank": 35,
+      "pct_of_total": 0.20129546962749026,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -10207,9 +9689,9 @@
           "total": 4526802.0
         }
       ],
-      "total": 5505822.048839999,
-      "rank": 43,
-      "pct_of_total": 0.15567713813335385,
+      "total": 5505822.04884,
+      "rank": 40,
+      "pct_of_total": 0.1611728486365259,
       "product_count": 2,
       "status": "flat",
       "last_active_month": "July"
@@ -10238,7 +9720,7 @@
             629999.9916,
             314999.9958
           ],
-          "total": 4724999.936999999
+          "total": 4724999.937
         },
         {
           "name": "Masterista Syrup Creme Brulee 850ml",
@@ -10256,8 +9738,8 @@
         }
       ],
       "total": 5054999.9399999995,
-      "rank": 45,
-      "pct_of_total": 0.14293014139265078,
+      "rank": 42,
+      "pct_of_total": 0.14797585773025834,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10304,9 +9786,43 @@
         }
       ],
       "total": 4794645.0,
-      "rank": 46,
-      "pct_of_total": 0.1355686045324792,
+      "rank": 43,
+      "pct_of_total": 0.14035444407682715,
       "product_count": 2,
+      "status": "growing",
+      "last_active_month": "July"
+    },
+    {
+      "name": "BALI DYNASTY RESORT",
+      "monthly": [
+        0.0,
+        559999.995,
+        559999.995,
+        1119999.99,
+        0.0,
+        1119999.99,
+        1119999.99
+      ],
+      "products": [
+        {
+          "name": "Inofa Heat Treated Wheat Flour SF 346 @25kg/sack",
+          "category": "Flour Mip",
+          "monthly": [
+            0.0,
+            559999.995,
+            559999.995,
+            1119999.99,
+            0.0,
+            1119999.99,
+            1119999.99
+          ],
+          "total": 4479999.96
+        }
+      ],
+      "total": 4479999.96,
+      "rank": 44,
+      "pct_of_total": 0.13114378725640954,
+      "product_count": 1,
       "status": "growing",
       "last_active_month": "July"
     },
@@ -10352,10 +9868,58 @@
         }
       ],
       "total": 4464000.6975,
-      "rank": 48,
-      "pct_of_total": 0.126219635696092,
+      "rank": 46,
+      "pct_of_total": 0.1306754381724155,
       "product_count": 2,
       "status": "new",
+      "last_active_month": "July"
+    },
+    {
+      "name": "THE OBEROI",
+      "monthly": [
+        299999.9997,
+        0.0,
+        899999.9991,
+        299999.9997,
+        599999.9994,
+        1499999.9985,
+        599999.9994
+      ],
+      "products": [
+        {
+          "name": "Tepung Hime @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            299999.9997,
+            0.0,
+            899999.9991,
+            299999.9997,
+            599999.9994,
+            1499999.9985,
+            599999.9994
+          ],
+          "total": 4199999.9958
+        },
+        {
+          "name": "Tepung Double Zero @25Kg/Sack",
+          "category": "Flour Sriboga",
+          "monthly": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "total": 0.0
+        }
+      ],
+      "total": 4199999.9958,
+      "rank": 47,
+      "pct_of_total": 0.12294730152768041,
+      "product_count": 2,
+      "status": "growing",
       "last_active_month": "July"
     },
     {
@@ -10382,7 +9946,7 @@
             337019.9982,
             168509.9991
           ],
-          "total": 2022119.9892
+          "total": 2022119.9891999997
         },
         {
           "name": "Flavour Artisan - Belgian Signature Dark Chocolate (80 Cocoa%)  500gr",
@@ -10399,9 +9963,9 @@
           "total": 1652000.0574
         }
       ],
-      "total": 3674120.0465999995,
-      "rank": 49,
-      "pct_of_total": 0.10388575746533256,
+      "total": 3674120.0466,
+      "rank": 48,
+      "pct_of_total": 0.10755312992141634,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10447,9 +10011,9 @@
           "total": 2526804.0
         }
       ],
-      "total": 3216803.9993040003,
-      "rank": 51,
-      "pct_of_total": 0.09095514459154777,
+      "total": 3216803.999304,
+      "rank": 50,
+      "pct_of_total": 0.09416604086985109,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10496,8 +10060,8 @@
         }
       ],
       "total": 2956799.9958,
-      "rank": 53,
-      "pct_of_total": 0.0836035304620564,
+      "rank": 52,
+      "pct_of_total": 0.08655490023909462,
       "product_count": 2,
       "status": "growing",
       "last_active_month": "July"
@@ -10544,8 +10108,8 @@
         }
       ],
       "total": 2464200.0,
-      "rank": 57,
-      "pct_of_total": 0.06967526381805854,
+      "rank": 56,
+      "pct_of_total": 0.07213493826844687,
       "product_count": 2,
       "status": "declining",
       "last_active_month": "July"
@@ -10578,8 +10142,8 @@
         }
       ],
       "total": 1838160.0,
-      "rank": 60,
-      "pct_of_total": 0.051973980577795016,
+      "rank": 59,
+      "pct_of_total": 0.05380876476240902,
       "product_count": 1,
       "status": "declining",
       "last_active_month": "July"
@@ -10626,8 +10190,8 @@
         }
       ],
       "total": 218790.002099,
-      "rank": 74,
-      "pct_of_total": 0.006186288092282042,
+      "rank": 73,
+      "pct_of_total": 0.0064046762824302925,
       "product_count": 2,
       "status": "new",
       "last_active_month": "July"
@@ -10661,7 +10225,7 @@
     {
       "name": "Australian Butter Unsalted",
       "category": "Dairy",
-      "total": 218624766.66601703,
+      "total": 218624766.666017,
       "customer_count": 1
     },
     {
@@ -10685,7 +10249,7 @@
     {
       "name": "O Sole Pomodori Pelati Peeled Tomatoes 2.5Kg",
       "category": "Dry Goods",
-      "total": 81773978.25411801,
+      "total": 81773978.254118,
       "customer_count": 7
     },
     {
@@ -10697,7 +10261,7 @@
     {
       "name": "Pristine Classic Cooking Cream 1 Lt",
       "category": "Dairy",
-      "total": 64013120.70200901,
+      "total": 64013120.70200899,
       "customer_count": 7
     },
     {
@@ -10731,12 +10295,6 @@
       "customer_count": 1
     },
     {
-      "name": "BALIAN Glass Still (330 ml x 20)",
-      "category": "Balian",
-      "total": 36559999.270799994,
-      "customer_count": 4
-    },
-    {
       "name": "Pure Green Tea @50TB/Box",
       "category": "Beverage",
       "total": 36520899.47618601,
@@ -10751,13 +10309,7 @@
     {
       "name": "Tepung Japanese Tempura 1kg/pack",
       "category": "Flour Mip",
-      "total": 33440299.349099997,
-      "customer_count": 5
-    },
-    {
-      "name": "BALIAN Glass Sparkling (330 ml x 20)",
-      "category": "Balian",
-      "total": 33299999.556000005,
+      "total": 33440299.3491,
       "customer_count": 5
     },
     {
@@ -10795,12 +10347,6 @@
       "category": "Frozen Fries",
       "total": 17930000.163000003,
       "customer_count": 6
-    },
-    {
-      "name": "BALIAN Glass Still (750 ml x 12)",
-      "category": "Balian",
-      "total": 16667999.7822,
-      "customer_count": 2
     },
     {
       "name": "Peppermint Tea @50tb/Box",
@@ -10895,7 +10441,7 @@
     {
       "name": "Savis English Breakfast Tea 50 Tb Cover Alila",
       "category": "Beverage",
-      "total": 8999999.879999999,
+      "total": 8999999.88,
       "customer_count": 1
     },
     {
@@ -10971,12 +10517,6 @@
       "customer_count": 3
     },
     {
-      "name": "BALIAN Crate Sparkling 330 ml (Deposit)",
-      "category": "Balian",
-      "total": 6580000.0,
-      "customer_count": 5
-    },
-    {
       "name": "EMBORG Perfect Pasta 1L",
       "category": "Dairy",
       "total": 6490000.081176,
@@ -10993,12 +10533,6 @@
       "category": "Dairy",
       "total": 6342487.916067,
       "customer_count": 1
-    },
-    {
-      "name": "BALIAN Return Bottle Glass 330 ml (Deposit)",
-      "category": "Balian",
-      "total": 6243000.0,
-      "customer_count": 5
     },
     {
       "name": "Tepung Double Zero 1kg/pack",
@@ -11031,15 +10565,9 @@
       "customer_count": 1
     },
     {
-      "name": "BALIAN Crate Still 330 ml (Deposit)",
-      "category": "Balian",
-      "total": 5250000.0,
-      "customer_count": 4
-    },
-    {
       "name": "Arass English Breakfast Tea 100 Tb",
       "category": "Other",
-      "total": 5159999.868225,
+      "total": 5159999.868225001,
       "customer_count": 3
     },
     {
@@ -11059,12 +10587,6 @@
       "category": "Beverage",
       "total": 5050500.0,
       "customer_count": 1
-    },
-    {
-      "name": "BALIAN Glass Sparkling (750 ml x 12)",
-      "category": "Balian",
-      "total": 5003999.935500001,
-      "customer_count": 2
     },
     {
       "name": "Javanese Jasmine Tea @50TB/Box",
@@ -11093,7 +10615,7 @@
     {
       "name": "Komi Teriyaki Sauce 1.9 L",
       "category": "Other",
-      "total": 4505000.196959999,
+      "total": 4505000.19696,
       "customer_count": 1
     },
     {
@@ -11183,7 +10705,7 @@
     {
       "name": "ICE SHAKEN PEACH & MANGO 1000 GR",
       "category": "Beverage",
-      "total": 3227387.515159,
+      "total": 3227387.5151589997,
       "customer_count": 2
     },
     {
@@ -11197,12 +10719,6 @@
       "category": "Beverage",
       "total": 3204589.9356000004,
       "customer_count": 1
-    },
-    {
-      "name": "BALIAN Crate Still 750 ml (Deposit)",
-      "category": "Balian",
-      "total": 2940000.0,
-      "customer_count": 2
     },
     {
       "name": "Crr Rock'n Super Crispy Jakets Spicy Wedges 10Kg/Ctn",
@@ -11225,7 +10741,7 @@
     {
       "name": "Masterista Ice Shaken Lemon Tea 1000Gr",
       "category": "Beverage",
-      "total": 2588776.1844479996,
+      "total": 2588776.184448,
       "customer_count": 1
     },
     {
@@ -11244,12 +10760,6 @@
       "name": "Flavorista Vanilla Latte 1 Kg",
       "category": "Beverage",
       "total": 2464200.0,
-      "customer_count": 2
-    },
-    {
-      "name": "BALIAN Return Bottle Glass 750 ml (Deposit)",
-      "category": "Balian",
-      "total": 2250000.0,
       "customer_count": 2
     },
     {
@@ -11292,12 +10802,6 @@
       "name": "Savis Pure Bunga Telang 200 Gr",
       "category": "Beverage",
       "total": 1980000.0180000002,
-      "customer_count": 2
-    },
-    {
-      "name": "BALIAN Crate Sparkling 750 ml (Deposit)",
-      "category": "Balian",
-      "total": 1960000.0,
       "customer_count": 2
     },
     {
@@ -11367,12 +10871,6 @@
       "customer_count": 1
     },
     {
-      "name": "BALIAN Glass Sparkling (750 ml x 6)",
-      "category": "Balian",
-      "total": 1512000.042,
-      "customer_count": 1
-    },
-    {
       "name": "Tepung Mix Waffle 1kg/pack",
       "category": "Flour Mip",
       "total": 1481850.0,
@@ -11388,12 +10886,6 @@
       "name": "Masterista Syrup Mojito 850 Ml",
       "category": "Beverage",
       "total": 1406900.01279,
-      "customer_count": 1
-    },
-    {
-      "name": "BALIAN Glass Still (750 ml x 6)",
-      "category": "Balian",
-      "total": 1404000.0389999999,
       "customer_count": 1
     },
     {
@@ -11479,12 +10971,6 @@
       "category": "Frozen Fries",
       "total": 840000.0258,
       "customer_count": 1
-    },
-    {
-      "name": "BALIAN Glass Still (330 ml x 12)",
-      "category": "Balian",
-      "total": 792000.0072,
-      "customer_count": 2
     },
     {
       "name": "Premium Straight Cut 6x2Kg",
@@ -11622,12 +11108,6 @@
       "name": "Nusantara Frappe Powder - Bajigur 1Kg",
       "category": "Beverage",
       "total": 156510.0,
-      "customer_count": 1
-    },
-    {
-      "name": "BALIAN Glass Sparkling (330 ml x 12)",
-      "category": "Balian",
-      "total": 132000.0012,
       "customer_count": 1
     },
     {
@@ -11886,19 +11366,15 @@
     },
     {
       "category": "Dairy",
-      "total": 476672165.009537
+      "total": 476672165.0095369
     },
     {
       "category": "Frozen Fries",
       "total": 192497993.32696396
     },
     {
-      "category": "Balian",
-      "total": 120594998.6339
-    },
-    {
       "category": "Dry Goods",
-      "total": 98645643.10048601
+      "total": 98645643.100486
     },
     {
       "category": "Flour Mip",
@@ -11906,7 +11382,7 @@
     },
     {
       "category": "Other",
-      "total": 37522524.74793601
+      "total": 37522524.74793602
     },
     {
       "category": "Frozen Sea Food",
