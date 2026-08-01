@@ -776,17 +776,40 @@
     const plotW = W - padL - padR, plotH = H - padT - padB;
     const months = DATA.months, values = DATA.monthly_totals;
     const targets = DATA.monthly_targets;
-    const maxVal = Math.max(...targets, ...values) * 1.08;
+
+    // "Nice numbers" axis (Heckbert) so gridlines land on round values (500M, 1B, ...)
+    // instead of arbitrary fractions of the raw max.
+    function niceNumber(range, round) {
+      const exponent = Math.floor(Math.log10(range));
+      const fraction = range / Math.pow(10, exponent);
+      let niceFraction;
+      if (round) {
+        if (fraction < 1.5) niceFraction = 1;
+        else if (fraction < 3) niceFraction = 2;
+        else if (fraction < 7) niceFraction = 5;
+        else niceFraction = 10;
+      } else {
+        if (fraction <= 1) niceFraction = 1;
+        else if (fraction <= 2) niceFraction = 2;
+        else if (fraction <= 5) niceFraction = 5;
+        else niceFraction = 10;
+      }
+      return niceFraction * Math.pow(10, exponent);
+    }
+    const desiredTicks = 5;
+    const rawMax = Math.max(...targets, ...values, 1) * 1.05;
+    const tickStep = niceNumber(niceNumber(rawMax, false) / (desiredTicks - 1), true);
+    const maxVal = Math.ceil(rawMax / tickStep) * tickStep;
+    const ticks = Math.round(maxVal / tickStep);
 
     const x = i => padL + (i / (months.length - 1)) * plotW;
     const y = v => padT + plotH - (v / maxVal) * plotH;
 
     let svgHtml = '';
 
-    // gridlines + y labels (4 bands)
-    const ticks = 4;
+    // gridlines + y labels (nice round steps)
     for (let t = 0; t <= ticks; t++) {
-      const v = (maxVal / ticks) * t;
+      const v = tickStep * t;
       const yy = y(v);
       svgHtml += `<line class="grid-line" x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}"/>`;
       svgHtml += `<text class="axis-label" x="${padL - 10}" y="${yy + 4}" text-anchor="end">${fmtIDR(v, { short: true })}</text>`;
