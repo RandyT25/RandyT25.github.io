@@ -719,44 +719,74 @@
     `Generated ${new Date(DATA.generated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`;
 
   // ---------------- KPI strip ----------------
-  const progressPct = Math.min(100, DATA.target_progress_pct);
-  const monthProgressPct = Math.min(100, DATA.current_month_progress_pct);
   const completeMonths = DATA.partial_month ? DATA.months.length - 1 : DATA.months.length;
-  const runRateWindow = Math.min(3, completeMonths);
-  const currentMonthLabel = monthShort(DATA.months[DATA.months.length - 1]).replace('*', '');
+  const lastCompleteIdx = completeMonths - 1;
+  const prevCompleteIdx = lastCompleteIdx - 1;
+  const lastCompleteLabel = monthShort(DATA.months[lastCompleteIdx]);
+  const lastCompleteActual = DATA.monthly_totals[lastCompleteIdx];
+  const lastCompleteTarget = DATA.monthly_targets[lastCompleteIdx];
+  const momPct = (prevCompleteIdx >= 0 && DATA.monthly_totals[prevCompleteIdx])
+    ? (lastCompleteActual - DATA.monthly_totals[prevCompleteIdx]) / DATA.monthly_totals[prevCompleteIdx] * 100
+    : null;
+  const vsTargetDelta = lastCompleteActual - lastCompleteTarget;
+
+  // pacing: average of the earlier vs. later half of complete months tracked so far
+  const half = Math.floor(completeMonths / 2);
+  const avg = arr => arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0;
+  const h1Avg = avg(DATA.monthly_totals.slice(0, half));
+  const h2Avg = avg(DATA.monthly_totals.slice(half, completeMonths));
+  const halfChangePct = h1Avg ? (h2Avg - h1Avg) / h1Avg * 100 : null;
+
+  const currentMonthLabel = monthShort(DATA.months[DATA.months.length - 1]);
+  const dormantSince = (lastCompleteLabel !== currentMonthLabel)
+    ? `${lastCompleteLabel}/${currentMonthLabel}`
+    : currentMonthLabel;
+  const avgPerAccount = DATA.customer_count ? DATA.grand_total / DATA.customer_count : 0;
+
   const kpis = [
     {
-      label: "Total revenue · period",
-      value: fmtIDR(DATA.grand_total, { short: true }),
-      sub: `Across ${DATA.months.length} months`,
+      label: "Revenue YTD",
+      value: fmtIDR(DATA.grand_total, { short: true, decimals: 1 }),
+      sub: `${monthShort(DATA.months[0])} – ${currentMonthLabel} · F&amp;B only`,
       cls: "",
     },
     {
-      label: "Current run rate",
-      value: fmtIDR(DATA.run_rate, { short: true }) + "/mo",
-      sub: `Avg of last ${runRateWindow} complete months` + (DATA.partial_month ? ` · ${monthShort(DATA.partial_month)} still in progress` : ""),
+      label: `${lastCompleteLabel} revenue`,
+      value: fmtIDR(lastCompleteActual, { short: true, decimals: 1 }),
+      sub: momPct === null ? "No prior month to compare"
+        : `${momPct >= 0 ? '▲' : '▼'} ${Math.abs(momPct).toFixed(1)}% vs ${monthShort(DATA.months[prevCompleteIdx])}`,
       cls: "kpi--info",
     },
     {
-      label: `Progress to ${fmtIDR(DATA.monthly_target, { short: true })}/mo target`,
-      value: DATA.target_progress_pct.toFixed(0) + "%",
-      sub: `<div class="progress-track"><div class="progress-fill" style="width:${progressPct}%"></div></div>`,
-      isHtml: true,
-      cls: "kpi--good",
+      label: `vs Target (${lastCompleteLabel})`,
+      value: `${vsTargetDelta >= 0 ? '+' : '−'}${fmtIDR(Math.abs(vsTargetDelta), { short: true, decimals: 1 })}`,
+      sub: `H1 ${fmtIDR(h1Avg, { short: true, decimals: 1 })} · H2 ${fmtIDR(h2Avg, { short: true, decimals: 1 })} · `
+        + (halfChangePct === null ? '—' : (halfChangePct >= 0 ? '+' : '−') + Math.abs(halfChangePct).toFixed(1) + '%'),
+      cls: vsTargetDelta >= 0 ? "kpi--good" : "kpi--critical",
     },
     {
-      label: `${currentMonthLabel} target`,
-      value: DATA.current_month_progress_pct.toFixed(0) + "%",
-      sub: `<div class="progress-track"><div class="progress-fill" style="width:${monthProgressPct}%"></div></div>`
-        + `<div style="margin-top:3px">${fmtIDR(DATA.current_month_actual, { short: true })} of ${fmtIDR(DATA.current_month_target, { short: true })}</div>`,
-      isHtml: true,
+      label: `${currentMonthLabel} revenue (MTD)`,
+      value: fmtIDR(DATA.current_month_actual, { short: true, decimals: 1 }),
+      sub: `${DATA.current_month_progress_pct.toFixed(0)}% of ${fmtIDR(DATA.current_month_target, { short: true })} target · excl. Balian`,
       cls: "kpi--warning",
     },
     {
-      label: "Top-5 concentration",
-      value: DATA.top5_pct_of_total.toFixed(0) + "%",
-      sub: `of revenue from 5 of ${DATA.customer_count} accounts`,
+      label: "Active customers",
+      value: String(DATA.customer_count),
+      sub: `Avg ${fmtIDR(avgPerAccount, { short: true, decimals: 1 })} per account`,
+      cls: "",
+    },
+    {
+      label: "SKUs sold",
+      value: String(DATA.product_count),
+      sub: "Unique products",
       cls: "kpi--secondary",
+    },
+    {
+      label: "Dormant",
+      value: String(DATA.at_risk.length),
+      sub: `No order ${dormantSince}`,
+      cls: "kpi--critical",
     },
   ];
   document.getElementById('kpiStrip').innerHTML = kpis.map(k => `
