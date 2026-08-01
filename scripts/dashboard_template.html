@@ -130,13 +130,21 @@
   .kpi.kpi--warning::before { background: var(--warning); }
   .kpi.kpi--info::before { background: var(--info); }
   .kpi.kpi--critical::before { background: var(--critical); }
-  .kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); }
+  .kpi.kpi--good .kpi-value { color: var(--good); }
+  .kpi.kpi--warning .kpi-value { color: var(--warning); }
+  .kpi.kpi--critical .kpi-value { color: var(--critical); }
+  .kpi.kpi--info .kpi-value { color: var(--info); }
+  .kpi.kpi--secondary .kpi-value { color: var(--secondary); }
+  .kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .kpi-value {
     font-size: 22px; font-weight: 800; letter-spacing: -0.01em;
     font-variant-numeric: tabular-nums; white-space: nowrap; line-height: 1.15;
   }
-  .kpi-sub { font-size: 11px; color: var(--ink-2); }
+  .kpi-sub { font-size: 11px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .kpi-sub b { color: var(--ink); }
+  .kpi-delta { font-weight: 700; }
+  .kpi-delta.up { color: var(--good); }
+  .kpi-delta.down { color: var(--critical); }
   .progress-track {
     height: 6px; border-radius: 4px; background: var(--surface-2); overflow: hidden; margin-top: 2px;
   }
@@ -754,26 +762,27 @@
       label: `${lastCompleteLabel} revenue`,
       value: fmtIDR(lastCompleteActual, { short: true, decimals: 1 }),
       sub: momPct === null ? "No prior month to compare"
-        : `${momPct >= 0 ? '▲' : '▼'} ${Math.abs(momPct).toFixed(1)}% vs ${monthShort(DATA.months[prevCompleteIdx])}`,
+        : `<span class="kpi-delta ${momPct >= 0 ? 'up' : 'down'}">${momPct >= 0 ? '▲' : '▼'} ${Math.abs(momPct).toFixed(1)}%</span> vs ${monthShort(DATA.months[prevCompleteIdx])}`,
       cls: "kpi--info",
     },
     {
       label: `vs Target (${lastCompleteLabel})`,
       value: `${vsTargetDelta >= 0 ? '+' : '−'}${fmtIDR(Math.abs(vsTargetDelta), { short: true, decimals: 1 })}`,
-      sub: `H1 ${fmtIDR(h1Avg, { short: true, decimals: 1 })} · H2 ${fmtIDR(h2Avg, { short: true, decimals: 1 })} · `
-        + (halfChangePct === null ? '—' : (halfChangePct >= 0 ? '+' : '−') + Math.abs(halfChangePct).toFixed(1) + '%'),
+      sub: `Pace H1→H2 ` + (halfChangePct === null ? '—' : `<span class="kpi-delta ${halfChangePct >= 0 ? 'up' : 'down'}">${halfChangePct >= 0 ? '+' : '−'}${Math.abs(halfChangePct).toFixed(0)}%</span>`),
+      title: `First-half avg ${fmtIDR(h1Avg, { short: true })} vs second-half avg ${fmtIDR(h2Avg, { short: true })} of tracked months`,
       cls: vsTargetDelta >= 0 ? "kpi--good" : "kpi--critical",
     },
     {
-      label: `${currentMonthLabel} revenue (MTD)`,
+      label: `${currentMonthLabel} MTD`,
       value: fmtIDR(DATA.current_month_actual, { short: true, decimals: 1 }),
-      sub: `${DATA.current_month_progress_pct.toFixed(0)}% of ${fmtIDR(DATA.current_month_target, { short: true })} target · excl. Balian`,
+      sub: `${DATA.current_month_progress_pct.toFixed(0)}% of ${fmtIDR(DATA.current_month_target, { short: true, noPrefix: true })}`,
+      title: `${fmtIDR(DATA.current_month_actual, { short: true })} of ${fmtIDR(DATA.current_month_target, { short: true })} target · excludes Balian (water/deposits)`,
       cls: "kpi--warning",
     },
     {
-      label: "Active customers",
+      label: "Accounts",
       value: String(DATA.customer_count),
-      sub: `Avg ${fmtIDR(avgPerAccount, { short: true, decimals: 1 })} per account`,
+      sub: `Avg ${fmtIDR(avgPerAccount, { short: true, decimals: 1, noPrefix: true })} per account`,
       cls: "",
     },
     {
@@ -790,10 +799,10 @@
     },
   ];
   document.getElementById('kpiStrip').innerHTML = kpis.map(k => `
-    <div class="kpi ${k.cls}">
+    <div class="kpi ${k.cls}"${k.title ? ` title="${esc(k.title)}"` : ''}>
       <div class="kpi-label">${k.label}</div>
       <div class="kpi-value">${k.value}</div>
-      <div class="kpi-sub">${k.isHtml ? k.sub : k.sub}</div>
+      <div class="kpi-sub">${k.sub}</div>
     </div>
   `).join('');
 
