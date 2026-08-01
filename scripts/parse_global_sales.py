@@ -171,7 +171,21 @@ def main():
     print(f"This month ({months[-1]}): {data['current_month_actual']:,.0f} of "
           f"{data['current_month_target']:,.0f} target ({data['current_month_progress_pct']:.1f}%)")
     print(f"At-risk customers: {len(data['at_risk'])}, Upsell targets: {len(data['upsell_targets'])}")
+    abc_line = ", ".join(f"{b['cls']}={b['accs']}" for b in data['abc'])
+    print(f"ABC tiers: {abc_line}")
+    print(f"Opportunities: {len(data['opportunities'])}, "
+          f"Top grower: {data['top_grower']['name'] if data['top_grower'] else 'none'}")
     print(f"Wrote {out_path}")
+
+
+def mom_pct(monthly, trend_len):
+    """Latest complete month vs. the prior complete month, as a % change."""
+    if trend_len < 2:
+        return None
+    lat, prv = monthly[trend_len - 1], monthly[trend_len - 2]
+    if prv == 0:
+        return None
+    return round((lat - prv) / prv * 100, 1)
 
 
 def trend_status(monthly, window=3):
@@ -208,14 +222,19 @@ def build_data(months, customers, trend_len, has_partial, default_target, monthl
     run_rate = sum(monthly_totals[:trend_len][-run_rate_window:]) / run_rate_window if run_rate_window else 0
 
     ranked = sorted(customers, key=lambda c: -c["total"])
+    running = 0.0
     for i, c in enumerate(ranked):
         c["rank"] = i + 1
         c["pct_of_total"] = (c["total"] / grand_total * 100) if grand_total else 0
         c["product_count"] = len(c["products"])
         trend_monthly = c["monthly"][:trend_len] if has_partial else c["monthly"]
         c["status"] = trend_status(trend_monthly)
+        c["mom_pct"] = mom_pct(c["monthly"], trend_len)
         last_idx = max((i for i, v in enumerate(c["monthly"]) if v > 0), default=None)
         c["last_active_month"] = months[last_idx] if last_idx is not None else None
+        running += c["total"]
+        frac = running / grand_total if grand_total else 1
+        c["cls"] = "A" if frac <= 0.80 else ("B" if frac <= 0.95 else "C")
 
     top5_total = sum(c["total"] for c in ranked[:5])
     top10_total = sum(c["total"] for c in ranked[:10])
@@ -224,6 +243,41 @@ def build_data(months, customers, trend_len, has_partial, default_target, monthl
     upsell_targets = sorted(
         [c for c in ranked if c["product_count"] <= 2 and c["status"] != "churned"],
         key=lambda c: -c["total"],
+    )
+
+    abc_buckets = {k: {"accs": 0, "rev": 0.0} for k in "ABC"}
+    for c in ranked:
+        b = abc_buckets[c["cls"]]
+        b["accs"] += 1
+        b["rev"] += c["total"]
+    ABC_STRAT = {"A": "Top tier — Protect & Grow", "B": "Middle — Upsell", "C": "Long tail — Review"}
+    abc = [
+        {"cls": k, "accs": abc_buckets[k]["accs"], "rev": round(abc_buckets[k]["rev"]),
+         "pct": (abc_buckets[k]["rev"] / grand_total * 100) if grand_total else 0,
+         "strat": ABC_STRAT[k]}
+        for k in "ABC"
+    ]
+
+    totals_sorted = sorted(c["total"] for c in ranked)
+    p75_floor = totals_sorted[int(len(totals_sorted) * 0.75)] if totals_sorted else 0
+    opp_candidates = [
+        c for c in ranked
+        if c["cls"] in ("A", "B") and c["product_count"] <= 6 and c["total"] >= p75_floor
+    ]
+    opp_candidates.sort(key=lambda c: (c["cls"] == "B", -c["total"]))
+    opportunities = [
+        {"rank": i, "name": c["name"], "cls": c["cls"], "product_count": c["product_count"],
+         "total": round(c["total"])}
+        for i, c in enumerate(opp_candidates[:5], 1)
+    ]
+
+    growers = sorted(
+        [c for c in ranked if c["mom_pct"] is not None and c["mom_pct"] > 5],
+        key=lambda c: -c["mom_pct"],
+    )
+    top_grower = (
+        {"name": growers[0]["name"], "mom_pct": growers[0]["mom_pct"], "total": round(growers[0]["total"])}
+        if growers else None
     )
 
     product_agg = {}
@@ -271,6 +325,9 @@ def build_data(months, customers, trend_len, has_partial, default_target, monthl
         "upsell_targets": upsell_targets,
         "products": products,
         "categories": categories,
+        "abc": abc,
+        "opportunities": opportunities,
+        "top_grower": top_grower,
     }
 
 

@@ -218,6 +218,17 @@
   .chip--flat { background: var(--surface-2); color: var(--ink-2); }
   .chip--declining { background: var(--warning-soft); color: var(--warning); }
   .chip--churned { background: var(--critical-soft); color: var(--critical); }
+  .chip--tier-a { background: var(--accent-soft); color: var(--accent); }
+  .chip--tier-b { background: var(--secondary-soft); color: var(--secondary); }
+  .chip--p1 { background: var(--critical-soft); color: var(--critical); }
+  .chip--p2 { background: var(--warning-soft); color: var(--warning); }
+  .chip--p3 { background: var(--good-soft); color: var(--good); }
+
+  /* ---------- Weekly action plan ---------- */
+  .week-plan-row { display: flex; gap: 12px; align-items: flex-start; padding: 10px 18px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .week-plan-row:last-child { border-bottom: none; }
+  .week-plan-day { min-width: 34px; font-size: 11px; font-weight: 700; color: var(--ink-2); letter-spacing: 0.05em; padding-top: 2px; }
+  .week-plan-text { flex: 1; }
 
   /* ---------- Two-column action list ---------- */
   .action-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -428,6 +439,26 @@
     </div>
   </section>
 
+  <section class="block" data-page="accounts">
+    <div class="block-head">
+      <h2>Customer segmentation (ABC)</h2>
+      <div class="hint">Cumulative revenue share — A = top 80%, B = next 15%, C = long tail</div>
+    </div>
+    <div class="card">
+      <div class="rank-list" id="abcTiers"></div>
+    </div>
+  </section>
+
+  <section class="block" data-page="actions">
+    <div class="block-head">
+      <h2>This week's action plan</h2>
+      <div class="hint" id="planPeriod">Auto-generated from the latest data</div>
+    </div>
+    <div class="action-card">
+      <div class="action-card-body" id="weeklyPlanBody" style="max-height:none"></div>
+    </div>
+  </section>
+
   <section class="block" data-page="actions">
     <div class="block-head">
       <h2>This month's action list</h2>
@@ -469,6 +500,7 @@
           <option value="name">Sort: Account</option>
           <option value="total">Sort: Total</option>
           <option value="product_count">Sort: Products</option>
+          <option value="cls">Sort: Tier</option>
           <option value="status">Sort: Status</option>
           <option value="last_active_month">Sort: Last active</option>
         </select>
@@ -484,6 +516,7 @@
             <th data-key="total" class="num">Total<span class="arrow">▾</span></th>
             <th>Trend</th>
             <th data-key="product_count" class="num">Products<span class="arrow">▾</span></th>
+            <th data-key="cls">Tier<span class="arrow">▾</span></th>
             <th data-key="status">Status<span class="arrow">▾</span></th>
             <th data-key="last_active_month">Last active<span class="arrow">▾</span></th>
           </tr>
@@ -564,6 +597,12 @@
     return `<span class="chip chip--${m.cls}"><span class="chip-icon">${m.icon}</span>${m.label}</span>`;
   }
 
+  const TIER_META = { A: { label: "Tier A", cls: "tier-a" }, B: { label: "Tier B", cls: "tier-b" }, C: { label: "Tier C", cls: "flat" } };
+  function tierChip(cls) {
+    const m = TIER_META[cls] || TIER_META.C;
+    return `<span class="chip chip--${m.cls}">${m.label}</span>`;
+  }
+
   function monthShort(m) {
     const s = m || "";
     const partial = s.endsWith('*');
@@ -611,7 +650,7 @@
       const stats = monthContextStats(c, monthKey);
 
       nameEl.textContent = c.name;
-      subEl.innerHTML = `${chip(c.status)}<span>Rank #${stats.rank || '—'} of ${stats.rankOf}${stats.monthSuffix}</span>` +
+      subEl.innerHTML = `${chip(c.status)}${tierChip(c.cls)}<span>Rank #${stats.rank || '—'} of ${stats.rankOf}${stats.monthSuffix}</span>` +
         `<span>${fmtIDR(stats.value, { short: true })} ${stats.valueLabel} · ${stats.pct.toFixed(1)}% ${stats.pctLabel}</span>` +
         `<span>${c.product_count} product${c.product_count === 1 ? '' : 's'}</span>`;
 
@@ -747,13 +786,17 @@
       svgHtml += `<text class="axis-label" x="${x(i)}" y="${H - 10}" text-anchor="middle">${monthShort(m)}</text>`;
     });
 
-    // target dashed line — one segment per month so a changing ramp target shows as a step
+    // target dashed line — one segment per month so a changing ramp target shows as a step,
+    // with a vertical connector at each step so it reads as one continuous line, not floating pieces
     const segW = months.length > 1 ? plotW / (months.length - 1) : plotW;
     months.forEach((m, i) => {
       const ty = y(targets[i]);
       const x1 = Math.max(padL, x(i) - segW / 2);
       const x2 = Math.min(W - padR, x(i) + segW / 2);
       svgHtml += `<line class="target-line" x1="${x1}" y1="${ty}" x2="${x2}" y2="${ty}"/>`;
+      if (i < months.length - 1 && targets[i + 1] !== targets[i]) {
+        svgHtml += `<line class="target-line" x1="${x2}" y1="${ty}" x2="${x2}" y2="${y(targets[i + 1])}"/>`;
+      }
     });
     const lastTarget = targets[targets.length - 1];
     const lastTy = y(lastTarget);
@@ -844,7 +887,10 @@
           <div class="rank-num">${key === 'total' ? c.rank : idx + 1}</div>
           <div class="rank-main">
             <div class="rank-name-line">
-              <span class="rank-name clickable-name" data-name="${esc(c.name)}" data-month-context="${key}" title="${esc(c.name)}">${esc(c.name)}</span>
+              <span style="display:flex;align-items:center;gap:6px;min-width:0">
+                <span class="rank-name clickable-name" data-name="${esc(c.name)}" data-month-context="${key}" title="${esc(c.name)}">${esc(c.name)}</span>
+                ${tierChip(c.cls)}
+              </span>
               <span class="rank-pct">${(getValue(c) / (denom || 1) * 100).toFixed(1)}%</span>
             </div>
             <div class="rank-track"><div class="rank-fill" style="width:${(getValue(c) / maxVal * 100).toFixed(1)}%"></div></div>
@@ -866,6 +912,80 @@
     });
 
     draw('total');
+  })();
+
+  // ---------------- ABC segmentation ----------------
+  (function renderABC() {
+    const tiers = DATA.abc;
+    document.getElementById('abcTiers').innerHTML = tiers.map(t => `
+      <div class="rank-row">
+        <div class="rank-num">${t.cls}</div>
+        <div class="rank-main">
+          <div class="rank-name-line">
+            <span class="rank-name">${t.accs} account${t.accs === 1 ? '' : 's'} · ${t.strat}</span>
+            <span class="rank-pct">${t.pct.toFixed(1)}%</span>
+          </div>
+          <div class="rank-track"><div class="rank-fill${t.cls !== 'A' ? ' secondary' : ''}" style="width:${t.pct.toFixed(1)}%"></div></div>
+        </div>
+        <div class="rank-value">${fmtIDR(t.rev, { short: true })}</div>
+      </div>
+    `).join('');
+  })();
+
+  // ---------------- Weekly action plan ----------------
+  (function renderWeeklyPlan() {
+    document.getElementById('planPeriod').textContent = `Generated for ${DATA.months[DATA.months.length - 1]}`;
+
+    const urgentDecliners = DATA.customers
+      .filter(c => c.status !== 'churned' && c.mom_pct !== null && c.mom_pct < -5)
+      .sort((a, b) => a.mom_pct - b.mom_pct);
+    const opp = DATA.opportunities[0];
+    const grower = DATA.top_grower;
+    const topCategory = DATA.categories[0];
+
+    const items = [];
+
+    items.push({ day: 'MON', p: 'p1',
+      text: `Review this month's data — ${fmtIDR(DATA.current_month_actual, { short: true })} of ${fmtIDR(DATA.current_month_target, { short: true })} target so far (${DATA.current_month_progress_pct.toFixed(0)}%).` });
+
+    if (DATA.at_risk.length > 0) {
+      const first = DATA.at_risk[0];
+      items.push({ day: 'MON', p: 'p1',
+        text: `${DATA.at_risk.length} account${DATA.at_risk.length === 1 ? '' : 's'} went quiet — start re-engagement calls with ${esc(first.name)}${DATA.at_risk.length > 1 ? ` + ${DATA.at_risk.length - 1} more` : ''}.` });
+    }
+
+    if (urgentDecliners.length > 0) {
+      const first = urgentDecliners[0];
+      items.push({ day: 'MON', p: 'p1',
+        text: `Urgent decline — ${esc(first.name)} down ${Math.abs(first.mom_pct).toFixed(0)}% month-over-month${urgentDecliners.length > 1 ? ` (+${urgentDecliners.length - 1} more account${urgentDecliners.length - 1 === 1 ? '' : 's'} declining >5%)` : ''}. Call before month-end.` });
+    }
+
+    items.push({ day: 'TUE', p: 'p2',
+      text: `Top 10 accounts = ${DATA.top10_pct_of_total.toFixed(0)}% of revenue — protect these relationships, watch for any early wobble.` });
+
+    if (opp) {
+      items.push({ day: 'WED', p: 'p2',
+        text: `Opportunity — ${esc(opp.name)} (Tier ${opp.cls}, only ${opp.product_count} product${opp.product_count === 1 ? '' : 's'}, ${fmtIDR(opp.total, { short: true })} total): pitch additional categories.` });
+    }
+    if (grower) {
+      items.push({ day: 'WED', p: 'p2',
+        text: `Growth account — ${esc(grower.name)} up ${grower.mom_pct.toFixed(0)}% month-over-month: lock in the next order before it cools off.` });
+    }
+
+    items.push({ day: 'THU', p: 'p2',
+      text: `Prepare bundle promos — pair slow movers with top sellers in ${esc(topCategory.category)}, this territory's leading category, for the next order cycle.` });
+
+    items.push({ day: 'FRI', p: 'p3',
+      text: `Weekly KPI review — compare actuals vs. ${fmtIDR(DATA.current_month_target, { short: true })} target, set next week's priorities.` });
+
+    const P_LABEL = { p1: 'P1', p2: 'P2', p3: 'P3' };
+    document.getElementById('weeklyPlanBody').innerHTML = items.map(it => `
+      <div class="week-plan-row">
+        <div class="week-plan-day">${it.day}</div>
+        <span class="chip chip--${it.p}">${P_LABEL[it.p]}</span>
+        <div class="week-plan-text">${it.text}</div>
+      </div>
+    `).join('');
   })();
 
   // ---------------- Action lists ----------------
@@ -971,6 +1091,7 @@
           <td class="num" data-label="Total">${fmtIDR(c.total, { short: true })}</td>
           <td class="spark-cell" data-label="Trend">${sparkline(c)}</td>
           <td class="num" data-label="Products">${c.product_count}</td>
+          <td data-label="Tier">${tierChip(c.cls)}</td>
           <td data-label="Status">${chip(c.status)}</td>
           <td data-label="Last active">${c.last_active_month || '—'}</td>
         </tr>
